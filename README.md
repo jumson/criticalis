@@ -41,6 +41,16 @@ The format will be the epub format. More on this will be forthcoming as I explor
 ### Digestion / Implementation Notes / Examples (this is a living document)
 This project will need to be a synthesis of an ePub reader and a git client. I'll likely attempt to find an open source ePub reader and a git client already implemented in NodeJS, and modify them to allow for good referencing of chunks.
 
+Potential sources of implementations: 
+- ePub reading
+    - simple ePub streamer #[npm install epub](https://www.npmjs.com/package/epub) and the #[github page](https://github.com/julien-c/epub)
+    - ePub to JSON, and some HTML generation - could be useful #[npm install epub-parser](https://www.npmjs.com/package/epub-parser) and #[the github](https://github.com/Vaporbook/epub-parser)
+    - ePub from HTML #[npm install epub-gen](https://www.npmjs.com/package/epub-gen) and #[the github](https://github.com/cyrilis/epub-gen)
+    - A streaming EPUB3 writer #[npm install streampub](https://www.npmjs.com/package/streampub) and #[the github](https://github.com/iarna/streampub)
+    - The Readium projects look pretty good for rendering ePub3 content  #[the main site](http://readium.github.io/readium-project/) and the #[readium-shared-js](https://github.com/readium/readium-shared-js)
+    - This may be a more simple integration #[Future Press](http://futurepress.org/) and #[the github](https://github.com/futurepress/epub.js)
+        - it looks quite promising > Similar to a plugins, Epub.js implements events that can be "hooked" into. Thus you can interact with and manipulate the contents of the book.
+
 As an example for what we are working with, the two graphics at the top of the page show Psalm 1, rendered in PDF and ePub. Below, is what it looks like inside the xml file (**content-0012.xml**) shows starting on line **1078** and skips a little to show how a paragraph ends and starts again:
 
 ```xml
@@ -93,6 +103,7 @@ Each change submitted by the user would end up, in the background, being transmi
 There will need to be two branches -- one where the changes are viewable by all, and another where the accepted changes are integrated as a 'final' product.
 
 A separate project would be perhaps some kind of machine learning method to take all these corrections and come up with a better OCR algorithm.
+
 
 
 ## Public References (downloaded copies are linked below and #[found here](sources/))
