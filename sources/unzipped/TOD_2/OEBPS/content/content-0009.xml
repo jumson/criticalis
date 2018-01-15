@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>The Treasury of David</title>
+<style type="text/css">
+.fakecover {
+  margin:0;
+  padding:0;
+  border:none;
+  height:100%;
+  width:100%;
+  background:black;
+  text-align: center;
+  font-weight: normal;
+  font-family: Georgia,"Times New Roman",Serif;
+}
+.cover {
+  color: black;
+  margin: 0px;
+  padding:100px 0px 100px 0px;
+  background:white;
+}
+.title {
+  font-size: 35px;
+  padding: 25px 5px 40px 5px;
+}
+.author {
+  padding: 40px 5px 25px 5px;
+  font-size: 25px;
+}
+.notice {
+  padding: 80px 5px 10px 5px;
+  font-size: 18px;
+  color: white;
+}
+.top {
+  height:120px;
+}
+.bottom {
+  height:120px;
+}
+.flow {
+  margin: 0;
+  font-size: 1em;
+}
+.flow .pagebreak {
+  page-break-before: always;
+}
+.flow p {
+  text-align: left;
+  text-indent: 0;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+.flow .gstxt_sup {
+  font-size: 75%;
+  position: relative;
+  bottom: 0.5em;
+}
+.flow .gstxt_sub {
+  font-size: 75%;
+  position: relative;
+  top: 0.3em;
+}
+.flow .gstxt_hlt {
+  background-color: yellow;
+}
+.flow div.gtxt_inset_box {
+  padding: 0.5em 0.5em 0.5em 0.5em;
+  margin: 1em 1em 1em 1em;
+  border: 1px black solid;
+}
+.flow div.gtxt_footnote {
+  padding: 0 0.5em 0 0.5em;
+  border: 1px black dotted;
+}
+.flow .gstxt_underline {
+  text-decoration: underline;
+}
+.flow .gtxt_heading {
+  text-align: center;
+  margin-bottom: 1em;
+  font-size: 150%;
+  font-weight: bold;
+  font-variant: small-caps;
+}
+.flow .gtxt_h1_heading {
+  text-align: center;
+  font-size: 120%;
+  font-weight: bold;
+}
+.flow .gtxt_h2_heading {
+  font-size: 110%;
+  font-weight: bold;
+}
+.flow .gtxt_h3_heading {
+  font-weight: bold;
+}
+.flow .gtxt_lineated {
+  margin-left: 2em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  white-space: pre-wrap;
+}
+.flow .gtxt_lineated_code {
+  margin-left: 2em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  white-space: pre-wrap;
+  font-family: monospace;
+}
+.flow .gtxt_quote {
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.flow .gtxt_list_entry {
+  margin-left: 2ex;
+  text-indent: -2ex;
+}
+.flow .gimg_graphic {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.flow .gimg_table {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.flow {
+  font-family: serif;
+}
+.flow span,p {
+  font-family: inherit;
+}
+
+</style></head>
+<body>
+<div class='fakecover'>
+  <div class='top' />
+  <div class='cover'>
+    <div class='title'>The Treasury of David</div>
+    <div class='author'>Charles Haddon Spurgeon</div>
+  </div>
+  <div class='bottom'>
+    <div class='notice'>Google&trade; Book Search</div>
+  </div>
+</div>
+<div class='pagebreak'></div>
+<!-- Content from Google Book Search, generated at 1515612793373971 -->
+<div class='flow' style=''>
+<a class='page full_page_image'  id='GBS.PP1'></a>
+<img src='../data/content-0001.png' style='max-width:100%; max-height:100%' alt='Image for page 0' /></div>
+<div class='pagebreak'></div>
+<div style='margin:4em;'>&nbsp;</div>
+<div style='margin:4em;text-align:justify;'><p>
+This is a digital copy of a book that was preserved for generations on library shelves before it was carefully scanned by Google as part of a project to make the world's books discoverable online. See the back of the book for detailed information.
+</p></div>
+<div class='pagebreak'></div>
+<!-- Content from Google Book Search, generated at 1515612793618453 -->
+<div class='flow' style=''>
+</div>
+<!-- Content from Google Book Search, generated at 1515612793823074 -->
+<div class='flow' style=''>
+<div class='pagebreak'></div>
+<a class='page full_page_image'  id='GBS.PP3'></a>
+<img src='../data/content-0002.png' style='max-width:100%; max-height:100%' alt='Image for page 2' /></div>
+<!-- Content from Google Book Search, generated at 1515612794057551 -->
+<div class='flow' style=''>
+</div>
+<!-- Content from Google Book Search, generated at 1515612794242807 -->
+<div class='flow' style=''>
+</div>
+<!-- Content from Google Book Search, generated at 1515612794445453 -->
+<div class='flow' style=''>
+</div>
+<!-- Content from Google Book Search, generated at 1515612794702133 -->
+<div class='flow' style=''>
+<div class='pagebreak'></div>
+<a class='page full_page_image'  id='GBS.PR3'></a>
+<img src='../data/content-0003.png' style='max-width:100%; max-height:100%' alt='Image for page 6' /></div>
+<!-- Content from Google Book Search, generated at 1515612794994828 -->
+<div class='flow' style=''>
+<div class='pagebreak'></div>
+<a class='page full_page_image'  id='GBS.PR4'></a>
+<img src='../data/content-0004.png' style='max-width:100%; max-height:100%' alt='Image for page 7' /></div>
+<!-- Content from Google Book Search, generated at 1515612795463488 -->
+<div class='flow' style=''>
+<a class='page'  id='GBS.PR5'></a>
+<div id='block.8.0.0.box.580.472.399.45.q.80' class='gtxt_body' style='margin-bottom: 1.5em;'>
+<a id='GBS.PR5.w.0.0.0'></a><p class='gtxt_body' style='font-size:114%;text-indent:1em;' id='para.8.0.0.box.580.472.399.45.q.80'>PREFACE.</p>
+</div>
+<div id='block.8.1.0.box.132.654.1298.1671.q.60' class='gtxt_body'>
+<a id='GBS.PR5.w.1.0.0'></a><p class='gtxt_body' id='para.8.1.0.box.135.654.1292.451.q.60'><span style='font-variant:small-caps;'>Greatly </span>encouraged by the generous reception awarded to my first volume, I have laboured on with diligence, and am now able to present the reader with the second instalment of my work. Whether life and health shall be given me to complete my task, which will probably extend to six volumes, remains with the gracious Preserver of men; but with his aid and allowance, my face is set towards that design, and I pray that my purpose may be achieved, if it be for the divine glory, and for the good of his church.</p>
+<a id='GBS.PR5.w.1.1.0'></a><p class='gtxt_body' style='text-indent:1em;' id='para.8.1.1.box.132.1115.1298.901.q.60'>In this volume, which like the former, contains twenty-six sacred odes, we have several of the more memorable and precious of Zion&#39;s songs. In commenting upon some of them, I have been overwhelmed with awe, and said with Jacob, &quot; How dreadful is this place, it is none other than the house of God.&quot; Especially was this the case with the fifty-first; I postponed expounding it week after week, feeling more and more my inability for the work. Often I sat down to it, and rose up again without having penned a line. It is a bush burning with fire yet not consumed, and out of it a voice seemed to cry to me, &quot;Draw not nigh hither, put off thy shoes from off thy feet.&quot; The Psalm is very human, its cries and sobs are of one born of woman; but it is freighted with an inspiration all divine, as if the Great Father were putting words into his child&#39;s mouth. Such a Psalm may be wept over, absorbed into the soul, and exhaled again in devotion; but commented on&#8212;ah! where is he who having attempted it can do other than blush at his defeat?</p>
+<a id='GBS.PR5.w.1.2.0'></a><p class='gtxt_body' style='text-indent:1em;' id='para.8.1.2.box.133.2035.1293.290.q.60'>I have followed the same plan as in the former volume, not only because I am committed to it by the law of uniformity, but also because it is on the whole advantageous. Some have suggested alterations, but many more have commended the very features which would have been improved away, and therefore I have continued in the selfsame method.</p>
+</div>
+</div>
+<!-- Content from Google Book Search, generated at 1515612795901880 -->
+<div class='flow' style=''>
+<a class='page'  id='GBS.PR6'></a>
+<div id='block.9.1.0.box.183.269.1297.1375.q.60' class='gtxt_body'>
+<a id='GBS.PR6.w.1.0.0'></a><p class='gtxt_body' style='text-indent:1em;' id='para.9.1.0.box.183.269.1297.294.q.60'>Greater use has, in this volume, been made of the Latin writers. Extracts have been made not only from those which are condensed in Pool&#39;s Synopsis; but from many others. These works are a mine of exposition far too little known. If the index shall serve to introduce fresh expositions to my ministerial readers, I shall not have laboured in vain.</p>
+<a id='GBS.PR6.w.1.1.0'></a><p class='gtxt_body' style='text-indent:1em;' id='para.9.1.1.box.183.577.1297.400.q.60'>The acknowledgments of obligation made in Volume I. might very justly be repeated as concerning Volume II. ; the reader will consider them as again recorded. It may also be needful to repeat the statement that as I give the name of each Author quoted, each authority is personally responsible for his own sentiments; and I do not wish it to be supposed that I endorse all that is inserted. It is often useful to us to know what has been said by authors whose views we could by no means accept.</p>
+<a id='GBS.PR6.w.1.2.0'></a><p class='gtxt_body' style='text-indent:1em;' id='para.9.1.2.box.184.988.1295.392.q.60'>More and more is the conviction forced upon my heart that every man must traverse the territory of the Psalms himself if he would know what a goodly land they are. They flow with milk and honey, but not to strangers; they are only fertile to lovers of their hills and vales. None but the Holy Spirit can give a man the key to the Treasury of David; and even he gives it rather to experience than to study. Happy he who for himself knows the secret of the Psalms.</p>
+<a id='GBS.PR6.w.1.3.0'></a><p class='gtxt_body' style='text-indent:1em;' id='para.9.1.3.box.185.1398.1293.246.q.60'>If permitted by the Great Master whom I serve, I shall now proceed with another portion of this TREASURY OF <span style='font-variant:small-caps;'>David</span>; but the labour and research are exceedingly great, and my other occupations are very pressing, and therefore I must crave the patience of the Christian public.</p>
+</div>
+<div id='block.9.2.0.box.966.1668.494.190.q.101' class='gimg_graphic'>
+<img src='../data/content-0005.png' style='max-width:100%; max-height:100%' alt='[graphic][merged small]' /></div>
+</div>
+<!-- Content from Google Book Search, generated at 1515612796397585 -->
+<div class='flow' style=''>
+<a class='page full_page_lineated'  id='GBS.PR7'></a>
+<div id='block.10.0.0.box.684.513.204.48.q.90' class='gtxt_body' style='margin-bottom: 1.5em;'>
+<a id='GBS.PR7.w.0.0.0'></a><p class='gtxt_body' style='font-size:108%;' id='para.10.0.0.box.684.513.204.48.q.90'>INDEX <br/></p>
+</div>
+<div id='block.10.1.0.box.427.613.712.27.q.70' class='gtxt_body'>
+<a id='GBS.PR7.w.1.0.0'></a><p class='gtxt_body' id='para.10.1.0.box.427.613.712.27.q.70'>OF AUTHORS QUOTED OR REFERRED TO. <br/></p>
+</div>
+<div id='block.10.2.0.box.131.761.633.506.q.50' class='gtxt_column'>
+<a id='GBS.PR7.w.2.0.0'></a><p class='gtxt_column gtxt_index_entry' id='para.10.2.0.box.136.761.243.29.q.60'>Abenezra, 99, 151 <br/></p>
+<a id='GBS.PR7.w.2.1.0'></a><p class='gtxt_column gtxt_index_entry' id='para.10.2.1.box.135.799.296.28.q.60'>Adkins, Richard, 111 <br/></p>
+<a id='GBS.PR7.w.2.2.0'></a><p class='gtxt_column gtxt_index_entry' id='para.10.2.2.box.134.836.630.27.q.60'>Adams, Thomas (1614), 12, 110, 128, 149, 151, <br/></p>
+<a id='GBS.PR7.w.2.3.0'></a><p class='gtxt_column gtxt_index_entry' id='para.10.2.3.box.165.873.599.29.q.60'>163, 161, 171, 173, 185, 212, 216. 229, 255, <br/></p>
+<a id='GBS.PR7.w.2.4.0'></a><p class='gtxt_column gtxt_index_entry' id='para.10.2.4.box.134.911.630.102.q.40'>  371. 42fi. 442. 444, 445 <br/>/Eschylns, 317 <br/>AlnsworMi, Henry (&#8212;1632), 20, 163, 169, 201. <br/></p>
+<a id='GBS.PR7.w.2.5.0'></a><p class='gtxt_column gtxt_index_entry' id='para.10.2.5.box.132.1021.632.103.q.50'>  235, 269, 274, 361, 407. 409 <br/>Airay. Henry (1500&#8212;1010), 113 <br/>Alexander, Joseph Addison (1850), 111, 123, <br/></p>
+<a id='GBS.PR7.w.2.6.0'></a><p class='gtxt_column gtxt_index_entry' id='para.10.2.6.box.131.1133.633.103.q.50'>  127, 315. 410, 438. 440, 441, 444. 457 <br/>Alexander, William Lindsay (1862), 244 <br/>Alexander, Thomas (1861), 400, 404, 471, 474, <br/></p>
+<a id='GBS.PR7.w.2.7.0'></a><p class='gtxt_column gtxt_index_entry' id='para.10.2.7.box.160.1244.46.23.q.60'>477 <br/></p>
+</div>
+<div id='block.10.3.0.box.129.761.1301.1589.q.50' class='gtxt_footnote'>
+<a id='GBS.PR7.w.3.0.0'></a><p class='gtxt_footnote gtxt_index_entry' id='para.10.3.0.box.131.1281.445.29.q.60'><b>Alford, </b>Henry (1810&#8212;1871). 366 <br/></p>
+<a id='GBS.PR7.w.3.1.0'></a><p class='gtxt_footnote gtxt_index_entry' id='para.10.3.1.box.130.1318.569.29.q.50'>Allcine, Richard (1611&#8212;1681), 83. 96, 144 <br/></p>
+<a id='GBS.PR7.w.3.2.0'></a><p class='gtxt_footnote gtxt_index_entry' id='para.10.3.2.box.131.1356.598.29.q.50'>Ambrose (340&#8212;397), 172. 202, 342, 380, 459 <br/></p>
+<a id='GBS.PR7.w.3.3.0'></a><p class='gtxt_footnote gtxt_index_entry' id='para.10.3.3.box.131.1393.517.28.q.50'>Ambrose, Isaac (1592&#8212;1074), 29, 398, <br/></p>
+<a id='GBS.PR7.w.3.4.0'></a><p class='gtxt_footnote gtxt_index_entry' id='para.10.3.4.box.131.1430.531.28.q.50'>Anderson, James (1846). 163, 205, 474 <br/></p>
+<a id='GBS.PR7.w.3.5.0'></a><p class='gtxt_footnote gtxt_index_entry' id='para.10.3.5.box.130.1467.535.29.q.60'>Andrevrcs, Lancelot (1555&#8212;1626), 400 <br/></p>
+<a id='GBS.PR7.w.3.6.0'></a><p class='gtxt_footnote gtxt_index_entry' id='para.10.3.6.box.130.1503.553.31.q.60'>Aquinas, Thomas (1224&#8212;1274), 123, 293 <br/></p>
+<a id='GBS.PR7.w.3.7.0'></a><p class='gtxt_footnote gtxt_index_entry' id='para.10.3.7.box.130.1541.191.24.q.60'>Aristotle. 209 <br/></p>
+<a id='GBS.PR7.w.3.8.0'></a><p class='gtxt_footnote gtxt_index_entry' id='para.10.3.8.box.130.1579.407.26.q.50'>Amdt, John (1555-1021). 82 <br/></p>
+<a id='GBS.PR7.w.3.9.0'></a><p class='gtxt_footnote gtxt_index_entry' id='para.10.3.9.box.129.1616.379.27.q.50'>Arnot, William (1S58). 184 <br/></p>
+<a id='GBS.PR7.w.3.10.0'></a><p class='gtxt_footnote gtxt_index_entry' id='para.10.3.10.box.130.1652.526.29.q.50'>Arvieux, Laurent d&#39; (1035&#8212;1702), 144 <br/></p>
+<a id='GBS.PR7.w.3.11.0'></a><p class='gtxt_footnote gtxt_index_entry' id='para.10.3.11.box.130.1690.359.28.q.50'>Arvine, K. (1859), 26, 423 <br/></p>
+<a id='GBS.PR7.w.3.12.0'></a><p class='gtxt_footnote gtxt_index_entry' id='para.10.3.12.box.130.1728.369.29.q.50'>Ash, Simeon (1642), 85, 86 <br/></p>
+<a id='GBS.PR7.w.3.13.0'></a><p class='gtxt_footnote gtxt_index_entry' id='para.10.3.13.box.131.1763.349.27.q.50'>Athanasius, 310, 306. 367 <br/></p>
+<a id='GBS.PR7.w.3.14.0'></a><p class='gtxt_footnote gtxt_index_entry' id='para.10.3.14.box.130.1801.632.29.q.60'>Augnstine (353&#8212;429), 10, 16, 102, 103. 110. <br/></p>
+<a id='GBS.PR7.w.3.15.0'></a><p class='gtxt_footnote gtxt_index_entry' id='para.10.3.15.box.160.1838.602.30.q.60'>123, 124, 128, 129, 149, 160, 173. 211, 307, <br/></p>
+<a id='GBS.PR7.w.3.16.0'></a><p class='gtxt_footnote gtxt_index_entry' id='para.10.3.16.box.131.1875.630.67.q.50'>  872, 375, 399, 425, 438, 442, 480 <br/>Avrillon, Jean Baptiste Elias (1052-1729), 7, <br/></p>
+<a id='GBS.PR7.w.3.17.0'></a><p class='gtxt_footnote gtxt_index_entry' id='para.10.3.17.box.131.1948.459.67.q.60'>  8,233 <br/>Ayguan, Michael (1416), 181, 387 <br/></p>
+<a id='GBS.PR7.w.3.18.0'></a><p class='gtxt_footnote gtxt_index_entry' id='para.10.3.18.box.132.2058.440.30.q.60'>Bacon, William Thompson, 125 <br/></p>
+<a id='GBS.PR7.w.3.19.0'></a><p class='gtxt_footnote gtxt_index_entry' id='para.10.3.19.box.131.2096.630.141.q.50'>Baker, Sir Richard (1568&#8212;1645), 7, 9, 16, 17, <br/>  20, 21. 53,59, 60, 01, 114,123, 142, 148, 1.54, <br/>  227, 228, 229. 230, 233, 234, 235, 237, 459, <br/>  461, 463, 465, 400, 470, 473, 477 <br/></p>
+<a id='GBS.PR7.w.3.20.0'></a><p class='gtxt_footnote gtxt_index_entry' id='para.10.3.20.box.132.2243.508.33.q.50'>Ball, John (1585&#8212;1640), 130, 152, 464 <br/></p>
+<a id='GBS.PR7.w.3.21.0'></a><p class='gtxt_footnote gtxt_index_entry' id='para.10.3.21.box.132.2281.418.31.q.60'>Barclay, John (1734&#8212;1798), 39 <br/></p>
+<a id='GBS.PR7.w.3.22.0'></a><p class='gtxt_footnote gtxt_index_entry' id='para.10.3.22.box.132.2317.345.32.q.60'>Barlow, John (1618), 258 <br/></p>
+<a id='GBS.PR7.w.3.23.0'></a><p class='gtxt_footnote gtxt_index_entry' id='para.10.3.23.box.803.761.627.31.q.60'>Barnes, Albert (1798-1870), 13, 30. 42, 109, <br/></p>
+<a id='GBS.PR7.w.3.24.0'></a><p class='gtxt_footnote gtxt_index_entry' id='para.10.3.24.box.801.798.594.437.q.40'>  111, 160, 232, 346, 409, 421 <br/>Barth, T. C. (1865), 213, 386 <br/>Basil (326-379), 40, 44,143 <br/>Bate, Julius (1711&#8212;1771), 407 <br/>Baylie, Robert (1043), 203 <br/>Baync, Paul (&#8212;1617), 448 <br/>Baxter, Richard (1015&#8212;1691), 78, 423 <br/>Bcddome, B. (1717&#8212;1795), 50. 161 (Poetry) <br/>Bellarmine, Robert (1542&#8212;1021), 18, 406 <br/>Benmohel, N. L. (1847), 271 <br/>Bernard (1091&#8212;1157), 7, 59, 347, 307, 386 <br/>Bible, Berleb., 207 <br/></p>
+<a id='GBS.PR7.w.3.25.0'></a><p class='gtxt_footnote gtxt_index_entry' id='para.10.3.25.box.800.1244.628.104.q.50'>Bible, Pocket Commentary (1830), 211 <br/>Biblical Treasury, The, 132 <br/>Blddulph, Thomas Trcgemia (1763 &#8212; 1838). <br/></p>
+<a id='GBS.PR7.w.3.26.0'></a><p class='gtxt_footnote gtxt_index_entry' id='para.10.3.26.box.800.1356.628.140.q.50'>  459, 465, 477 <br/>Bingham, Charles H. (1836), 101, 114 <br/>Binney, Thomas (1809), 145 <br/>Binnie, William (1870), 94, 128, 141, 165-6, <br/></p>
+<a id='GBS.PR7.w.3.27.0'></a><p class='gtxt_footnote gtxt_index_entry' id='para.10.3.27.box.800.1505.626.140.q.50'>  298, 360, 386, 410 <br/>Blackerby, Samuel (1673). 293 <br/>Blunt, J J. (18&#8212;), 236 <br/>Bogan, Zachary (1625&#8212;1659), 56, 143, 306, <br/></p>
+<a id='GBS.PR7.w.3.28.0'></a><p class='gtxt_footnote gtxt_index_entry' id='para.10.3.28.box.800.1654.626.138.q.50'>  317 <br/>Bogue, David (1750&#8212;1825) 331 <br/>Bolton, Robert (1572&#8212;1031), 217 <br/>Bonar, Andrew A. (1859), 151, 163, 384, 397, <br/></p>
+<a id='GBS.PR7.w.3.29.0'></a><p class='gtxt_footnote gtxt_index_entry' id='para.10.3.29.box.798.1801.629.215.q.50'>  410, 437 <br/>Bonur. Horatius (1847), 190 (poetry). 254 <br/>Boothroyd, Benjamin (&#8212;1836), 442 <br/>Bouehicr, Barton (1855), 200, 292, 437. 441 <br/>Bowes, G. S. (1800), 29, 60 <br/>Boys, John (1500-1043), 363, 370, 379, 397, <br/></p>
+<a id='GBS.PR7.w.3.30.0'></a><p class='gtxt_footnote gtxt_index_entry' id='para.10.3.30.box.798.2023.628.214.q.50'>  398, 399, 401, 472 <br/>Bradbury. Charles (17a5), 6, 80 <br/>Bradford, John (1510-1555), 142 <br/>Bridge, William (1600&#8212;1670), 323 <br/>Brominrdus, Johannes de (1485), 293 <br/>Brooks, Thomas (1608&#8212;16S0), 37, 55, 58, 166, <br/></p>
+<a id='GBS.PR7.w.3.31.0'></a><p class='gtxt_footnote gtxt_index_entry' id='para.10.3.31.box.828.2243.598.32.q.50'>169, 172,184, 308-9, 258, 274, 276, 310, 319, <br/></p>
+<a id='GBS.PR7.w.3.32.0'></a><p class='gtxt_footnote gtxt_index_entry' id='para.10.3.32.box.798.2284.393.66.q.60'>  346,350 <br/>Browning, Robert (1849), 80 <br/></p>
+</div>
+</div>
+<!-- Content from Google Book Search, generated at 1515612796970766 -->
+<div class='flow' style=''>
+<a class='page full_page_lineated'  id='GBS.PR8'></a>
+<div id='block.11.1.0.box.238.290.631.2034.q.50' class='gtxt_column'>
+<a id='GBS.PR8.w.1.0.0'></a><p class='gtxt_column gtxt_index_entry' id='para.11.1.0.box.239.290.628.105.q.50'>Bruce, Robert (1559-1631), 269, 282 <br/>Buifon, Comte de (1707&#8212;1788), 129 <br/>Bunyan, John (1628&#8212;1688), 191, 202, 232, 284 <br/></p>
+<a id='GBS.PR8.w.1.1.0'></a><p class='gtxt_column gtxt_index_entry' id='para.11.1.1.box.238.403.586.474.q.40'>  (poetry), 816 <br/>Burder, George (1838), 128, 409 <br/>Burder, Samuel (1839), 183, 253, 272, 408 <br/>Burgess, Daniel (1645&#8212;1712-13), 443 <br/>Burke, Edmund (1730&#8212;1797), 253 <br/>Burns, James D. (1823&#8212;18C4), 204-5 <br/>Burton, William (1602), 294-5, 296, 297 <br/>Burroughs, Jeremiah (1599-1646), 370 <br/>Burroughs, Thomas (1657), 245 <br/>Bush, George (1796-), 128 <br/>Buxtorf, John (1564&#8212;1629), 170 <br/>Byflcld, Nicholas (1579&#8212;1622), 199 <br/>Bythner, Victorlnus (&#8212;1670), 271, 360, 418 <br/></p>
+<a id='GBS.PR8.w.1.2.0'></a><p class='gtxt_column gtxt_index_entry' id='para.11.1.2.box.239.921.627.104.q.50'>Calamy, Edmund (1600-1666), 133 <br/>Calmet, Augustine (1672&#8212;1757), 52, 359 <br/>Calvin, John (1509&#8212;1564), 14, 19, 28, 40, 43, <br/></p>
+<a id='GBS.PR8.w.1.3.0'></a><p class='gtxt_column gtxt_index_entry' id='para.11.1.3.box.267.1034.600.29.q.50'>52, 72, 78, 79, 81, 93, 129, 132, 167, 170, 205, <br/></p>
+<a id='GBS.PR8.w.1.4.0'></a><p class='gtxt_column gtxt_index_entry' id='para.11.1.4.box.267.1071.598.29.q.60'>206, 234, 235, 255, 270, 272, 289, 293, 294, <br/></p>
+<a id='GBS.PR8.w.1.5.0'></a><p class='gtxt_column gtxt_index_entry' id='para.11.1.5.box.239.1108.626.325.q.50'>  296, 343, 400, 470, 471, 473 <br/>Cameron, Richard (1680), 390 <br/>Capel, Richard (1586&#8212;1056), 291 <br/>Carbone, Ludovic de, 200 <br/>Carlyle, Thomas (18&#8212;), 77 <br/>Carmichael, Alexander (1677), 101 <br/>Carter, Charles (1869), 111, 214 <br/>Cartwright, Christopher (1602&#8212;1658), 74 <br/>Caryl, Joseph (1602&#8212;1673), 38, 40, 43,45, 130, <br/></p>
+<a id='GBS.PR8.w.1.6.0'></a><p class='gtxt_column gtxt_index_entry' id='para.11.1.6.box.268.1441.597.29.q.50'>170, 179, 181, 211, 228, 345, 372, 389, 400, <br/></p>
+<a id='GBS.PR8.w.1.7.0'></a><p class='gtxt_column gtxt_index_entry' id='para.11.1.7.box.267.1478.598.29.q.50'>418, 419, 420, 423, 424, 428, 441, 443, 444, <br/></p>
+<a id='GBS.PR8.w.1.8.0'></a><p class='gtxt_column gtxt_index_entry' id='para.11.1.8.box.240.1516.626.176.q.50'>  445, 483 <br/>Caswall, Edward (1861), 375 <br/>Cawdray, Robert (1609), 40, 77, 111 <br/>Chalmers, Thomas (1780&#8212;1847), 21,290, 457 <br/>Chandler, Samuel (1693-1766), 52. 53. 57, 61, <br/></p>
+<a id='GBS.PR8.w.1.9.0'></a><p class='gtxt_column gtxt_index_entry' id='para.11.1.9.box.269.1701.597.29.q.50'>142, 152, 458, 459, 464, 465, 467, 474, 477, <br/></p>
+<a id='GBS.PR8.w.1.10.0'></a><p class='gtxt_column gtxt_index_entry' id='para.11.1.10.box.241.1739.625.103.q.50'>  481, 482, 484 <br/>Chardin, Sir John (1643&#8212;1713), 364 <br/>Charnock, Stephen (1628&#8212;1680), 84, 98, 273, <br/></p>
+<a id='GBS.PR8.w.1.11.0'></a><p class='gtxt_column gtxt_index_entry' id='para.11.1.11.box.241.1850.627.215.q.50'>  441,445 <br/>Cheynell, Francis (1645), 427 <br/>Christian Treasury, The (1848), 111, 146 <br/>Christophers, S. W. (1866), 384 <br/>Chrysostom (347&#8212;407). 77. 123, 148, 306 <br/>Clarke, Adam (1760&#8212;1832), 13, 19, 52, 53, 72, <br/></p>
+<a id='GBS.PR8.w.1.12.0'></a><p class='gtxt_column gtxt_index_entry' id='para.11.1.12.box.269.2072.598.29.q.60'>97, 107, 126, 131, 133, 134, 147, 151, 211, <br/></p>
+<a id='GBS.PR8.w.1.13.0'></a><p class='gtxt_column gtxt_index_entry' id='para.11.1.13.box.269.2109.598.29.q.50'>272, 289, 291, 344, 385, 397, 399, 458, 459, <br/></p>
+<a id='GBS.PR8.w.1.14.0'></a><p class='gtxt_column gtxt_index_entry' id='para.11.1.14.box.242.2147.627.139.q.40'>  464, 469. 481 <br/>Clarke, Samuel (1599&#8212;16S2), 142, 313 <br/>Clarke, Samuel (1675&#8212;1729). 38 <br/>Clarkson. David (1621&#8212;1686), 19, 137, 148, <br/></p>
+<a id='GBS.PR8.w.1.15.0'></a><p class='gtxt_column gtxt_index_entry' id='para.11.1.15.box.272.2295.414.29.q.50'>183, 207, 213, 277, 278, 343, 427 <br/></p>
+</div>
+<div id='block.11.2.0.box.901.290.629.2032.q.50' class='gtxt_column'>
+<a id='GBS.PR8.w.2.0.0'></a><p class='gtxt_column gtxt_index_entry' id='para.11.2.0.box.902.290.572.30.q.50'>Cobbet, Thomas (1608&#8212;1686), 15, 59, 256 <br/></p>
+<a id='GBS.PR8.w.2.1.0'></a><p class='gtxt_column gtxt_index_entry' id='para.11.2.1.box.901.328.501.30.q.50'>Cocceius, John (1603-1669), 52, 126 <br/></p>
+<a id='GBS.PR8.w.2.2.0'></a><p class='gtxt_column gtxt_index_entry' id='para.11.2.2.box.901.365.587.30.q.50'>Coetlogon, Charles de (1775), 458, 460, 477 <br/></p>
+<a id='GBS.PR8.w.2.3.0'></a><p class='gtxt_column gtxt_index_entry' id='para.11.2.3.box.901.402.428.29.q.60'>Cole, Thomas (1627&#8212;1697), 235 <br/></p>
+<a id='GBS.PR8.w.2.4.0'></a><p class='gtxt_column gtxt_index_entry' id='para.11.2.4.box.901.439.572.31.q.50'>Collinge, John (1623&#8212;1690), 812, 323, 387 <br/></p>
+<a id='GBS.PR8.w.2.5.0'></a><p class='gtxt_column gtxt_index_entry' id='para.11.2.5.box.901.476.377.30.q.60'>Colvill, William (1655), 185 <br/></p>
+<a id='GBS.PR8.w.2.6.0'></a><p class='gtxt_column gtxt_index_entry' id='para.11.2.6.box.901.514.401.29.q.50'>Conybeare, W. J. (1856), 105 <br/></p>
+<a id='GBS.PR8.w.2.7.0'></a><p class='gtxt_column gtxt_index_entry' id='para.11.2.7.box.901.551.372.29.q.60'>Coombs, Jessie (1867), 235 <br/></p>
+<a id='GBS.PR8.w.2.8.0'></a><p class='gtxt_column gtxt_index_entry' id='para.11.2.8.box.901.588.586.29.q.50'>Coore, Richard (&#8212;1687), 361. 369, 378, 389 <br/></p>
+<a id='GBS.PR8.w.2.9.0'></a><p class='gtxt_column gtxt_index_entry' id='para.11.2.9.box.901.625.624.30.q.50'>Cowper, William (1566&#8212;1619), 466, 468, 469, <br/></p>
+<a id='GBS.PR8.w.2.10.0'></a><p class='gtxt_column gtxt_index_entry' id='para.11.2.10.box.901.663.480.139.q.50'>  471, 476 <br/>Cox, Frances Elizabeth (1864), 204 <br/>Crabbe, George (1754&#8212;1832), 291 <br/>Crates, 423 <br/></p>
+<a id='GBS.PR8.w.2.11.0'></a><p class='gtxt_column gtxt_index_entry' id='para.11.2.11.box.901.811.625.66.q.50'>Craven, Isaac (1630), 102, 162 <br/>Cresswell, Daniel (1776&#8212;1844), 82, 162, 170, <br/></p>
+<a id='GBS.PR8.w.2.12.0'></a><p class='gtxt_column gtxt_index_entry' id='para.11.2.12.box.901.885.581.215.q.50'>  186, 209, 270, 272, 294, 344, 408, 442 <br/>Criclietl, George (1870), 76 <br/>Cruso, Timothy (1657&#8212;1697), 15, 181, 185 <br/>Culvenvell, Nathanael (&#8212;1650), 306 <br/>Cyprian, 216 <br/>Cyclopaedia, Kitto&#39;s Biblical, 101, 244, 359 <br/></p>
+<a id='GBS.PR8.w.2.13.0'></a><p class='gtxt_column gtxt_index_entry' id='para.11.2.13.box.903.1143.233.29.q.50'>D., J. (1608), 420 <br/></p>
+<a id='GBS.PR8.w.2.14.0'></a><p class='gtxt_column gtxt_index_entry' id='para.11.2.14.box.904.1181.425.29.q.50'>&quot;Daily Telegraph&quot; (1869), 145 <br/></p>
+<a id='GBS.PR8.w.2.15.0'></a><p class='gtxt_column gtxt_index_entry' id='para.11.2.15.box.903.1218.441.29.q.50'>Damiano, Peter (988&#8212;1072), 152 <br/></p>
+<a id='GBS.PR8.w.2.16.0'></a><p class='gtxt_column gtxt_index_entry' id='para.11.2.16.box.903.1256.459.28.q.60'>Daveuaut, John (1562&#8212;1641), 399 <br/></p>
+<a id='GBS.PR8.w.2.17.0'></a><p class='gtxt_column gtxt_index_entry' id='para.11.2.17.box.902.1293.383.28.q.60'>Davidson. David (1836), 211 <br/></p>
+<a id='GBS.PR8.w.2.18.0'></a><p class='gtxt_column gtxt_index_entry' id='para.11.2.18.box.902.1330.390.29.q.60'>Davies, Benjamin (1870), 236 <br/></p>
+<a id='GBS.PR8.w.2.19.0'></a><p class='gtxt_column gtxt_index_entry' id='para.11.2.19.box.902.1367.623.32.q.60'>Davies, Sir John (1569-1626), 145, 172, 182, <br/></p>
+<a id='GBS.PR8.w.2.20.0'></a><p class='gtxt_column gtxt_index_entry' id='para.11.2.20.box.902.1405.624.213.q.50'>  253 <br/>Davey, Dr., 364 <br/>Day, John (1609), 10 <br/>De Burgh, William (1860), 128, 203, 341 <br/>Defoe, Daniel (1663&#8212;1731), 280 <br/>Delitzsch, Franz (1869), 167, 214, 286, 277, <br/></p>
+<a id='GBS.PR8.w.2.21.0'></a><p class='gtxt_column gtxt_index_entry' id='para.11.2.21.box.903.1627.626.141.q.50'>  370, 410 <br/>De Rossi, John Bernard (1784), 327 <br/>De Wette, Wilhelm (1850), 346 <br/>Dickson, David (1583&#8212;1662), 29, 73, 75, 80, <br/></p>
+<a id='GBS.PR8.w.2.22.0'></a><p class='gtxt_column gtxt_index_entry' id='para.11.2.22.box.931.1776.597.29.q.60'>83, 115, 145, 179, 181, 186, 202, 207, 277, <br/></p>
+<a id='GBS.PR8.w.2.23.0'></a><p class='gtxt_column gtxt_index_entry' id='para.11.2.23.box.903.1812.626.103.q.50'>  279, 292, 293, 343, 347, 348, 365, 370, 375 <br/>Dinioek, Henry (1791), 471 <br/>Diodati, John (1576&#8212;1649), 41, 52, 77, 125, <br/></p>
+<a id='GBS.PR8.w.2.24.0'></a><p class='gtxt_column gtxt_index_entry' id='para.11.2.24.box.904.1924.625.66.q.50'>  200, 278, 367, 444 <br/>Donne, John (1573&#8212;1631), 107,108, 109, 110, <br/></p>
+<a id='GBS.PR8.w.2.25.0'></a><p class='gtxt_column gtxt_index_entry' id='para.11.2.25.box.904.1997.626.177.q.40'>  114, 227-8, 230 <br/>Doolittle, Samuel (1693), 132 <br/>Doolittle, Thomas (1630&#8212;1707), 132 <br/>Duncan, Mary (1825&#8212;1865), 55, 210, 231 <br/>Dunlop, William (1692&#8212;1720), 84, 142, 271, <br/></p>
+<a id='GBS.PR8.w.2.26.0'></a><p class='gtxt_column gtxt_index_entry' id='para.11.2.26.box.905.2183.442.139.q.50'>  329, 331, 425 <br/>Dun-, John (1868), 127, 214, 465 <br/>Duppa, Brian (1588-1602), 311 <br/>Durant, John (1620&#8212;), 3:23 <br/></p>
+</div>
+</div>
+<!-- Content from Google Book Search, generated at 1515612797691641 -->
+<div class='flow' style=''>
+<a class='page full_page_lineated'  id='GBS.PR9'></a>
+<div id='block.12.1.0.box.120.298.633.2036.q.40' class='gtxt_column'>
+<a id='GBS.PR9.w.1.0.0'></a><p class='gtxt_column gtxt_index_entry' id='para.12.1.0.box.123.298.325.29.q.60'><b>Eadie, </b>John (1808), 101 <br/></p>
+<a id='GBS.PR9.w.1.1.0'></a><p class='gtxt_column gtxt_index_entry' id='para.12.1.1.box.123.336.460.29.q.60'>Edwards, John (1037-1716), 418 <br/></p>
+<a id='GBS.PR9.w.1.2.0'></a><p class='gtxt_column gtxt_index_entry' id='para.12.1.2.box.122.373.631.29.q.60'>Edwards, Jonathan (1703&#8212;1758;, 180, 181, <br/></p>
+<a id='GBS.PR9.w.1.3.0'></a><p class='gtxt_column gtxt_index_entry' id='para.12.1.3.box.121.411.396.140.q.50'>  187. 390, 393 <br/>Elwin, Fountain (1842), 106 <br/>Ephraem, Syrus (&#8212;379), 148 <br/>Epiphauius, 296 <br/></p>
+<a id='GBS.PR9.w.1.4.0'></a><p class='gtxt_column gtxt_index_entry' id='para.12.1.4.box.120.560.631.67.q.50'>Erasmus, Dcsiderus (1467&#8212;1536), 75 <br/>Erskine, Ralph (1685-1752), 20, 274, 385, <br/></p>
+<a id='GBS.PR9.w.1.5.0'></a><p class='gtxt_column gtxt_index_entry' id='para.12.1.5.box.120.634.591.253.q.50'>   386, 392 <br/>Estwiek, Nicholas (1644), 254 <br/>E*tey, George (1603), 468, 476 <br/>Eusebius (267-338), 289, 344 <br/>Euthymius Zigabenus, 216 <br/>Evans, James Harrington (1785&#8212;1849), 98 <br/>Ewald, Henrich, 244, 870 <br/></p>
+<a id='GBS.PR9.w.1.6.0'></a><p class='gtxt_column gtxt_index_entry' id='para.12.1.6.box.121.932.577.28.q.60'>Farindon, Anthony (1596&#8212;1658), 206, 218 <br/></p>
+<a id='GBS.PR9.w.1.7.0'></a><p class='gtxt_column gtxt_index_entry' id='para.12.1.7.box.121.969.492.28.q.50'>Fcnner, William (1600&#8212;1640), 444 <br/></p>
+<a id='GBS.PR9.w.1.8.0'></a><p class='gtxt_column gtxt_index_entry' id='para.12.1.8.box.122.1006.462.30.q.50'>Flcino, Marsilio (1433-14&lt;&gt;9), 148 <br/></p>
+<a id='GBS.PR9.w.1.9.0'></a><p class='gtxt_column gtxt_index_entry' id='para.12.1.9.box.122.1044.427.28.q.60'>Firmin, Giles (1617&#8212;1697), 232 <br/></p>
+<a id='GBS.PR9.w.1.10.0'></a><p class='gtxt_column gtxt_index_entry' id='para.12.1.10.box.122.1082.420.29.q.60'>Fisher, John (1459&#8212;1535), 114 <br/></p>
+<a id='GBS.PR9.w.1.11.0'></a><p class='gtxt_column gtxt_index_entry' id='para.12.1.11.box.122.1119.630.29.q.50'>Flavel, John (1627&#8212;1691), 58, 82, 275, 345, <br/></p>
+<a id='GBS.PR9.w.1.12.0'></a><p class='gtxt_column gtxt_index_entry' id='para.12.1.12.box.122.1156.629.214.q.50'>  347, 367. 374 <br/>Fletcher, Giles (1588&#8212;1623), 398 <br/>Forbes, A. P. (1857), 228-9, 457 <br/>&quot;Four Friends &quot; (1867), 386 <br/>Fowler, Christopher (1610&#8212;1678), 29, 112 <br/>Frame, James (1809), 270, 271, 276, 277, 278, <br/></p>
+<a id='GBS.PR9.w.1.13.0'></a><p class='gtxt_column gtxt_index_entry' id='para.12.1.13.box.123.1379.628.250.q.50'>  279,282 <br/>Frank, Mark (1613&#8212;1664), 273, 362 <br/>Francis, Philip (1765), 40 <br/>French, W. and Skinner, G. (1842), 445, 469 <br/>Fry, John (1842), 209. 307 <br/>Fuller, <b>Andrew </b>(1754-1815), 185 <br/>Fuller, Thomas (160S-1661), 110, 152, 292, <br/></p>
+<a id='GBS.PR9.w.1.14.0'></a><p class='gtxt_column gtxt_index_entry' id='para.12.1.14.box.151.1637.107.25.q.60'>446.460 <br/></p>
+<a id='GBS.PR9.w.1.15.0'></a><p class='gtxt_column gtxt_index_entry' id='para.12.1.15.box.124.1710.628.105.q.40'>Gadaby, John (1862), 171, 2S5, 270, 308 <br/>(iataker. Thomas (1574&#8212;1654), 130, 148, 426 <br/>Geier, Martin (1614&#8212;1681), <span style='font-style:italic;'>T2, </span>124, 151, 277, <br/></p>
+<a id='GBS.PR9.w.1.16.0'></a><p class='gtxt_column gtxt_index_entry' id='para.12.1.16.box.126.1822.626.181.q.40'>  279, 294, 397, 437, 441, 444, 482 <br/>Gcnebrard, Gilbert (1537&#8212;1597), 151, 181 <br/>Gerhard, Paul (1606&#8212;16761, 203-4 <br/>Gcienius, F. II. W. (1786-1842), 370, 409 <br/>GUI, John (1697&#8212;1771), 133, 141, 144, 148, <br/></p>
+<a id='GBS.PR9.w.1.17.0'></a><p class='gtxt_column gtxt_index_entry' id='para.12.1.17.box.128.2009.624.290.q.50'>  160, 168, 205, 289, 346, 386, 437, 443, 444 <br/>Gilpiu, Richard (1677), 58 <br/>Ginsberg, Christian D. (1863), 184 <br/>Gipps, George (1645), 442 <br/>Glascock, John (1659), 208, 209 <br/>Good, John Mason (1764&#8212;1827), 423 <br/>Goodwin, John (1593-1605), 149 <br/>Goodwin, Thomas (1600&#8212;1679), 15, 272, 275, <br/></p>
+<a id='GBS.PR9.w.1.18.0'></a><p class='gtxt_column gtxt_index_entry' id='para.12.1.18.box.158.2304.356.30.q.50'>279,292,371,463,464,475 <br/></p>
+</div>
+<div id='block.12.2.0.box.788.306.631.2030.q.50' class='gtxt_column'>
+<a id='GBS.PR9.w.2.0.0'></a><p class='gtxt_column gtxt_index_entry' id='para.12.2.0.box.790.306.297.28.q.50'>Gore, J. (1633), 214-5 <br/></p>
+<a id='GBS.PR9.w.2.1.0'></a><p class='gtxt_column' id='para.12.2.1.box.790.343.311.28.q.60'>Gotthold (See Siriver) <br/></p>
+<a id='GBS.PR9.w.2.2.0'></a><p class='gtxt_column gtxt_index_entry' id='para.12.2.2.box.790.380.598.30.q.50'>Gouge, Win. (1575&#8212;1653), 29, 71, 230, 375, <br/></p>
+<a id='GBS.PR9.w.2.3.0'></a><p class='gtxt_column gtxt_index_entry' id='para.12.2.3.box.790.418.421.29.q.60'>Gray, Andrew (1805&#8212;1861), 11 <br/></p>
+<a id='GBS.PR9.w.2.4.0'></a><p class='gtxt_column gtxt_index_entry' id='para.12.2.4.box.790.455.175.28.q.60'>Gregory, 101 <br/></p>
+<a id='GBS.PR9.w.2.5.0'></a><p class='gtxt_column gtxt_index_entry' id='para.12.2.5.box.789.491.629.30.q.60'>Grecnhlll, William (1591&#8212;1677), 104, 182, 186, <br/></p>
+<a id='GBS.PR9.w.2.6.0'></a><p class='gtxt_column gtxt_index_entry' id='para.12.2.6.box.789.528.629.178.q.50'>  210 <br/>Grenada, Lewis <b>DE </b>(1504-1588), <b>IN </b><br/>Griffith, Matthew (1633), 212 <br/>Grotius, Hugo (1583&#8212;1645), 128 <br/>Gurnall, William (1617&#8212;1679&#39;, 13, 45, 81, 83, <br/></p>
+<a id='GBS.PR9.w.2.7.0'></a><p class='gtxt_column gtxt_index_entry' id='para.12.2.7.box.817.714.600.29.q.50'>99, 100. 103, 104, 142, 171, 247, 254, 257, <br/></p>
+<a id='GBS.PR9.w.2.8.0'></a><p class='gtxt_column gtxt_index_entry' id='para.12.2.8.box.817.752.598.29.q.50'>312, 313, 320, 342, 391, 420, 440, 445, 470, <br/></p>
+<a id='GBS.PR9.w.2.9.0'></a><p class='gtxt_column gtxt_index_entry' id='para.12.2.9.box.789.788.630.67.q.40'>  483 <br/>Guyon, Jeanne Bouvier dc la Mothe (1648&#8212; <br/></p>
+<a id='GBS.PR9.w.2.10.0'></a><p class='gtxt_column gtxt_index_entry' id='para.12.2.10.box.818.849.132.43.q.50'>1*717), 878 <br/></p>
+<a id='GBS.PR9.w.2.11.0'></a><p class='gtxt_column gtxt_index_entry' id='para.12.2.11.box.790.935.626.142.q.40'>Hall, Joseph (1574-1656), 388, 892 <br/>Halyburton, Thomas (1674&#8212;1711), 167 <br/><b>Hamilton, </b>James (1814&#8212;1867), 37 <br/>Hammond, Henry (1605&#8212;1660), 28, 75, 152, <br/></p>
+<a id='GBS.PR9.w.2.12.0'></a><p class='gtxt_column gtxt_index_entry' id='para.12.2.12.box.790.1084.627.104.q.50'>  272, 294, 384, 408 <br/>Hapotone, Dalman (1867), 141, 184. 370 <br/>Hardy, Nathanael (1618&#8212;1670), 82, 101, 103, <br/></p>
+<a id='GBS.PR9.w.2.13.0'></a><p class='gtxt_column gtxt_index_entry' id='para.12.2.13.box.789.1197.630.141.q.50'>  104, 147, 148, 200, 202, 215, 236, 249, 460 <br/>Hare, Francis (1740), 183, 419 <br/>Harmer, Thomas (1715&#8212;1788), 101, 346. 483 <br/>Harpur, George (1862), 360, 301, 362, 365, 366, <br/></p>
+<a id='GBS.PR9.w.2.14.0'></a><p class='gtxt_column gtxt_index_entry' id='para.12.2.14.box.789.1344.626.178.q.50'>  369, 378 <br/>Hart, Joseph (1762), 267 (Poetry) <br/>Hawker, Robert (1753-1827), 145,-361,375 <br/>Hayward, Sir John (1560-1627), 114 <br/>Hengstenbcrg, E. W (1845), 56, -125, 126, <br/></p>
+<a id='GBS.PR9.w.2.15.0'></a><p class='gtxt_column gtxt_index_entry' id='para.12.2.15.box.788.1530.627.65.q.50'>  145, 207, 269, 344, 348, 408 <br/>Henry, Matthew (1662&#8212;1714). 30, 59, 80, 83, <br/></p>
+<a id='GBS.PR9.w.2.16.0'></a><p class='gtxt_column gtxt_index_entry' id='para.12.2.16.box.813.1603.603.30.q.50'>147, 148, 201, 214, 259, 260, 278, 296, 361, <br/></p>
+<a id='GBS.PR9.w.2.17.0'></a><p class='gtxt_column gtxt_index_entry' id='para.12.2.17.box.788.1640.586.214.q.40'>  876, 397, 407, 447 <br/>Herbert, George (1593&#8212;1632), 253, 310 <br/>Hervey, James (1713-14&#8212;1758), 204 <br/>Heywood, Oliver (1629&#8212;1702), 170, 308 <br/>Hieron, Samuel (1572&#8212;1617), 428, 462, 476 <br/>Hilary, 102 <br/></p>
+<a id='GBS.PR9.w.2.18.0'></a><p class='gtxt_column gtxt_index_entry' id='para.12.2.18.box.789.1863.628.103.q.50'>Hildersham, Arthur (1503&#8212;1631), 477 <br/>Holdsworth, Richard (1590&#8212;1649), 131 <br/>Holy David and his Old English Translators <br/></p>
+<a id='GBS.PR9.w.2.19.0'></a><p class='gtxt_column gtxt_index_entry' id='para.12.2.19.box.789.1974.627.214.q.50'>  Cleared [Anon.] (1706), 361 <br/>Homes, Nath. (-1678), 327, 328, 330, 332 <br/>Hood, E. Paxton (1865), 79, 292, 3.10 <br/>Hopkins, Ezekiel (1633-1090), 172, 427 <br/>Horace, 40, 152 <br/>Home, George (1730&#8212;1792), 29, 39, 42, 60, <br/></p>
+<a id='GBS.PR9.w.2.20.0'></a><p class='gtxt_column gtxt_index_entry' id='para.12.2.20.box.818.2196.598.30.q.50'>150, 207, 218, 255, 269, 289, 294, 397, 408, <br/></p>
+<a id='GBS.PR9.w.2.21.0'></a><p class='gtxt_column gtxt_index_entry' id='para.12.2.21.box.790.2234.626.65.q.50'>  482 <br/>Horslcy, Samuel (1733&#8212;1806). 17, 44, 110, <br/></p>
+<a id='GBS.PR9.w.2.22.0'></a><p class='gtxt_column gtxt_index_entry' id='para.12.2.22.box.820.2308.294.28.q.50'>121, 368, 387, 444, 445 <br/></p>
+</div>
+</div>
+<!-- Content from Google Book Search, generated at 1515612798328677 -->
+<div class='flow' style=''>
+<a class='page full_page_lineated'  id='GBS.PR10'></a>
+<div id='block.13.1.0.box.225.277.629.2040.q.40' class='gimg_body' style='margin-bottom: 1.5em;'>
+<img src='../data/content-0006.png' style='max-width:100%; max-height:100%' alt='[ocr errors]' /></div>
+<div id='block.13.2.0.box.888.276.629.2041.q.50' class='gtxt_body'>
+<a id='GBS.PR10.w.2.0.0'></a><p class='gtxt_body gtxt_index_entry' id='para.13.2.0.box.890.276.627.32.q.60'><b>Leighton, </b>Robert (1611&#8212;1684), 95, 99, 104, <br/></p>
+<a id='GBS.PR10.w.2.1.0'></a><p class='gtxt_body gtxt_index_entry' id='para.13.2.1.box.890.314.627.218.q.40'>  114, 244, 247, 248, 253, 256, 200 <br/>Lightfoot, John (1602&#8212; 16T5), 54, 406 <br/>Littleton, Adam (1627&#8212;1694), 460 <br/>Lockyer, Nicholas (1612&#8212;1684-5), 233 <br/>Lorinus, <b>John </b>(1569&#8212;1634), 95. 106, 311 <br/>Love, Christopher (1618-1651), 102, 226, 248, <br/></p>
+<a id='GBS.PR10.w.2.2.0'></a><p class='gtxt_body gtxt_index_entry' id='para.13.2.2.box.890.539.627.104.q.50'>  311, 314. 315 <br/>Lowth, Robert (1710&#8212;1787), 226, 419 <br/>Luther, Martlu (1483-1546), 72, 95, 210, 217, <br/></p>
+<a id='GBS.PR10.w.2.3.0'></a><p class='gtxt_body gtxt_index_entry' id='para.13.2.3.box.918.650.358.29.q.50'>871, 877, 384, 387, 461, 476 <br/></p>
+<a id='GBS.PR10.w.2.4.0'></a><p class='gtxt_body gtxt_index_entry' id='para.13.2.4.box.890.703.219.30.q.50'>M., D (1678), 13 <br/></p>
+<a id='GBS.PR10.w.2.5.0'></a><p class='gtxt_body gtxt_index_entry' id='para.13.2.5.box.891.741.485.29.q.50'>Macgrcgor, Duncan (1869), 874, 377 <br/></p>
+<a id='GBS.PR10.w.2.6.0'></a><p class='gtxt_body gtxt_index_entry' id='para.13.2.6.box.890.778.626.31.q.50'>McCheyne, Robert Murray (1813&#8212;1843), 36, <br/></p>
+<a id='GBS.PR10.w.2.7.0'></a><p class='gtxt_body gtxt_index_entry' id='para.13.2.7.box.890.815.626.104.q.50'>  40, 41, 43, 471 <br/>Malan, Caesar, 279 <br/>Mant, Richard (1776&#8212;1849), 130,144, 232,370, <br/></p>
+<a id='GBS.PR10.w.2.8.0'></a><p class='gtxt_body gtxt_index_entry' id='para.13.2.8.box.890.926.624.67.q.60'>  466,483 <br/>Manton, Thomas (1620-1677), 96, 97, 213-13, <br/></p>
+<a id='GBS.PR10.w.2.9.0'></a><p class='gtxt_body gtxt_index_entry' id='para.13.2.9.box.890.1000.623.104.q.50'>  256, 349, 421 <br/>Marbury, Edward (1649), 55,152 <br/>March, Henry (1833), 309, 310, 312, 313, 314, <br/></p>
+<a id='GBS.PR10.w.2.10.0'></a><p class='gtxt_body gtxt_index_entry' id='para.13.2.10.box.891.1112.625.103.q.50'>  315, 317, 318, 321, 322, 333, 328, 331 <br/>Marshall, <b>Nathanael </b>(1731), 187 <br/>Massillon, Jean <b>Baptiste </b>(1663&#8212;1742), 27, 28, <br/></p>
+<a id='GBS.PR10.w.2.11.0'></a><p class='gtxt_body gtxt_index_entry' id='para.13.2.11.box.889.1223.625.667.q.40'>  38,39,43 <br/>Mayer, John (1653), 13, 72, 342 <br/>Me&#39;de, Joseph (1586&#8212;1638), 273 <br/>Melancthon, Philip (1497&#8212;1560), 72, 217 <br/><b>Melville, </b>Henry (1837), 109, 113 <br/>Merriek, Jam* (1720-1769), 17, 273 <br/>Mestral, Armand de, 384 <br/>Metastaslo, Pietro (1698&#8212;1782), 167 <br/>Mlchaclis, John Henry (1668&#8212;1738), 419 <br/>Milton, John (1608&#8212;1674), 408 <br/>Moll, Carl Bernard (1869), 378 <br/>Mollerus, D. H. (1639), 125, 145, 184 <br/>Monastier, <b>Antoine </b>(1859), 80 <br/>Montague, M. (1844). 95 <br/>Montanus, B. Arias (1527&#8212;1598), 311, 407 <br/>Montgomery, James (1771&#8212;1854), 39 <br/>Moricr, J. P. (1801), 864 <br/>Morlson, John (1829), 166, 347, 316, 329, 385, <br/></p>
+<a id='GBS.PR10.w.2.12.0'></a><p class='gtxt_body gtxt_index_entry' id='para.13.2.12.box.890.1894.626.141.q.50'>  419, 463, 466 <br/>Mossom, Robert (1657), 10, 58, 201 <br/>Mudge, Zachary (1744), 180 <br/>Muis, Simon de (1587&#8212;1644), 17, 151, 186, 899, <br/></p>
+<a id='GBS.PR10.w.2.13.0'></a><p class='gtxt_body gtxt_index_entry' id='para.13.2.13.box.889.2043.505.103.q.50'>  437,441 <br/>Munster, Sebastian (1489&#8212;1552), 183 <br/>Murcot, John (1657), 465 <br/></p>
+<a id='GBS.PR10.w.2.14.0'></a><p class='gtxt_body gtxt_index_entry' id='para.13.2.14.box.888.2175.357.29.q.60'><b>Walton, </b>James (1664), 150 <br/></p>
+<a id='GBS.PR10.w.2.15.0'></a><p class='gtxt_body gtxt_index_entry' id='para.13.2.15.box.890.2211.625.30.q.60'>Neale, John Mason (1860), 58, 77, 95, 106, <br/></p>
+<a id='GBS.PR10.w.2.16.0'></a><p class='gtxt_body gtxt_index_entry' id='para.13.2.16.box.919.2250.597.30.q.60'>123, 142, 144, 147, 181, 289, 293, 308, 380, <br/></p>
+<a id='GBS.PR10.w.2.17.0'></a><p class='gtxt_body gtxt_index_entry' id='para.13.2.17.box.918.2287.170.30.q.50'>897, 418, 443 <br/></p>
+</div>
+</div>
+<!-- Content from Google Book Search, generated at 1515612800406643 -->
+<div class='flow' style=''>
+<a class='page full_page_lineated'  id='GBS.PR11'></a>
+<div id='block.14.1.0.box.183.305.635.2072.q.50' class='gtxt_body' style='margin-bottom: 1.5em;'>
+<a id='GBS.PR11.w.1.0.0'></a><p class='gtxt_body gtxt_index_entry' id='para.14.1.0.box.185.305.577.216.q.40'>Ness, Christopher (1631&#8212;1705), S07, 464 <br/>Newton, Adelaide (1824&#8212;1854), 60 <br/>Nicholls, Benjamin Elliott (1858), 172 <br/>Nicholson, W. (&#8212;1671), 179, 376, 407, 408 <br/>Nouet, James (1847), 172 <br/>Noyes, George R. (1846), 294 <br/></p>
+<a id='GBS.PR11.w.1.1.0'></a><p class='gtxt_body gtxt_index_entry' id='para.14.1.1.box.184.549.349.30.q.50'>Otfbr, George (1862), 427 <br/></p>
+<a id='GBS.PR11.w.1.2.0'></a><p class='gtxt_body gtxt_index_entry' id='para.14.1.2.box.183.586.338.29.q.50'>OfTord, John (1868), 329 <br/></p>
+<a id='GBS.PR11.w.1.3.0'></a><p class='gtxt_body gtxt_index_entry' id='para.14.1.3.box.183.623.287.29.q.50'>Origen, 216, 254, 409 <br/></p>
+<a id='GBS.PR11.w.1.4.0'></a><p class='gtxt_body gtxt_index_entry' id='para.14.1.4.box.183.660.399.28.q.60'>Orton, Joh (1717&#8212;1783), 365 <br/></p>
+<a id='GBS.PR11.w.1.5.0'></a><p class='gtxt_body gtxt_index_entry' id='para.14.1.5.box.183.696.539.30.q.50'>Owen, John (1616-1683), 276, 409, 411 <br/></p>
+<a id='GBS.PR11.w.1.6.0'></a><p class='gtxt_body gtxt_index_entry' id='para.14.1.6.box.184.753.632.67.q.50'>Page, Samuel (1646), 101, 244, 459, 460, 462, <br/>  467. 472, 473, 475, 477 <br/></p>
+<a id='GBS.PR11.w.1.7.0'></a><p class='gtxt_body gtxt_index_entry' id='para.14.1.7.box.185.827.454.31.q.60'>Paley, William (1743&#8212;1805), 126 <br/></p>
+<a id='GBS.PR11.w.1.8.0'></a><p class='gtxt_body gtxt_index_entry' id='para.14.1.8.box.185.864.534.30.q.60'>Park hurst, John (1728&#8212;1797), 201, 407 <br/></p>
+<a id='GBS.PR11.w.1.9.0'></a><p class='gtxt_body gtxt_index_entry' id='para.14.1.9.box.185.903.363.29.q.50'>Parr, Elnflthan (1651), 381 <br/></p>
+<a id='GBS.PR11.w.1.10.0'></a><p class='gtxt_body gtxt_index_entry' id='para.14.1.10.box.184.938.449.30.q.60'>Parre, Richard (1617&#8212;1691). 216 <br/></p>
+<a id='GBS.PR11.w.1.11.0'></a><p class='gtxt_body gtxt_index_entry' id='para.14.1.11.box.184.975.511.30.q.60'>Parsons, Benjamin (1797&#8212;1855), 292 <br/></p>
+<a id='GBS.PR11.w.1.12.0'></a><p class='gtxt_body gtxt_index_entry' id='para.14.1.12.box.185.1013.461.30.q.60'>Patrick, Symon (16.6&#8212;1707), 204 <br/></p>
+<a id='GBS.PR11.w.1.13.0'></a><p class='gtxt_body gtxt_index_entry' id='para.14.1.13.box.184.1049.634.31.q.50'>Paxton,George(1762&#8212;1837),44,255,364,385,389 <br/></p>
+<a id='GBS.PR11.w.1.14.0'></a><p class='gtxt_body gtxt_index_entry' id='para.14.1.14.box.184.1087.598.31.q.50'>Payson, Edward (1783&#8212;1827), 364, 366, 377 <br/></p>
+<a id='GBS.PR11.w.1.15.0'></a><p class='gtxt_body gtxt_index_entry' id='para.14.1.15.box.185.1125.375.27.q.60'>Pearce, Edward (1673), 362 <br/></p>
+<a id='GBS.PR11.w.1.16.0'></a><p class='gtxt_body gtxt_index_entry' id='para.14.1.16.box.183.1162.464.29.q.60'>Pcdeo, Alexander (1682), 146. 345 <br/></p>
+<a id='GBS.PR11.w.1.17.0'></a><p class='gtxt_body gtxt_index_entry' id='para.14.1.17.box.184.1199.478.31.q.60'>Pennington, John (1656), 202, 206 <br/></p>
+<a id='GBS.PR11.w.1.18.0'></a><p class='gtxt_body gtxt_index_entry' id='para.14.1.18.box.186.1236.590.30.q.50'>Perkins, William (1558&#8212;1602), 95, 254, 445 <br/></p>
+<a id='GBS.PR11.w.1.19.0'></a><p class='gtxt_body gtxt_index_entry' id='para.14.1.19.box.184.1273.631.104.q.50'>Perowne, J. J. Stewart (1864). 72, 130, 165, <br/>   171. 182, 184, 185, 233, 274, 277, 292, 296, <br/>  305, 315, 328, 343, 348, 426, 438, 474, 482 <br/></p>
+<a id='GBS.PR11.w.1.20.0'></a><p class='gtxt_body gtxt_index_entry' id='para.14.1.20.box.184.1385.331.30.q.50'>Peters, Hugh (1645), 84 <br/></p>
+<a id='GBS.PR11.w.1.21.0'></a><p class='gtxt_body gtxt_index_entry' id='para.14.1.21.box.187.1422.376.29.q.60'>Phillips, George (1846). 327 <br/></p>
+<a id='GBS.PR11.w.1.22.0'></a><p class='gtxt_body gtxt_index_entry' id='para.14.1.22.box.185.1458.469.30.q.50'>Philpot. J. 0. (1802&#8212;1869), 231-2 <br/></p>
+<a id='GBS.PR11.w.1.23.0'></a><p class='gtxt_body gtxt_index_entry' id='para.14.1.23.box.184.1495.562.28.q.60'>Pierson, Thomas (1570&#8212;1633), 12, 17, 21 <br/></p>
+<a id='GBS.PR11.w.1.24.0'></a><p class='gtxt_body gtxt_index_entry' id='para.14.1.24.box.185.1532.439.28.q.60'>Pinchbeck, Edmund (1652), 186 <br/></p>
+<a id='GBS.PR11.w.1.25.0'></a><p class='gtxt_body gtxt_index_entry' id='para.14.1.25.box.185.1569.470.29.q.60'>Pineda, John de (1577&#8212;1637), 125 <br/></p>
+<a id='GBS.PR11.w.1.26.0'></a><p class='gtxt_body gtxt_index_entry' id='para.14.1.26.box.187.1608.365.26.q.60'>Pinke, William (1631), 129 <br/></p>
+<a id='GBS.PR11.w.1.27.0'></a><p class='gtxt_body gtxt_index_entry' id='para.14.1.27.box.189.1643.504.30.q.50'>Piscator, John (1546&#8212;1626), 184, 464 <br/></p>
+<a id='GBS.PR11.w.1.28.0'></a><p class='gtxt_body gtxt_index_entry' id='para.14.1.28.box.185.1681.425.27.q.50'>Pitcairn, David (1846), 368, 378 <br/></p>
+<a id='GBS.PR11.w.1.29.0'></a><p class='gtxt_body gtxt_index_entry' id='para.14.1.29.box.185.1717.340.30.q.50'>Pitman, J. R. (1846), 149 <br/></p>
+<a id='GBS.PR11.w.1.30.0'></a><p class='gtxt_body gtxt_index_entry' id='para.14.1.30.box.186.1755.336.29.q.60'>Pitts, Joseph (1704), 346 <br/></p>
+<a id='GBS.PR11.w.1.31.0'></a><p class='gtxt_body gtxt_index_entry' id='para.14.1.31.box.186.1792.460.29.q.60'>Plain Commentary, A (ia59), 408 <br/></p>
+<a id='GBS.PR11.w.1.32.0'></a><p class='gtxt_body gtxt_index_entry' id='para.14.1.32.box.185.1828.574.30.q.60'>Piayfere, Thomas (1604), 56, 105, 113, 144 <br/></p>
+<a id='GBS.PR11.w.1.33.0'></a><p class='gtxt_body gtxt_index_entry' id='para.14.1.33.box.185.1865.338.30.q.60'>Pledger, Elias (1677), 57 <br/></p>
+<a id='GBS.PR11.w.1.34.0'></a><p class='gtxt_body gtxt_index_entry' id='para.14.1.34.box.186.1902.202.29.q.60'>Pliny, 109. 236 <br/></p>
+<a id='GBS.PR11.w.1.35.0'></a><p class='gtxt_body gtxt_index_entry' id='para.14.1.35.box.184.1939.629.101.q.50'>Plumer. William S. (1867), 7, 8, 72, 179, 187, <br/>  205, 233, 253. &#39;J93, 305, 330, 343, 370, 397, <br/>  408, 447, 457, 481 <br/></p>
+<a id='GBS.PR11.w.1.36.0'></a><p class='gtxt_body gtxt_index_entry' id='para.14.1.36.box.185.2050.380.30.q.50'>Plumptre, E. H. (1870), 296 <br/></p>
+<a id='GBS.PR11.w.1.37.0'></a><p class='gtxt_body gtxt_index_entry' id='para.14.1.37.box.185.2087.509.29.q.60'>Pollok, Robert (1799-1827), 176, 181 <br/></p>
+<a id='GBS.PR11.w.1.38.0'></a><p class='gtxt_body' id='para.14.1.38.box.187.2125.171.30.q.60'>Polycarp, <span style='font-style:italic;'>T2 </span><br/></p>
+<a id='GBS.PR11.w.1.39.0'></a><p class='gtxt_body gtxt_index_entry' id='para.14.1.39.box.186.2162.625.29.q.50'>Pool. Matthew (1624&#8212;1679). 13. 247. 254, 259, <br/></p>
+<a id='GBS.PR11.w.1.40.0'></a><p class='gtxt_body gtxt_index_entry' id='para.14.1.40.box.184.2199.518.178.q.50'>  296, 344, 345, 363, 397, 438, 444, 459 <br/>Pope, Alexander (1688&#8212;1744). 10 <br/>Porter, Ebenezer (1834). 256 <br/>Porter, J. L. (1867), 407 <br/>Power, Philip Beunet (1862), 28 <br/></p>
+</div>
+<div id='block.14.2.0.box.857.306.634.2071.q.40' class='gimg_body'>
+<img src='../data/content-0007.png' style='max-width:100%; max-height:100%' alt='[ocr errors]' /></div>
+</div>
+<!-- Content from Google Book Search, generated at 1515612801561770 -->
+<div class='flow' style=''>
+<a class='page'  id='GBS.PR12'></a>
+<div id='block.15.1.0.box.231.305.633.2071.q.40' class='gimg_body' style='margin-bottom: 1.5em;'>
+<img src='../data/content-0008.png' style='max-width:100%; max-height:100%' alt='[ocr errors]' /></div>
+<div id='block.15.2.0.box.903.304.631.2067.q.40' class='gtxt_body'>
+<a id='GBS.PR12.w.2.0.0'></a><p class='gtxt_body' id='para.15.2.0.box.904.304.355.31.q.50'>Udull, Ephraim (1642), 46</p>
+<a id='GBS.PR12.w.2.1.0'></a><p class='gtxt_body' id='para.15.2.1.box.903.342.373.29.q.60'>Underbill, E. B. (1850); 347</p>
+<a id='GBS.PR12.w.2.2.0'></a><p class='gtxt_body' id='para.15.2.2.box.903.379.396.30.q.60'>Vatablus, Francis (1545), 171</p>
+<a id='GBS.PR12.w.2.3.0'></a><p class='gtxt_body' style='text-align:right;' id='para.15.2.3.box.904.416.626.32.q.50'>Venumu, Hermann (1697&#8212;1787), 146,167,294,</p>
+<a id='GBS.PR12.w.2.4.0'></a><p class='gtxt_body gtxt_lineated' id='para.15.2.4.box.903.454.593.179.q.50'>  437, 443, 444, 481, 482, 484 <br/>Verschoyle, Hamilton (1843), 77 <br/>Victorinus, Hugo, 399 <br/>Vinet, Alexander Rodolph (1797&#8212;1847), 60 <br/>Virgil, 389 <br/></p>
+<a id='GBS.PR12.w.2.5.0'></a><p class='gtxt_body' style='text-align:right;' id='para.15.2.5.box.905.641.629.30.q.40'>Volney, Constantino F. C, Comte de (1755&#8212;</p>
+<a id='GBS.PR12.w.2.6.0'></a><p class='gtxt_body gtxt_lineated' id='para.15.2.6.box.905.679.285.66.q.50'>  1820), 41 <br/>Votier, J. (1652), 423 <br/></p>
+<a id='GBS.PR12.w.2.7.0'></a><p class='gtxt_body gtxt_lineated' id='para.15.2.7.box.905.780.627.178.q.50'>Wngner, George (1862), 10 <br/>Walford, Willium (1837), 169, 211, 231, 477 <br/>Walton, Isaac (1593&#8212;1683), 206 <br/>Waterland, Daniel (1683&#8212; 1740), 149 <br/>Watson, Thomns (1660), 8, 17. 27, 60, 96, 104, <br/></p>
+<a id='GBS.PR12.w.2.8.0'></a><p class='gtxt_body' style='text-align:right;' id='para.15.2.8.box.936.966.595.30.q.50'>113, 123, 149, 213, &#39;229, 246, 2)7, 292, 347,</p>
+<a id='GBS.PR12.w.2.9.0'></a><p class='gtxt_body' style='text-indent:1em;' id='para.15.2.9.box.933.1004.106.29.q.60'>423, 446</p>
+<a id='GBS.PR12.w.2.10.0'></a><p class='gtxt_body gtxt_lineated' id='para.15.2.10.box.906.1039.625.620.q.40'>Walts, Isaac (1674&#8212;1748), 307, 308, 321, 437 <br/>Webbe, George (1613), 878 <br/>Weumse, John (&#8212;1636), 127 <br/>Weiss, Benjamin (1856), 171, 236-7, 343 <br/>Weich, John (1576&#8212;1622), 462 <br/>Wells, John (&#8212;1676), 124, 399 <br/>Wesley, Charles (1708&#8212;1788), 385 <br/>Wesley, John (1703&#8212;1791), 8 <br/>Westticld, Thomas (1644), 215 <br/>Westminster Assembly&#39;s Annotations, 370 <br/>W<sup>T</sup>hitc, Henry Kirke (1785&#8212;1806), 107 <br/>Whitecross, John ( ), 112 <br/>Whitefleld, George (1714&#8212;1770), 377 <br/>Whitlock, John (165S), 216 <br/>Wilberforce, Samuel (1849), 218 <br/>Wiicocks, Thomas (1586), 200, 210, 236, 344, <br/>  398 <br/></p>
+<a id='GBS.PR12.w.2.11.0'></a><p class='gtxt_body' style='text-align:right;' id='para.15.2.11.box.907.1668.569.33.q.50'>Wiicox, Daniel (1676-1733), 13, 72-3, 87</p>
+<a id='GBS.PR12.w.2.12.0'></a><p class='gtxt_body' style='text-align:right;' id='para.15.2.12.box.908.1706.467.32.q.60'>Willett, Andrew (1562&#8212;1621), 378</p>
+<a id='GBS.PR12.w.2.13.0'></a><p class='gtxt_body' id='para.15.2.13.box.906.1744.437.31.q.60'>Willison, John (1680&#8212;1750), 20</p>
+<a id='GBS.PR12.w.2.14.0'></a><p class='gtxt_body' id='para.15.2.14.box.909.1781.386.33.q.50'>Wilson, John (1847), 37, 1*5</p>
+<a id='GBS.PR12.w.2.15.0'></a><p class='gtxt_body' style='text-align:right;' id='para.15.2.15.box.908.1816.622.34.q.50'>Wilson, W. (1860), 30, 82, 206, 209, 213, 214,</p>
+<a id='GBS.PR12.w.2.16.0'></a><p class='gtxt_body' style='text-align:right;' id='para.15.2.16.box.934.1853.596.35.q.50'>274, 291, 293, 296, 348, 421, 467, 469, 470,</p>
+<a id='GBS.PR12.w.2.17.0'></a><p class='gtxt_body' style='text-indent:1em;' id='para.15.2.17.box.934.1897.44.22.q.50'>473</p>
+<a id='GBS.PR12.w.2.18.0'></a><p class='gtxt_body' style='text-align:right;' id='para.15.2.18.box.910.1927.555.33.q.50'>Witsius, Hermann (1636&#8212;1708), 231, 372</p>
+<a id='GBS.PR12.w.2.19.0'></a><p class='gtxt_body' id='para.15.2.19.box.907.1968.328.31.q.60'>Wood, J. G. (1869), 389</p>
+<a id='GBS.PR12.w.2.20.0'></a><p class='gtxt_body' style='text-align:right;' id='para.15.2.20.box.908.2000.622.34.q.50'>Wordsworth, Christopher (1868), 40, 42, 44,</p>
+<a id='GBS.PR12.w.2.21.0'></a><p class='gtxt_body' style='text-align:right;' id='para.15.2.21.box.934.2039.597.34.q.50'>52, 74,123, 144, 152, 182, 200, 279, 342, 344,</p>
+<a id='GBS.PR12.w.2.22.0'></a><p class='gtxt_body gtxt_lineated' id='para.15.2.22.box.907.2079.435.67.q.50'>  859, 361, 365, 398, 424, 469 <br/>Wouter of Stoelwyk (1541), 209 <br/></p>
+<a id='GBS.PR12.w.2.23.0'></a><p class='gtxt_body gtxt_lineated' id='para.15.2.23.box.907.2187.434.74.q.50'>Young, Edward (1681&#8212;1765), 2 <br/>Young, Richard (1655), 128,146 <br/></p>
+<a id='GBS.PR12.w.2.24.0'></a><p class='gtxt_body gtxt_lineated' id='para.15.2.24.box.906.2297.628.74.q.50'>Zinzendorf, Count Nicholas Louis (1684&#8212; <br/>   1760), 363 <br/></p>
+</div>
+</div>
+<!-- Content from Google Book Search, generated at 1515612802267475 -->
+<div class='flow' style=''>
+<a class='page'  id='GBS.PA1'></a>
+<div id='block.16.0.0.box.108.490.1303.872.q.50' class='gtxt_body'>
+<a id='GBS.PA1.w.0.0.0'></a><p class='gtxt_body' style='font-size:108%;text-indent:1em;' id='para.16.0.0.box.531.490.475.38.q.70'>PSALM XXVII.</p>
+<a id='GBS.PA1.w.0.1.0'></a><p class='gtxt_body' style='text-indent:1em;' id='para.16.0.1.box.109.556.1302.296.q.60'>TrrtE <span style='font-variant:small-caps;'>And </span><span style='font-variant:small-caps;'>Subject.</span>&#8212;<span style='font-style:italic;'>Nothing </span><span style='font-style:italic;'>whatever </span><span style='font-style:italic;'>can </span><span style='font-style:italic;'>be </span><span style='font-style:italic;'>drawn </span><span style='font-style:italic;'>from </span><span style='font-style:italic;'>the </span><span style='font-style:italic;'>title </span><span style='font-style:italic;'>as </span><span style='font-style:italic;'>to </span><span style='font-style:italic;'>the </span><span style='font-style:italic;'>time </span><span style='font-style:italic;'>when </span><span style='font-style:italic;'>this </span><span style='font-style:italic;'>rsalm </span><span style='font-style:italic;'>was </span><span style='font-style:italic;'>written, </span><span style='font-style:italic;'>for </span><span style='font-style:italic;'>the </span><span style='font-style:italic;'>heading, </span>&quot;A Psalm of David,&quot; <span style='font-style:italic;'>is </span><span style='font-style:italic;'>common </span><span style='font-style:italic;'>to </span><span style='font-style:italic;'>so </span><span style='font-style:italic;'>many </span><span style='font-style:italic;'>of </span><span style='font-style:italic;'>the </span><span style='font-style:italic;'>Psalms</span><span style='font-style:italic;'>; </span><span style='font-style:italic;'>but </span><span style='font-style:italic;'>if </span><span style='font-style:italic;'>one </span><span style='font-style:italic;'>may </span><span style='font-style:italic;'>judge </span><span style='font-style:italic;'>from </span><span style='font-style:italic;'>the </span><span style='font-style:italic;'>matter </span><span style='font-style:italic;'>of </span><span style='font-style:italic;'>the </span><span style='font-style:italic;'>song, </span><span style='font-style:italic;'>the </span><span style='font-style:italic;'>writer </span><span style='font-style:italic;'>was </span><span style='font-style:italic;'>pursued </span><span style='font-style:italic;'>by </span><span style='font-style:italic;'>enemies, </span><span style='font-style:italic;'>verses </span>2 <span style='font-style:italic;'>andS, </span><span style='font-style:italic;'>was </span><span style='font-style:italic;'>shut </span><span style='font-style:italic;'>out </span><span style='font-style:italic;'>from </span><span style='font-style:italic;'>the </span><span style='font-style:italic;'>house </span><span style='font-style:italic;'>of </span><span style='font-style:italic;'>the </span><span style='font-style:italic;'>Lord, </span><span style='font-style:italic;'>verse </span>4, <span style='font-style:italic;'>was </span><span style='font-style:italic;'>just </span><span style='font-style:italic;'>parting </span><span style='font-style:italic;'>from </span><span style='font-style:italic;'>father </span><span style='font-style:italic;'>and </span><span style='font-style:italic;'>mother, </span><span style='font-style:italic;'>verse </span>10, <span style='font-style:italic;'>and </span><span style='font-style:italic;'>was </span><span style='font-style:italic;'>subject </span><span style='font-style:italic;'>to </span><span style='font-style:italic;'>slander, </span><span style='font-style:italic;'>verse </span>12 ; <span style='font-style:italic;'>do </span><span style='font-style:italic;'>not </span><span style='font-style:italic;'>all </span><span style='font-style:italic;'>these </span><span style='font-style:italic;'>meet </span><span style='font-style:italic;'>in </span><span style='font-style:italic;'>the </span><span style='font-style:italic;'>time </span><span style='font-style:italic;'>when </span><span style='font-style:italic;'>Doeg, </span><span style='font-style:italic;'>the </span><span style='font-style:italic;'>Edomite, </span><span style='font-style:italic;'>spake </span><span style='font-style:italic;'>against </span><span style='font-style:italic;'>him </span><span style='font-style:italic;'>to </span><span style='font-style:italic;'>Saul</span>? <span style='font-style:italic;'>It </span><span style='font-style:italic;'>is </span><span style='font-style:italic;'>a </span><span style='font-style:italic;'>song </span><span style='font-style:italic;'>of </span><span style='font-style:italic;'>cheerful </span><span style='font-style:italic;'>hope, </span><span style='font-style:italic;'>well </span><span style='font-style:italic;'>fitted </span><span style='font-style:italic;'>for </span><span style='font-style:italic;'>those </span><span style='font-style:italic;'>in </span><span style='font-style:italic;'>trial </span><span style='font-style:italic;'>who </span><span style='font-style:italic;'>have </span><span style='font-style:italic;'>learned </span><span style='font-style:italic;'>to </span><span style='font-style:italic;'>lean </span><span style='font-style:italic;'>uponthe </span><span style='font-style:italic;'>Almighty </span><span style='font-style:italic;'>arm. </span><span style='font-style:italic;'>Tlie </span><span style='font-style:italic;'>Psalm </span><span style='font-style:italic;'>may </span><span style='font-style:italic;'>with </span><span style='font-style:italic;'>profit </span><span style='font-style:italic;'>be </span><span style='font-style:italic;'>read </span><span style='font-style:italic;'>in </span><span style='font-style:italic;'>a </span><span style='font-style:italic;'>threefold </span><span style='font-style:italic;'>way, </span><span style='font-style:italic;'>as </span><span style='font-style:italic;'>the </span><span style='font-style:italic;'>language </span><span style='font-style:italic;'>of </span><span style='font-style:italic;'>David, </span><span style='font-style:italic;'>of </span><span style='font-style:italic;'>the </span><span style='font-style:italic;'>Churcli, </span><span style='font-style:italic;'>and </span><span style='font-style:italic;'>of </span><span style='font-style:italic;'>the </span><span style='font-style:italic;'>Ijyrd </span><span style='font-style:italic;'>Jesus. </span><span style='font-style:italic;'>The </span><span style='font-style:italic;'>plenitude </span><span style='font-style:italic;'>of </span><span style='font-style:italic;'>Scripture </span><span style='font-style:italic;'>will </span><span style='font-style:italic;'>thus </span><span style='font-style:italic;'>appear </span><span style='font-style:italic;'>the </span><span style='font-style:italic;'>more </span><span style='font-style:italic;'>wonderful. </span></p>
+<a id='GBS.PA1.w.0.2.0'></a><p class='gtxt_body' style='text-indent:1em;' id='para.16.0.2.box.108.852.1302.132.q.40'><span style='font-variant:small-caps;'>Division.</span>&#8212;<span style='font-style:italic;'>Tlie </span><span style='font-style:italic;'>poet </span><span style='font-style:italic;'>first </span><span style='font-style:italic;'>sounds </span><span style='font-style:italic;'>forth </span><span style='font-style:italic;'>his </span><span style='font-style:italic;'>sure </span><span style='font-style:italic;'>confidence </span><span style='font-style:italic;'>in </span><span style='font-style:italic;'>hit </span><span style='font-style:italic;'>God, </span>1&#8212;3, <span style='font-style:italic;'>and </span><span style='font-style:italic;'>his </span><span style='font-style:italic;'>love </span><span style='font-style:italic;'>of </span><span style='font-style:italic;'>communion </span><span style='font-style:italic;'>with </span><span style='font-style:italic;'>him, </span>4&#8212;6. <span style='font-style:italic;'>He </span><span style='font-style:italic;'>then </span><span style='font-style:italic;'>betakes </span><span style='font-style:italic;'>himself </span><span style='font-style:italic;'>to </span><span style='font-style:italic;'>prayer, </span>7&#8212;12, <span style='font-style:italic;'>and </span><span style='font-style:italic;'>concludes </span><span style='font-style:italic;'>wit/i </span><span style='font-style:italic;'>an </span><span style='font-style:italic;'>acknowledgment </span><span style='font-style:italic;'>of </span><span style='font-style:italic;'>the </span><span style='font-style:italic;'>sustaining </span><span style='font-style:italic;'>power </span><span style='font-style:italic;'>of </span><span style='font-style:italic;'>faith </span><span style='font-style:italic;'>in </span><span style='font-style:italic;'>his </span><span style='font-style:italic;'>own </span><span style='font-style:italic;'>case, </span><span style='font-style:italic;'>and </span><span style='font-style:italic;'>an </span><span style='font-style:italic;'>exhortation </span><span style='font-style:italic;'>to </span><span style='font-style:italic;'>others </span><span style='font-style:italic;'>to </span><span style='font-style:italic;'>follow </span><span style='font-style:italic;'>his </span><span style='font-style:italic;'>example. </span></p>
+<a id='GBS.PA1.w.0.3.0'></a><p class='gtxt_body' style='text-indent:1em;' id='para.16.0.3.box.637.1012.238.26.q.90'>EXPOSITION.</p>
+<a id='GBS.PA1.w.0.4.0'></a><p class='gtxt_body' id='para.16.0.4.box.110.1063.1298.118.q.50'>THE <span style='font-variant:small-caps;'>Lord </span><span style='font-style:italic;'>is </span>my light and my salvation ; whom shall I fear? the <span style='font-variant:small-caps;'>Lord </span><span style='font-style:italic;'>is </span>the strength of my life; of whom shall I be afraid?</p>
+<a id='GBS.PA1.w.0.5.0'></a><p class='gtxt_body' style='text-indent:1em;' id='para.16.0.5.box.110.1192.1294.84.q.50'>2 When the wicked, <span style='font-style:italic;'>even </span>mine enemies and my foes, came upon me to eat up my flesh, they stumbled and fell.</p>
+<a id='GBS.PA1.w.0.6.0'></a><p class='gtxt_body' style='text-indent:1em;' id='para.16.0.6.box.109.1277.1295.85.q.50'>3 Though an host should encamp against me, my heart shall not fear: though war should rise against me, in this <span style='font-style:italic;'>will </span>I ^confident.</p>
+</div>
+<div id='block.16.1.0.box.106.1379.1300.958.q.60' class='gtxt_footnote'>
+<a id='GBS.PA1.w.1.0.0'></a><p class='gtxt_footnote' style='text-indent:1em;' id='para.16.1.0.box.106.1379.1300.958.q.60'>1. &quot;<span style='font-style:italic;'>The </span><span style='font-style:italic;'>Lord </span><span style='font-style:italic;'>is </span><span style='font-style:italic;'>my </span><span style='font-style:italic;'>light </span><span style='font-style:italic;'>and </span><span style='font-style:italic;'>my </span><span style='font-style:italic;'>salvation.&#39;&#39;&#39;<sup>1</sup></span>&#8212;Here is personal interest, <span style='font-style:italic;'>&quot;my </span><span style='font-style:italic;'>light,&#39;&#39;&#39;&#39; </span>&quot;<span style='font-style:italic;'>my </span><span style='font-style:italic;'>saltation</span>;&quot; the soul is assured of it, and therefore, declaring it boldly. &quot;<span style='font-style:italic;'>My </span><span style='font-style:italic;'>light</span>;&quot;&#8212;into the soul at the new birth divine light is poured as the precursor of salvation ; where there is not enough light to see our own darkness and to long for the Lord Jesus, there is no evidence of salvation. Salvation fiuds us in the dark, but it docs not leave us there ; it gives light to those who sit in the valley of the shadow of death. After conversion our God is our joy, comfort, guide, teacher, and in every sense our light; he is light within, light around, light reflected from us, and light to be revealed to us. Note, it is not said merely that the Lord gives light, but that he &quot;<span style='font-style:italic;'>is</span>&quot; light; nor that he gives salvation, but that ho is salvation ; he, then, who by faith has laid hold upon God has all covenant blessings in his possession. Every light is not the sun, but the sun is the father of all lights. This being made sure as a fact, the argument drawn from it is put in the form of a question, &quot;<span style='font-style:italic;'>Whom </span><span style='font-style:italic;'>shall </span><span style='font-style:italic;'>I</span><span style='font-style:italic;'>/cart&quot; </span>A question which is its own answer. The powers of darkness are not to be feared, for the Lord, our light, destroys them ; and the damnation of hell is not to be dreaded by us, for the Lord is our salvation. This is a very different challenge from that of boastful Goliath, for it is based upon a very different foundation; it rests not upon the conceited vigour of an arm of flesh, but upon the real power of the omnipotent I AM. &quot;<span style='font-style:italic;'>The </span><span style='font-style:italic;'>Lord </span><span style='font-style:italic;'>is </span><span style='font-style:italic;'>the </span><span style='font-style:italic;'>strength </span><span style='font-style:italic;'>of </span><span style='font-style:italic;'>my </span><span style='font-style:italic;'>life.&#39;<sup>1</sup>&#39;&#39; </span>Here is a third glowing epithet, to show that the writer&#39;s hope was fastened with a threefold cord which could not be broken. We may well accumulate terms of praise where the Lord lavishes deeds of grace. Our life derives all its strength from him who is the author of it; and if he deigns to make us strong we cannot be weakened by all the machinations of the adversary. &quot;<span style='font-style:italic;'>Of </span><span style='font-style:italic;'>whom </span><span style='font-style:italic;'>shall </span><span style='font-style:italic;'>I </span><span style='font-style:italic;'>be </span><span style='font-style:italic;'>afraid?&quot; </span>The bold question looks into the future as well as the present. &quot;If Ood be for us,&quot; who can be against us, either now or in time to come?</p>
+</div>
+</div>
+<!-- Content from Google Book Search, generated at 1515612803164208 -->
+<div class='flow' style=''>
+<a class='page'  id='GBS.PA2'></a>
+<div id='block.17.1.0.box.267.294.1306.2052.q.60' class='gtxt_body'>
+<a id='GBS.PA2.w.1.0.0'></a><p class='gtxt_body' style='text-indent:1em;' id='para.17.1.0.box.273.294.1300.709.q.60'>2. This verse records a past deliverance, and is an instance of the way in which experience should be employed to reassure our faith in times of trial. Each word is instructive. &quot;<span style='font-style:italic;'>When </span><span style='font-style:italic;'>the </span><span style='font-style:italic;'>w</span><span style='font-style:italic;'>ieked.</span>&quot; It is a hopeful sign for us when the wicked hate us ; if our foes were godly men it would be a sore sorrow, but as for the wicked their hatred is better than their love. &quot;<span style='font-style:italic;'>Ecen </span><span style='font-style:italic;'>mine </span><span style='font-style:italic;'>enemies </span><span style='font-style:italic;'>and </span><span style='font-style:italic;'>my </span><span style='font-style:italic;'>foes.&#39;&#39; </span>There were many of them, they were of different sorts, but they were unanimous in mischief and hearty in hatred. &quot;<span style='font-style:italic;'>Came </span><span style='font-style:italic;'>upon </span><span style='font-style:italic;'>me </span>&quot;&#8212;advanced to the attack, leaping upon the victim like a lion upon its prey. &quot;<span style='font-style:italic;'>To </span><span style='font-style:italic;'>eat </span><span style='font-style:italic;'>up </span><span style='font-style:italic;'>my </span><span style='font-style:italic;'>flesh,&quot; </span>like cannibals they would make a full end of the man, tear him limb from limb, and make a feast for their malice. The enemies of our souls are not deficient in ferocity, they yield no quarter, and ought to have none in return. See in what danger David was; in the grip and grasp of numerous, powerful, and cruel enemies, and yet observe his perfect safety and their utter discomfiture !&quot; <span style='font-style:italic;'>They </span><span style='font-style:italic;'>stumbled </span><span style='font-style:italic;'>and </span><span style='font-style:italic;'>fell.&quot; </span>God&#39;s breath blew them off their legs. There were stones in the way which they never reckoned upon, and over these they made an ignominious tumble. This was literally true in the case of our Lord in Gethsemane, when those who came to take him went backward and fell to the ground; and herein he was a prophetic representative of all wrestling believers who, rising from their knees shall, by the power of faith, throw their foes upon their faces.</p>
+<a id='GBS.PA2.w.1.1.0'></a><p class='gtxt_body' style='text-indent:1em;' id='para.17.1.1.box.271.1004.1298.167.q.60'>3. &quot;<span style='font-style:italic;'>Though </span><span style='font-style:italic;'>an </span><span style='font-style:italic;'>host </span><span style='font-style:italic;'>should </span><span style='font-style:italic;'>encamp </span><span style='font-style:italic;'>against </span><span style='font-style:italic;'>me, </span><span style='font-style:italic;'>my </span><span style='font-style:italic;'>heart </span><span style='font-style:italic;'>shall </span><span style='font-style:italic;'>not </span><span style='font-style:italic;'>fear.&#39;&#39; </span>Before the actual conflict, while as yet the battle is untried, the warrior&#39;s heart, being held in suspense, is very liable to become fluttered. The encamping host often inspires greater dread than the same host in actual affray. Young tells us of some&#8212;</p>
+<a id='GBS.PA2.w.1.2.0'></a><p class='gtxt_body' style='text-align:center;' id='para.17.1.2.box.599.1183.640.29.q.60'>&quot;Who fvel a thousand deaths in fearing one.&quot;</p>
+<a id='GBS.PA2.w.1.3.0'></a><p class='gtxt_body' id='para.17.1.3.box.269.1237.1298.423.q.60'>Doubtless the shadow of anticipated trouble is, to timorous minds, a more prolific source of sorrow than the trouble itself, but faith puts a strengthening plaister to the back of courage, and throws out of the window the dregs of the cup of trembling. &quot;<span style='font-style:italic;'>Though </span><span style='font-style:italic;'>war </span><span style='font-style:italic;'>should </span><span style='font-style:italic;'>rise </span><span style='font-style:italic;'>against </span><span style='font-style:italic;'>me, </span><span style='font-style:italic;'>in </span><span style='font-style:italic;'>this </span><span style='font-style:italic;'>will </span><span style='font-style:italic;'>I </span><span style='font-style:italic;'>be </span><span style='font-style:italic;'>confident.&#39;&#39; </span>When it actually comes to push of pike, faith&#39;s shield will ward off the blow ; and if the first brush should be but the beginning of a war, yet faith&#39;s banners will wave in spite of the foe. Though battle should succeed battle, and one campaign should be followed by another, the believer will not be dismayed at the length of the conflict. Reader, this third verse is the comfortable and logical inference from the second, confidence is the child of experience. Have you been delivered out of great perils? then set up your ensign, wait at your watch-fire, and let the enemy do his worst.</p>
+<a id='GBS.PA2.w.1.4.0'></a><p class='gtxt_body' style='text-indent:1em;' id='para.17.1.4.box.269.1687.1291.128.q.60'>4 One <span style='font-style:italic;'>thing </span>have I desired of the <span style='font-variant:small-caps;'>Lord, </span>that will I seek after; that I may dwell in the house of the <span style='font-variant:small-caps;'>Lord </span>all the days of my life, to behold the beauty of the <span style='font-variant:small-caps;'>Lord, </span>and to enquire in his temple.</p>
+<a id='GBS.PA2.w.1.5.0'></a><p class='gtxt_body' style='text-indent:1em;' id='para.17.1.5.box.268.1816.1293.117.q.60'>5 For in the time of trouble he shall hide me in his pavilion: in the secret of his tabernacle shall he hide me; he shall set me up upon a rock.</p>
+<a id='GBS.PA2.w.1.6.0'></a><p class='gtxt_body' style='text-indent:1em;' id='para.17.1.6.box.267.1945.1294.126.q.50'>6 And now shall mine head be lifted up above mine enemies round about me: therefore will I offer in his tabernacle sacrifices of joy; I will sing, yea, I will sing praises unto the <span style='font-variant:small-caps;'>Lord. </span></p>
+<a id='GBS.PA2.w.1.7.0'></a><p class='gtxt_body' style='text-indent:1em;' id='para.17.1.7.box.267.2097.1293.249.q.60'>4. &quot;<span style='font-style:italic;'>One </span><span style='font-style:italic;'>thing.&quot; </span>Divided aims tend to distraction, weakness, disappointment. The man of one book is eminent, the man of one pursuit is successful. Let all our affections be bound up in one affection, and that affection set upon heavenly things. <span style='font-style:italic;'>&quot;Have </span><span style='font-style:italic;'>I </span><span style='font-style:italic;'>desired&quot;</span>&#8212;what we cannot at once attain, it is well to desire. God judges us very much by the desire of our hearts. He who rides a lame horse is not blamed by his master for want of speed, if ho makes all the haste he can, and would make more if he could; God takes the will for the</p>
+</div>
+</div>
+
+</body></html>

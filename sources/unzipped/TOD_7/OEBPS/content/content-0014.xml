@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>The Treasury of David</title>
+<style type="text/css">
+.fakecover {
+  margin:0;
+  padding:0;
+  border:none;
+  height:100%;
+  width:100%;
+  background:black;
+  text-align: center;
+  font-weight: normal;
+  font-family: Georgia,"Times New Roman",Serif;
+}
+.cover {
+  color: black;
+  margin: 0px;
+  padding:100px 0px 100px 0px;
+  background:white;
+}
+.title {
+  font-size: 35px;
+  padding: 25px 5px 40px 5px;
+}
+.author {
+  padding: 40px 5px 25px 5px;
+  font-size: 25px;
+}
+.notice {
+  padding: 80px 5px 10px 5px;
+  font-size: 18px;
+  color: white;
+}
+.top {
+  height:120px;
+}
+.bottom {
+  height:120px;
+}
+.flow {
+  margin: 0;
+  font-size: 1em;
+}
+.flow .pagebreak {
+  page-break-before: always;
+}
+.flow p {
+  text-align: left;
+  text-indent: 0;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+.flow .gstxt_sup {
+  font-size: 75%;
+  position: relative;
+  bottom: 0.5em;
+}
+.flow .gstxt_sub {
+  font-size: 75%;
+  position: relative;
+  top: 0.3em;
+}
+.flow .gstxt_hlt {
+  background-color: yellow;
+}
+.flow div.gtxt_inset_box {
+  padding: 0.5em 0.5em 0.5em 0.5em;
+  margin: 1em 1em 1em 1em;
+  border: 1px black solid;
+}
+.flow div.gtxt_footnote {
+  padding: 0 0.5em 0 0.5em;
+  border: 1px black dotted;
+}
+.flow .gstxt_underline {
+  text-decoration: underline;
+}
+.flow .gtxt_heading {
+  text-align: center;
+  margin-bottom: 1em;
+  font-size: 150%;
+  font-weight: bold;
+  font-variant: small-caps;
+}
+.flow .gtxt_h1_heading {
+  text-align: center;
+  font-size: 120%;
+  font-weight: bold;
+}
+.flow .gtxt_h2_heading {
+  font-size: 110%;
+  font-weight: bold;
+}
+.flow .gtxt_h3_heading {
+  font-weight: bold;
+}
+.flow .gtxt_lineated {
+  margin-left: 2em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  white-space: pre-wrap;
+}
+.flow .gtxt_lineated_code {
+  margin-left: 2em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  white-space: pre-wrap;
+  font-family: monospace;
+}
+.flow .gtxt_quote {
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.flow .gtxt_list_entry {
+  margin-left: 2ex;
+  text-indent: -2ex;
+}
+.flow .gimg_graphic {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.flow .gimg_table {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.flow {
+  font-family: serif;
+}
+.flow span,p {
+  font-family: inherit;
+}
+
+</style></head>
+<body>
+<div class='fakecover'>
+  <div class='top' />
+  <div class='cover'>
+    <div class='title'>The Treasury of David</div>
+    <div class='author'>Charles Haddon Spurgeon</div>
+  </div>
+  <div class='bottom'>
+    <div class='notice'>Google&trade; Book Search</div>
+  </div>
+</div>
+<div class='pagebreak'></div>
+<!-- Content from Google Book Search, generated at 1515631362056750 -->
+<div class='flow' style=''>
+<a class='page full_page_image'  id='GBS.PP1'></a>
+<img src='../data/content-0001.jpg' style='max-width:100%; max-height:100%' alt='Image for page 0' /></div>
+<div class='pagebreak'></div>
+<div style='margin:4em;'>&nbsp;</div>
+<div style='margin:4em;text-align:justify;'><p>
+This is a digital copy of a book that was preserved for generations on library shelves before it was carefully scanned by Google as part of a project to make the world's books discoverable online. See the back of the book for detailed information.
+</p></div>
+<div class='pagebreak'></div>
+<!-- Content from Google Book Search, generated at 1515631362316266 -->
+<div class='flow' style=''>
+</div>
+<!-- Content from Google Book Search, generated at 1515631362526783 -->
+<div class='flow' style=''>
+</div>
+<!-- Content from Google Book Search, generated at 1515631362810054 -->
+<div class='flow' style=''>
+</div>
+<!-- Content from Google Book Search, generated at 1515631363111387 -->
+<div class='flow' style=''>
+<div class='pagebreak'></div>
+<a class='page full_page_image'  id='GBS.PR1'></a>
+<img src='../data/content-0002.png' style='max-width:100%; max-height:100%' alt='Image for page 4' /></div>
+<!-- Content from Google Book Search, generated at 1515631363759762 -->
+<div class='flow' style=''>
+<a class='page'  id='GBS.PR2'></a>
+<div id='block.5.0.0.box.494.395.804.35.q.50' class='gtxt_body' style='margin-bottom: 1.5em;'>
+<a id='GBS.PR2.w.0.0.0'></a><p class='gtxt_body' style='font-size:107%;text-indent:1em;' id='para.5.0.0.box.494.395.804.35.q.50'><span style='font-style:italic;'>BOOKS </span><span style='font-style:italic;'>BY </span><span style='font-style:italic;'>REV. </span><span style='font-style:italic;'>C. </span><span style='font-style:italic;'>ff. </span><span style='font-style:italic;'>SPURGEON. </span></p>
+</div>
+<div id='block.5.1.0.box.415.470.963.1128.q.40' class='gtxt_body' style='margin-bottom: 1.5em;'>
+<a id='GBS.PR2.w.1.0.0'></a><p class='gtxt_body' id='para.5.1.0.box.431.470.945.77.q.30'><span style='font-style:italic;'>THE </span><span style='font-style:italic;'>TREASURY </span><span style='font-style:italic;'>OF </span><span style='font-style:italic;'>DAWD.&#8212;An </span>original exposition of the book or Psalms. Complete in seven volumes. Svo, cloth, per volume, $a.oo; &#171;h&quot;ep, $2.75.</p>
+<a id='GBS.PR2.w.1.1.0'></a><p class='gtxt_body' style='text-indent:1em;' id='para.5.1.1.box.422.564.956.75.q.50'><span style='font-variant:small-caps;'>Philip </span><span style='font-variant:small-caps;'>Schaff, </span>D.D.: &quot;The most important and practical work ol the age on the <span style='font-variant:small-caps;'>Psalter. </span>Full of the force .nut genius of this celebrated preacher and ric-i in selections from the entire range ol literature.&quot;</p>
+<a id='GBS.PR2.w.1.2.0'></a><p class='gtxt_body' style='text-indent:1em;' id='para.5.1.2.box.422.640.951.51.q.50'><span style='font-variant:small-caps;'>John </span><span style='font-variant:small-caps;'>Hall, </span>D.D.: &quot;Mr. Spurgeon&#39;s great work en the Psalms is without an equal as an exposition of that poilion 0&#39; Scripture.&quot;</p>
+<a id='GBS.PR2.w.1.3.0'></a><p class='gtxt_body' style='text-indent:1em;' id='para.5.1.3.box.416.690.959.52.q.40'><span style='font-variant:small-caps;'>Theodore </span>L. <span style='font-variant:small-caps;'>Cuyler, </span>D.D.: &quot;I have used this work for five ye?rs and found it worthy of its name. Whow goeth in there will find &#39; KcHfcpoils.&#39;&quot;</p>
+<a id='GBS.PR2.w.1.4.0'></a><p class='gtxt_body' style='text-indent:1em;' id='para.5.1.4.box.423.742.954.77.q.50'>&quot;<span style='font-variant:small-caps;'>William </span>M. <span style='font-variant:small-caps;'>Taylor, </span>D.D: &quot;In the exposition of ihe hean, &#39;1ht Treasury of David is <span style='font-style:italic;'>sui </span><span style='font-style:italic;'>generis, </span>rich in experience and pre-eminenti) devotional. The exposition is always fresh. To the preacher it is especially suggestive&quot;</p>
+<a id='GBS.PR2.w.1.5.0'></a><p class='gtxt_body gtxt_lineated' id='para.5.1.5.box.422.843.952.125.q.40'><span style='font-style:italic;'>AfY </span><span style='font-style:italic;'>SERMON </span><span style='font-style:italic;'>NOTES.&#8212; </span>Outline of sermons delivered in The Tabernacle, <br/>    London. Vol. 1., Gen.&#8212; Prov.; Vol. II., Eccles.&#8212; Malachi; Vol. III., St. <br/>   Matt.&#8212; Act?; Vol. IV., Rom.&#8212; Rev. Svo cloth, each $1.00. <br/><span style='font-style:italic;'>  Christian </span><span style='font-style:italic;'>World, </span><span style='font-style:italic;'>Lfndon</span><span style='font-style:italic;'>: </span><span style='font-style:italic;'>&quot;</span>Preachers of every grade will find some fresh <br/></p>
+<a id='GBS.PR2.w.1.6.0'></a><p class='gtxt_body' id='para.5.1.6.box.421.968.364.25.q.70'>suggestion under every head.&quot;</p>
+<a id='GBS.PR2.w.1.7.0'></a><p class='gtxt_body' id='para.5.1.7.box.419.1026.954.92.q.30'><span style='font-style:italic;'>ILLUSTRATIONS </span><span style='font-style:italic;'>AND </span><span style='font-style:italic;'>MEDITATIONS; </span><span style='font-style:italic;'>or, </span><span style='font-style:italic;'>&#171; </span><span style='font-style:italic;'>Flwersfrom </span><span style='font-style:italic;'>a </span><span style='font-style:italic;'>Puritan&#39;s </span><span style='font-style:italic;'>Gar </span><span style='font-style:italic;'>Jen*&#39;&#8212; </span>Distilled and dispensed by Rev. C. H. Spurgeon. iamo, paper 25 cents; cloth, $1.00.</p>
+<a id='GBS.PR2.w.1.8.0'></a><p class='gtxt_body' style='text-indent:1em;' id='para.5.1.8.box.415.1126.962.128.q.50'><span style='font-style:italic;'>&#8226;&#39; </span><span style='font-style:italic;'>&#39; </span><span style='font-style:italic;'>.&#39; </span><span style='font-style:italic;'><sub>f</sub>&#8226;, </span>Philadelphia: &quot;Thomas Man ton, D.D., who died near the close of the seventeenth century, was a voluminous preacher and writer. He received praise from his contemporaries, whwh has been echoed by eve y generation since. Mr. Spur g eon has selected the most -Inking and epigrammatw passages of his writings and appended to each a * meditation.&#39;&quot;</p>
+<a id='GBS.PR2.w.1.9.0'></a><p class='gtxt_body gtxt_lineated' id='para.5.1.9.box.421.1278.948.127.q.50'><span style='font-style:italic;'>THE. </span><span style='font-style:italic;'>CLEW </span><span style='font-style:italic;'>OF </span><span style='font-style:italic;'>THE </span><span style='font-style:italic;'>MAZE; </span><span style='font-style:italic;'>er. </span><span style='font-style:italic;'>Modern </span><span style='font-style:italic;'>Infidelity </span><span style='font-style:italic;'>and </span><span style='font-style:italic;'>How </span><span style='font-style:italic;'>to </span><span style='font-style:italic;'>Meet </span><span style='font-style:italic;'>It,&#8212; </span><br/>    Together with a series of non-religious papers, &quot;The Spare Half Hour.&quot; <br/>    Paper, 15 cents; cloth, 75 cents. <br/><span style='font-style:italic;'>  Christian </span><span style='font-style:italic;'>Herald, </span>London: &quot; As full of good things as an egg is of meat. <span style='font-variant:small-caps;'>Ik </span><br/></p>
+<a id='GBS.PR2.w.1.10.0'></a><p class='gtxt_body' id='para.5.1.10.box.416.1404.641.27.q.60'>treatment of the epidemic of skeptwism is thorough.&quot;</p>
+<a id='GBS.PR2.w.1.11.0'></a><p class='gtxt_body' id='para.5.1.11.box.419.1453.948.26.q.50'><span style='font-style:italic;'>TALKS </span><span style='font-style:italic;'>TO </span><span style='font-style:italic;'>FARMERS.&#8212; </span>A book of Nineteen Discourses to Farmers, urao,</p>
+<a id='GBS.PR2.w.1.12.0'></a><p class='gtxt_body' id='para.5.1.12.box.468.1488.142.25.q.60'>cloth ji.oo.</p>
+<a id='GBS.PR2.w.1.13.0'></a><p class='gtxt_body' style='text-indent:1em;' id='para.5.1.13.box.415.1522.952.76.q.60'><span style='font-style:italic;'>Canada </span><span style='font-style:italic;'>Baptist, </span>Toronto: &quot;It will be especially valuable to farmers, but all will enjoy the practical common sense, the abundance ol illustrative anecdote and the richness of imagery.&quot;</p>
+</div>
+<div id='block.5.2.0.box.413.1622.952.124.q.50' class='gtxt_body' style='margin-bottom: 1.5em;'>
+<a id='GBS.PR2.w.2.0.0'></a><p class='gtxt_body' id='para.5.2.0.box.413.1622.823.24.q.60'><span style='font-style:italic;'>JOHN </span><span style='font-style:italic;'>PLOUGHMAN&#39;S </span><span style='font-style:italic;'>TALK; </span><span style='font-style:italic;'>or, </span><span style='font-style:italic;'>Plain </span><span style='font-style:italic;'>Advice </span><span style='font-style:italic;'>to </span><span style='font-style:italic;'>Plain </span></p>
+<a id='GBS.PR2.w.2.1.0'></a><p class='gtxt_body' style='text-indent:1em;' id='para.5.2.1.box.444.1655.921.91.q.50'>Bound in the sami volume is Carlyle&#39;s Edinburgh address &quot; On the Choice of BooV.&quot; 4to, manilla, 12 cents. <span style='font-style:italic;'>Watchman, </span><span style='font-style:italic;'>London</span><span style='font-style:italic;'>: </span>&quot;It is racy, pungent, plain, and to the point.&quot;</p>
+</div>
+<div id='block.5.3.0.box.412.1771.951.177.q.40' class='gtxt_body' style='margin-bottom: 1.5em;'>
+<a id='GBS.PR2.w.3.0.0'></a><p class='gtxt_body' id='para.5.3.0.box.412.1771.951.24.q.60'><span style='font-style:italic;'>JOHN </span><span style='font-style:italic;'>PLOUGHMAN&#39;S </span><span style='font-style:italic;'>PICTURES; </span><span style='font-style:italic;'>or. </span><span style='font-style:italic;'>More </span><span style='font-style:italic;'>of </span><span style='font-style:italic;'>His </span><span style='font-style:italic;'>Plain </span><span style='font-style:italic;'>Talk </span><span style='font-style:italic;'>to </span><span style='font-style:italic;'>Plain </span></p>
+<a id='GBS.PR2.w.3.1.0'></a><p class='gtxt_body' style='text-indent:1em;' id='para.5.3.1.box.442.1804.909.59.q.50'>/Vtf^Jf.&#8212;Containing 39 quaint illustrations. Price, paper, &#39;5 cents. <span style='font-style:italic;'>Christian, </span><span style='font-style:italic;'>London: </span>&quot;The very quintessence of uncommon common-sense.&quot;</p>
+<a id='GBS.PR2.w.3.2.0'></a><p class='gtxt_body' id='para.5.3.2.box.414.1887.948.61.q.20'><span style='font-style:italic;'>THE </span><span style='font-style:italic;'>BIBLE </span><span style='font-style:italic;'>AND </span><span style='font-style:italic;'>THE </span><span style='font-style:italic;'>NEWSPAPER; </span><span style='font-style:italic;'>or, </span><span style='font-style:italic;'>How </span><span style='font-style:italic;'>to </span><span style='font-style:italic;'>Garner </span><span style='font-style:italic;'>Bible </span><span style='font-style:italic;'>Truths </span><span style='font-style:italic;'>from </span><span style='font-style:italic;'>Current </span><span style='font-style:italic;'>New*,</span>&#8212; ;t -, manilla. Price, paper, 15 cents.</p>
+</div>
+<div id='block.5.4.0.box.413.1992.949.27.q.50' class='gtxt_body'>
+<a id='GBS.PR2.w.4.0.0'></a><p class='gtxt_body' style='text-indent:1em;' id='para.5.4.0.box.413.1992.949.27.q.50'>PUNK &amp; WAGNALLS, Publishers, xo and 12 Dey St., New York.</p>
+</div>
+</div>
+<!-- Content from Google Book Search, generated at 1515631364127924 -->
+<div class='flow' style=''>
+<div class='pagebreak'></div>
+<a class='page full_page_image'  id='GBS.PR3'></a>
+<img src='../data/content-0003.png' style='max-width:100%; max-height:100%' alt='Image for page 6' /></div>
+<!-- Content from Google Book Search, generated at 1515631364553148 -->
+<div class='flow' style=''>
+<div class='pagebreak'></div>
+<a class='page full_page_image'  id='GBS.PR4'></a>
+<img src='../data/content-0004.png' style='max-width:100%; max-height:100%' alt='Image for page 7' /></div>
+<!-- Content from Google Book Search, generated at 1515631365069624 -->
+<div class='flow' style=''>
+<a class='page'  id='GBS.PR5'></a>
+<div id='block.8.1.0.box.1534.296.158.242.q.0' class='gimg_body' style='margin-bottom: 1.5em;'>
+<img src='../data/content-0005.png' style='max-width:100%; max-height:100%' alt='[merged small][ocr errors]' /></div>
+<div id='block.8.2.0.box.261.763.1304.1529.q.60' class='gtxt_body'>
+<a id='GBS.PR5.w.2.0.0'></a><p class='gtxt_body' style='font-size:104%;' id='para.8.2.0.box.266.763.1299.298.q.60'><span style='font-variant:small-caps;'>At </span>the end of all these years the last page of this Commentary is printed, and the seventh preface is requested. The demand sounds strangely in my ears. A preface when the work is done? It can be only nominally a preface, for it is really a farewell. I beg to introduce my closing volume, and then to retire with many apologies for having trespassed so much upon my reader&#39;s patience.</p>
+<a id='GBS.PR5.w.2.1.0'></a><p class='gtxt_body' style='font-size:104%;text-indent:1em;' id='para.8.2.1.box.266.1070.1299.863.q.60'>A tinge of sadness is on my spirit as I quit &quot;The Treasury of David,&quot; never to find on this earth a richer^storehouse, though the whole palace of revelation is open to me. Blessed have been the days spent in meditating, mourning, hoping, believing, and exulting with David! Can I hope to spend hours more joyous on this side of the golden gate? Perhaps not; for the seasons have been very choice in which the harp of the great poet of the sanctuary has charmed my ears. Yet the training which has come of these heavenly contemplations may haply go far to create and sustain a peaceful spirit which will never be without its own happy psalmody, and never without aspirations after something higher than it yet has known. The Book of Psalms instructs us in the use of wings as well as words: it sets us both mounting and singing. Often have I ceased my commenting upon the text, that I might rise with the psalm, and gaze upon visions of God. If I may only hope that these volumes will be as useful to other hearts in the reading as to mine in the writing, I shall be well rewarded by the prospect.</p>
+<a id='GBS.PR5.w.2.2.0'></a><p class='gtxt_body' style='font-size:104%;text-indent:1em;' id='para.8.2.2.box.261.1943.1302.349.q.60'>The former volumes have enjoyed a singular popularity. It may be questioned if in any age a commentary so large, upon a single book of the Bible, has enjoyed a circulation within measurable distance of that which has been obtained by this work. Among all orders of Christians &quot;The Treasury &quot; has found its way unrestrained by sectarian prejudice&#8212;another proof of the unity of the spiritual life, and the oneness of the food upon which it delights to feed.</p>
+</div>
+</div>
+<!-- Content from Google Book Search, generated at 1515631365806346 -->
+<div class='flow' style=''>
+<a class='page'  id='GBS.PR6'></a>
+<div id='block.9.1.0.box.230.251.1300.2044.q.60' class='gtxt_body'>
+<a id='GBS.PR6.w.1.0.0'></a><p class='gtxt_body' style='font-size:104%;' id='para.9.1.0.box.234.251.1295.402.q.60'>The author may not dare to be proud of the generous acknowledgments which he has received from men of all sections of the church; but, on the other hand, he cannot pass over them in ungrateful silence. Conscious as he is of his many literary sins of omission and of commission in these seven volumes, he is yet glad to have been permitted to do his best, and to have received abundant encouragement in the doing of it. Of all its good the glory is the Lord&#39;s; of all its weakness the unworthy author must bear the blame.</p>
+<a id='GBS.PR6.w.1.1.0'></a><p class='gtxt_body' style='font-size:104%;text-indent:1em;' id='para.9.1.1.box.232.662.1298.760.q.60'>This last portion of the Psalms has not been the easiest part of my gigantic task. On the contrary, with the exception of <span style='font-style:italic;'>The </span><span style='font-style:italic;'>Songs </span><span style='font-style:italic;'>of </span><span style='font-style:italic;'>Degrees, </span>and one or two other Psalms, these later hymns and hallelujahs have not been largely expounded, nor frequently referred to, by our great divines. Failing the English, a larger use has been made of the Latin authors ; and my esteemed friend, W. <span style='font-variant:small-caps;'>Durban, </span>B.A.,&#39; has rendered me great service in their translation. It would astonish our readers if they could see what tomes have been read, what folios have been covered with translations, and in the end what tiny morsels have been culled from the vast mass for incorporation with this Treasury. Heaps of earth have been sifted and washed, and have yielded only here and there a little &quot;dust of gold.&quot; No labour has been spared ; no difficulty has been shirked. May the good Lord accept my service, and enrich his church by it this day, and when I am gathered to my fathers!</p>
+<a id='GBS.PR6.w.1.2.0'></a><p class='gtxt_body' style='font-size:104%;text-indent:1em;' id='para.9.1.2.box.230.1431.1295.658.q.60'>My friend and amanuensis, Mr. J. L. KEYS, has continued to search the British Museum and public Libraries for me; and to him and many other kind friends I owe many a quotation which else might have been overlooked. Of the extracts I am editor in chief, and not much more; for brethren such as Mr. HENSON, of Kingsgate Street, have at sundry times, of their own accord, sent me material more or less useful. In the homiletical department my obligations are exceedingly great, and are duly acknowledged under initials. My venerable friend the Rev. GEORGE ROGERS leads the way ; but several other brethren, hailing from the Pastors&#39; College, follow with almost equal steps. Thanks are hereby tendered to them all, and to the multitude of authors from whom I have gathered flowers and fruits, fragrant and nourishing.</p>
+<a id='GBS.PR6.w.1.3.0'></a><p class='gtxt_body' style='font-size:104%;text-indent:1em;' id='para.9.1.3.box.231.2096.1293.199.q.60'>And now the colossal work is done! To God be all glory. More than twenty years have glided away while this pleasant labour has been in the doing ; but the wealth of mercy which has been lavished upon me during that time my grateful heart is unable to<a id='GBS.PR7.w.1.0.0'></a><span class='gtxt_body' id='para.10.1.0.box.231.262.1295.188.q.60'>
+measure. Surely goodness and mercy have followed me all those years, and made my heart to sing new psalms for new mercies. There is none like the God of Jeshurun. To him be all glory for ever and ever.</span></p>
+</div>
+</div>
+<!-- Content from Google Book Search, generated at 1515631366254468 -->
+<div class='flow' style=''>
+<a class='page'  id='GBS.PR7'></a>
+<div id='block.10.1.0.box.224.262.1308.996.q.60' class='gtxt_body' style='margin-bottom: 1.5em;'>
+<a id='GBS.PR7.w.1.1.0'></a><p class='gtxt_body' style='font-size:104%;text-indent:1em;' id='para.10.1.1.box.224.469.1308.610.q.60'>In these busy days, it would be greatly to the spiritual profit of Christian men if they were more familiar with the Book of Psalms, in which they would find a complete armoury for life&#39;s battles, and a perfect supply for life&#39;s needs. Here we have both delight and. usefulness, consolation and instruction. For every condition there is a psalm, suitable and elevating. The Book supplies the babe in grace with penitent cries, and the perfected saint with triumphant songs. Its breadth of experience stretches from the jaws of hell to the gate of heaven. He who is acquainted with the marches of the Psalm-country knows that the land floweth with milk and honey, and he delights to travel therein. To such I have aspired to be a helpful companion.</p>
+<a id='GBS.PR7.w.1.2.0'></a><p class='gtxt_body' style='font-size:104%;text-indent:1em;' id='para.10.1.2.box.224.1086.1298.95.q.60'>Reader, I beseech David&#39;s God to bless thee ; and I pray thee, when it is well with thee, breathe a like prayer for</p>
+<a id='GBS.PR7.w.1.3.0'></a><p class='gtxt_body' style='font-size:104%;text-align:center;' id='para.10.1.3.box.733.1216.288.42.q.80'>Thine heartily,</p>
+</div>
+<div id='block.10.2.0.box.270.1463.415.178.q.70' class='gimg_body'>
+<img src='../data/content-0006.png' style='max-width:100%; max-height:100%' alt='[merged small][graphic]' /></div>
+</div>
+<!-- Content from Google Book Search, generated at 1515631366540933 -->
+<div class='flow' style=''>
+</div>
+<!-- Content from Google Book Search, generated at 1515631367025720 -->
+<div class='flow' style=''>
+<div class='pagebreak'></div>
+<a class='page full_page_image'  id='GBS.PR9'></a>
+<img src='../data/content-0007.png' style='max-width:100%; max-height:100%' alt='Image for page 12' /></div>
+<!-- Content from Google Book Search, generated at 1515631367647589 -->
+<div class='flow' style=''>
+<div class='pagebreak'></div>
+<a class='page full_page_image'  id='GBS.PR10'></a>
+<img src='../data/content-0008.png' style='max-width:100%; max-height:100%' alt='Image for page 13' /></div>
+<!-- Content from Google Book Search, generated at 1515631368789286 -->
+<div class='flow' style=''>
+<div class='pagebreak'></div>
+<a class='page full_page_image'  id='GBS.PR11'></a>
+<img src='../data/content-0009.png' style='max-width:100%; max-height:100%' alt='Image for page 14' /></div>
+<!-- Content from Google Book Search, generated at 1515631369847754 -->
+<div class='flow' style=''>
+<div class='pagebreak'></div>
+<a class='page full_page_image'  id='GBS.PR12'></a>
+<img src='../data/content-0010.png' style='max-width:100%; max-height:100%' alt='Image for page 15' /></div>
+<!-- Content from Google Book Search, generated at 1515631370450812 -->
+<div class='flow' style=''>
+<div class='pagebreak'></div>
+<a class='page full_page_image'  id='GBS.PR13'></a>
+<img src='../data/content-0011.png' style='max-width:100%; max-height:100%' alt='Image for page 16' /></div>
+<!-- Content from Google Book Search, generated at 1515631371174373 -->
+<div class='flow' style=''>
+<a class='page'  id='GBS.PR14'></a>
+<div id='block.17.3.0.box.884.277.639.2051.q.40' class='gimg_body'>
+<img src='../data/content-0012.png' style='max-width:100%; max-height:100%' alt='[ocr errors][ocr errors][ocr errors]' /></div>
+</div>
+<!-- Content from Google Book Search, generated at 1515631371557893 -->
+<div class='flow' style=''>
+<a class='page'  id='GBS.PR15'></a>
+<div id='block.18.1.0.box.268.265.636.312.q.40' class='gimg_body'>
+<img src='../data/content-0013.png' style='max-width:100%; max-height:100%' alt='[ocr errors][ocr errors]' /></div>
+</div>
+<!-- Content from Google Book Search, generated at 1515631371820978 -->
+<div class='flow' style=''>
+</div>
+
+</body></html>

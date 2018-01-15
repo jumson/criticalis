@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE ncx PUBLIC "-//NISO//DTD ncx 2005-1//EN" "http://www.daisy.org/z3986/2005/ncx-2005-1.dtd"><ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1" xml:lang="en">
+  <head>
+    <meta name="dtb:uid" content="GoogleId" />
+    <meta name="dtb:depth" content="1" />
+    <meta name="dtb:totalPageCount" content="0" />
+    <meta name="dtb:maxPageNumber" content="0" />
+  </head>
+  <docTitle>
+    <text>The Treasury of David</text>
+  </docTitle>
+  <docAuthor>
+    <text>Charles Haddon Spurgeon</text>
+  </docAuthor>
+  <navMap>
+    <navPoint id="content-0009" playOrder="1">
+      <navLabel>
+        <text>Front Cover</text>
+      </navLabel>
+      <content src="content/content-0009.xml" />
+    </navPoint>
+    <navPoint id="content-0011" playOrder="2">
+      <navLabel>
+        <text>I</text>
+      </navLabel>
+      <content src="content/content-0011.xml" />
+    </navPoint>
+    <navPoint id="content-0013" playOrder="3">
+      <navLabel>
+        <text>Ii</text>
+      </navLabel>
+      <content src="content/content-0013.xml" />
+    </navPoint>
+    <navPoint id="content-0014" playOrder="4">
+      <navLabel>
+        <text>Iii</text>
+      </navLabel>
+      <content src="content/content-0014.xml" />
+    </navPoint>
+    <navPoint id="content-0016" playOrder="5">
+      <navLabel>
+        <text>Iv</text>
+      </navLabel>
+      <content src="content/content-0016.xml" />
+    </navPoint>
+    <navPoint id="content-0018" playOrder="6">
+      <navLabel>
+        <text>V</text>
+      </navLabel>
+      <content src="content/content-0018.xml" />
+    </navPoint>
+    <navPoint id="content-0023" playOrder="7">
+      <navLabel>
+        <text>Vi</text>
+      </navLabel>
+      <content src="content/content-0023.xml" />
+    </navPoint>
+    <navPoint id="content-0024" playOrder="8">
+      <navLabel>
+        <text>Vii</text>
+      </navLabel>
+      <content src="content/content-0024.xml" />
+    </navPoint>
+    <navPoint id="content-0028" playOrder="9">
+      <navLabel>
+        <text>Viii</text>
+      </navLabel>
+      <content src="content/content-0028.xml" />
+    </navPoint>
+    <navPoint id="content-0029" playOrder="10">
+      <navLabel>
+        <text>Ix</text>
+      </navLabel>
+      <content src="content/content-0029.xml" />
+    </navPoint>
+    <navPoint id="content-0032" playOrder="11">
+      <navLabel>
+        <text>X</text>
+      </navLabel>
+      <content src="content/content-0032.xml" />
+    </navPoint>
+    <navPoint id="content-0035" playOrder="12">
+      <navLabel>
+        <text>Xi</text>
+      </navLabel>
+      <content src="content/content-0035.xml" />
+    </navPoint>
+    <navPoint id="content-0037" playOrder="13">
+      <navLabel>
+        <text>Xii</text>
+      </navLabel>
+      <content src="content/content-0037.xml" />
+    </navPoint>
+    <navPoint id="content-0042" playOrder="14">
+      <navLabel>
+        <text>Xiii</text>
+      </navLabel>
+      <content src="content/content-0042.xml" />
+    </navPoint>
+    <navPoint id="content-0045" playOrder="15">
+      <navLabel>
+        <text>Xiv</text>
+      </navLabel>
+      <content src="content/content-0045.xml" />
+    </navPoint>
+    <navPoint id="content-0048" playOrder="16">
+      <navLabel>
+        <text>Xv</text>
+      </navLabel>
+      <content src="content/content-0048.xml" />
+    </navPoint>
+    <navPoint id="content-0051" playOrder="17">
+      <navLabel>
+        <text>Xvi</text>
+      </navLabel>
+      <content src="content/content-0051.xml" />
+    </navPoint>
+    <navPoint id="content-0053" playOrder="18">
+      <navLabel>
+        <text>Xvii</text>
+      </navLabel>
+      <content src="content/content-0053.xml" />
+    </navPoint>
+    <navPoint id="content-0055" playOrder="19">
+      <navLabel>
+        <text>Xviii</text>
+      </navLabel>
+      <content src="content/content-0055.xml" />
+    </navPoint>
+    <navPoint id="content-0058" playOrder="20">
+      <navLabel>
+        <text>Xix</text>
+      </navLabel>
+      <content src="content/content-0058.xml" />
+    </navPoint>
+    <navPoint id="content-0059" playOrder="21">
+      <navLabel>
+        <text>Xx</text>
+      </navLabel>
+      <content src="content/content-0059.xml" />
+    </navPoint>
+    <navPoint id="content-0060" playOrder="22">
+      <navLabel>
+        <text>Xxi</text>
+      </navLabel>
+      <content src="content/content-0060.xml" />
+    </navPoint>
+    <navPoint id="content-0062" playOrder="23">
+      <navLabel>
+        <text>Xxii</text>
+      </navLabel>
+      <content src="content/content-0062.xml" />
+    </navPoint>
+    <navPoint id="content-0063" playOrder="24">
+      <navLabel>
+        <text>Xxiii</text>
+      </navLabel>
+      <content src="content/content-0063.xml" />
+    </navPoint>
+    <navPoint id="content-0065" playOrder="25">
+      <navLabel>
+        <text>Xxiv</text>
+      </navLabel>
+      <content src="content/content-0065.xml" />
+    </navPoint>
+    <navPoint id="content-0068" playOrder="26">
+      <navLabel>
+        <text>Xxv</text>
+      </navLabel>
+      <content src="content/content-0068.xml" />
+    </navPoint>
+    <navPoint id="content-0071" playOrder="27">
+      <navLabel>
+        <text>Xxvi</text>
+      </navLabel>
+      <content src="content/content-0071.xml" />
+    </navPoint>
+    <navPoint id="content-0072" playOrder="28">
+      <navLabel>
+        <text>About this Book - From Google</text>
+      </navLabel>
+      <content src="content/content-0072.xml" />
+    </navPoint>
+  </navMap>
+</ncx>

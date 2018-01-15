@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE ncx PUBLIC "-//NISO//DTD ncx 2005-1//EN" "http://www.daisy.org/z3986/2005/ncx-2005-1.dtd"><ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1" xml:lang="en">
+  <head>
+    <meta name="dtb:uid" content="GoogleId" />
+    <meta name="dtb:depth" content="1" />
+    <meta name="dtb:totalPageCount" content="0" />
+    <meta name="dtb:maxPageNumber" content="0" />
+  </head>
+  <docTitle>
+    <text>The Treasury of David</text>
+  </docTitle>
+  <docAuthor>
+    <text>Charles Haddon Spurgeon</text>
+  </docAuthor>
+  <navMap>
+    <navPoint id="content-0010" playOrder="1">
+      <navLabel>
+        <text>Front Cover</text>
+      </navLabel>
+      <content src="content/content-0010.xml" />
+    </navPoint>
+    <navPoint id="content-0012" playOrder="2">
+      <navLabel>
+        <text>PSALM CIV. ...</text>
+      </navLabel>
+      <content src="content/content-0012.xml" />
+    </navPoint>
+    <navPoint id="content-0014" playOrder="3">
+      <navLabel>
+        <text>never be accomplished. Blessed be God for the great Tnou ...</text>
+      </navLabel>
+      <content src="content/content-0014.xml" />
+    </navPoint>
+    <navPoint id="content-0016" playOrder="4">
+      <navLabel>
+        <text>PSALM CV. ...</text>
+      </navLabel>
+      <content src="content/content-0016.xml" />
+    </navPoint>
+    <navPoint id="content-0017" playOrder="5">
+      <navLabel>
+        <text>31 He spake, and there came divers sorts of flies, ...</text>
+      </navLabel>
+      <content src="content/content-0017.xml" />
+    </navPoint>
+    <navPoint id="content-0018" playOrder="6">
+      <navLabel>
+        <text>arc all bank-full, and the exuberant moisture has aroused from ...</text>
+      </navLabel>
+      <content src="content/content-0018.xml" />
+    </navPoint>
+    <navPoint id="content-0020" playOrder="7">
+      <navLabel>
+        <text>PSALM THE HUNDRED AND FIFTH. ...</text>
+      </navLabel>
+      <content src="content/content-0020.xml" />
+    </navPoint>
+    <navPoint id="content-0021" playOrder="8">
+      <navLabel>
+        <text>PSALM CVI. ...</text>
+      </navLabel>
+      <content src="content/content-0021.xml" />
+    </navPoint>
+    <navPoint id="content-0023" playOrder="9">
+      <navLabel>
+        <text>29 Thus they provoked hint to anger with their inventions...</text>
+      </navLabel>
+      <content src="content/content-0023.xml" />
+    </navPoint>
+    <navPoint id="content-0025" playOrder="10">
+      <navLabel>
+        <text>PSALM CVII ...</text>
+      </navLabel>
+      <content src="content/content-0025.xml" />
+    </navPoint>
+    <navPoint id="content-0027" playOrder="11">
+      <navLabel>
+        <text>given both body and soul a mortal wound of sin, ...</text>
+      </navLabel>
+      <content src="content/content-0027.xml" />
+    </navPoint>
+    <navPoint id="content-0028" playOrder="12">
+      <navLabel>
+        <text>PSALM CVIII. ...</text>
+      </navLabel>
+      <content src="content/content-0028.xml" />
+    </navPoint>
+    <navPoint id="content-0029" playOrder="13">
+      <navLabel>
+        <text>PSALM CIX. ...</text>
+      </navLabel>
+      <content src="content/content-0029.xml" />
+    </navPoint>
+    <navPoint id="content-0032" playOrder="14">
+      <navLabel>
+        <text>PSALM CX. ...</text>
+      </navLabel>
+      <content src="content/content-0032.xml" />
+    </navPoint>
+    <navPoint id="content-0035" playOrder="15">
+      <navLabel>
+        <text>contrary to those pleasures which they love rather than God ...</text>
+      </navLabel>
+      <content src="content/content-0035.xml" />
+    </navPoint>
+    <navPoint id="content-0039" playOrder="16">
+      <navLabel>
+        <text>PSALM CXI. ...</text>
+      </navLabel>
+      <content src="content/content-0039.xml" />
+    </navPoint>
+    <navPoint id="content-0040" playOrder="17">
+      <navLabel>
+        <text>PSALM CXII. ...</text>
+      </navLabel>
+      <content src="content/content-0040.xml" />
+    </navPoint>
+    <navPoint id="content-0041" playOrder="18">
+      <navLabel>
+        <text>2 His seed shall be mighty upon earth: the ...</text>
+      </navLabel>
+      <content src="content/content-0041.xml" />
+    </navPoint>
+    <navPoint id="content-0043" playOrder="19">
+      <navLabel>
+        <text>PSALM CXIII. ...</text>
+      </navLabel>
+      <content src="content/content-0043.xml" />
+    </navPoint>
+    <navPoint id="content-0046" playOrder="20">
+      <navLabel>
+        <text>&quot;The lowest step around thy seat ...</text>
+      </navLabel>
+      <content src="content/content-0046.xml" />
+    </navPoint>
+    <navPoint id="content-0047" playOrder="21">
+      <navLabel>
+        <text>PSALM CXIV. ...</text>
+      </navLabel>
+      <content src="content/content-0047.xml" />
+    </navPoint>
+    <navPoint id="content-0049" playOrder="22">
+      <navLabel>
+        <text>PSALM CXV. ...</text>
+      </navLabel>
+      <content src="content/content-0049.xml" />
+    </navPoint>
+    <navPoint id="content-0051" playOrder="23">
+      <navLabel>
+        <text>At the same time, the prophet tacitly indicates that the ...</text>
+      </navLabel>
+      <content src="content/content-0051.xml" />
+    </navPoint>
+    <navPoint id="content-0052" playOrder="24">
+      <navLabel>
+        <text>PSALM CXVI. ...</text>
+      </navLabel>
+      <content src="content/content-0052.xml" />
+    </navPoint>
+    <navPoint id="content-0054" playOrder="25">
+      <navLabel>
+        <text>and bring nations from every portion of the earth, reconciled ...</text>
+      </navLabel>
+      <content src="content/content-0054.xml" />
+    </navPoint>
+    <navPoint id="content-0055" playOrder="26">
+      <navLabel>
+        <text>very notation of the word importeth, coming from a root ...</text>
+      </navLabel>
+      <content src="content/content-0055.xml" />
+    </navPoint>
+    <navPoint id="content-0056" playOrder="27">
+      <navLabel>
+        <text>PSALM CXVII. ...</text>
+      </navLabel>
+      <content src="content/content-0056.xml" />
+    </navPoint>
+    <navPoint id="content-0058" playOrder="28">
+      <navLabel>
+        <text>&lt; ...</text>
+      </navLabel>
+      <content src="content/content-0058.xml" />
+    </navPoint>
+    <navPoint id="content-0059" playOrder="29">
+      <navLabel>
+        <text>transgressed at all times; and yet the Lord continued ...</text>
+      </navLabel>
+      <content src="content/content-0059.xml" />
+    </navPoint>
+    <navPoint id="content-0065" playOrder="30">
+      <navLabel>
+        <text>man on earth, could have helped him.&quot; With the exposition ...</text>
+      </navLabel>
+      <content src="content/content-0065.xml" />
+    </navPoint>
+    <navPoint id="content-0066" playOrder="31">
+      <navLabel>
+        <text>About this Book - From Google</text>
+      </navLabel>
+      <content src="content/content-0066.xml" />
+    </navPoint>
+  </navMap>
+</ncx>

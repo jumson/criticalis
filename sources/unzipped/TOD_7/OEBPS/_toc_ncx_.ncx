@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE ncx PUBLIC "-//NISO//DTD ncx 2005-1//EN" "http://www.daisy.org/z3986/2005/ncx-2005-1.dtd"><ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1" xml:lang="en">
+  <head>
+    <meta name="dtb:uid" content="GoogleId" />
+    <meta name="dtb:depth" content="1" />
+    <meta name="dtb:totalPageCount" content="0" />
+    <meta name="dtb:maxPageNumber" content="0" />
+  </head>
+  <docTitle>
+    <text>The Treasury of David</text>
+  </docTitle>
+  <docAuthor>
+    <text>Charles Haddon Spurgeon</text>
+  </docAuthor>
+  <navMap>
+    <navPoint id="content-0014" playOrder="1">
+      <navLabel>
+        <text>Front Cover</text>
+      </navLabel>
+      <content src="content/content-0014.xml" />
+    </navPoint>
+    <navPoint id="content-0015" playOrder="2">
+      <navLabel>
+        <text>PSALM CXXV. ...</text>
+      </navLabel>
+      <content src="content/content-0015.xml" />
+    </navPoint>
+    <navPoint id="content-0017" playOrder="3">
+      <navLabel>
+        <text>For list of Works upon the Psalms of Degrees, see ...</text>
+      </navLabel>
+      <content src="content/content-0017.xml" />
+    </navPoint>
+    <navPoint id="content-0018" playOrder="4">
+      <navLabel>
+        <text>PSALM CXXVI. ...</text>
+      </navLabel>
+      <content src="content/content-0018.xml" />
+    </navPoint>
+    <navPoint id="content-0019" playOrder="5">
+      <navLabel>
+        <text>to the return, or meet those returning, as it were, ...</text>
+      </navLabel>
+      <content src="content/content-0019.xml" />
+    </navPoint>
+    <navPoint id="content-0020" playOrder="6">
+      <navLabel>
+        <text>PSALM CXXVII. ...</text>
+      </navLabel>
+      <content src="content/content-0020.xml" />
+    </navPoint>
+    <navPoint id="content-0022" playOrder="7">
+      <navLabel>
+        <text>not say, Unless the Lord help; but unless the ...</text>
+      </navLabel>
+      <content src="content/content-0022.xml" />
+    </navPoint>
+    <navPoint id="content-0024" playOrder="8">
+      <navLabel>
+        <text>PSALM CXXVIII. ...</text>
+      </navLabel>
+      <content src="content/content-0024.xml" />
+    </navPoint>
+    <navPoint id="content-0026" playOrder="9">
+      <navLabel>
+        <text>PSALM CXXIX. ...</text>
+      </navLabel>
+      <content src="content/content-0026.xml" />
+    </navPoint>
+    <navPoint id="content-0027" playOrder="10">
+      <navLabel>
+        <text>PSALM CXXX. ...</text>
+      </navLabel>
+      <content src="content/content-0027.xml" />
+    </navPoint>
+    <navPoint id="content-0028" playOrder="11">
+      <navLabel>
+        <text>PSALM CXXXI. ...</text>
+      </navLabel>
+      <content src="content/content-0028.xml" />
+    </navPoint>
+    <navPoint id="content-0029" playOrder="12">
+      <navLabel>
+        <text>PSALM CXXXII. ...</text>
+      </navLabel>
+      <content src="content/content-0029.xml" />
+    </navPoint>
+    <navPoint id="content-0030" playOrder="13">
+      <navLabel>
+        <text>cal, and the Lord knew what he meant : zeal ...</text>
+      </navLabel>
+      <content src="content/content-0030.xml" />
+    </navPoint>
+    <navPoint id="content-0032" playOrder="14">
+      <navLabel>
+        <text>set man, that is to say, dust and dung, above ...</text>
+      </navLabel>
+      <content src="content/content-0032.xml" />
+    </navPoint>
+    <navPoint id="content-0033" playOrder="15">
+      <navLabel>
+        <text>PSALM CXXXIII. f ...</text>
+      </navLabel>
+      <content src="content/content-0033.xml" />
+    </navPoint>
+    <navPoint id="content-0034" playOrder="16">
+      <navLabel>
+        <text>PSALM CXXXIV. ...</text>
+      </navLabel>
+      <content src="content/content-0034.xml" />
+    </navPoint>
+    <navPoint id="content-0035" playOrder="17">
+      <navLabel>
+        <text>PSALM CXXXV. ...</text>
+      </navLabel>
+      <content src="content/content-0035.xml" />
+    </navPoint>
+    <navPoint id="content-0037" playOrder="18">
+      <navLabel>
+        <text>and are thereby made able to inflame and to edify ...</text>
+      </navLabel>
+      <content src="content/content-0037.xml" />
+    </navPoint>
+    <navPoint id="content-0038" playOrder="19">
+      <navLabel>
+        <text>PSALM CXXXVI. ...</text>
+      </navLabel>
+      <content src="content/content-0038.xml" />
+    </navPoint>
+    <navPoint id="content-0039" playOrder="20">
+      <navLabel>
+        <text>of the year, and to mark with accuracy all their ...</text>
+      </navLabel>
+      <content src="content/content-0039.xml" />
+    </navPoint>
+    <navPoint id="content-0040" playOrder="21">
+      <navLabel>
+        <text>PSALM CXXXVIL ...</text>
+      </navLabel>
+      <content src="content/content-0040.xml" />
+    </navPoint>
+    <navPoint id="content-0041" playOrder="22">
+      <navLabel>
+        <text>temple, and the services of the sanctuary. Three times a-year ...</text>
+      </navLabel>
+      <content src="content/content-0041.xml" />
+    </navPoint>
+    <navPoint id="content-0043" playOrder="23">
+      <navLabel>
+        <text>&quot;AN EXPOSITION upon some select Psalms of David. . ...</text>
+      </navLabel>
+      <content src="content/content-0043.xml" />
+    </navPoint>
+    <navPoint id="content-0044" playOrder="24">
+      <navLabel>
+        <text>PSALM CXXXVI1L ...</text>
+      </navLabel>
+      <content src="content/content-0044.xml" />
+    </navPoint>
+    <navPoint id="content-0046" playOrder="25">
+      <navLabel>
+        <text>death. HI. He puts prayer into our hearts. 1. That ...</text>
+      </navLabel>
+      <content src="content/content-0046.xml" />
+    </navPoint>
+    <navPoint id="content-0047" playOrder="26">
+      <navLabel>
+        <text>PSALM CXXXIX. ...</text>
+      </navLabel>
+      <content src="content/content-0047.xml" />
+    </navPoint>
+    <navPoint id="content-0048" playOrder="27">
+      <navLabel>
+        <text>expect any such thing. If we were so foolish as ...</text>
+      </navLabel>
+      <content src="content/content-0048.xml" />
+    </navPoint>
+    <navPoint id="content-0049" playOrder="28">
+      <navLabel>
+        <text>What! had Jonah offended the winds or the waters, ...</text>
+      </navLabel>
+      <content src="content/content-0049.xml" />
+    </navPoint>
+    <navPoint id="content-0050" playOrder="29">
+      <navLabel>
+        <text>passest,&quot; etc. ; better rendered, &quot;Thou triest my walking ...</text>
+      </navLabel>
+      <content src="content/content-0050.xml" />
+    </navPoint>
+    <navPoint id="content-0052" playOrder="30">
+      <navLabel>
+        <text>Verse 24 (last clause).—See &quot; Spurgeon&apos;s Sermons,&quot; No. 903...</text>
+      </navLabel>
+      <content src="content/content-0052.xml" />
+    </navPoint>
+    <navPoint id="content-0053" playOrder="31">
+      <navLabel>
+        <text>PSALM CXL. ...</text>
+      </navLabel>
+      <content src="content/content-0053.xml" />
+    </navPoint>
+    <navPoint id="content-0054" playOrder="32">
+      <navLabel>
+        <text>thankful, because God is continually merciful to them; secondly, ...</text>
+      </navLabel>
+      <content src="content/content-0054.xml" />
+    </navPoint>
+    <navPoint id="content-0055" playOrder="33">
+      <navLabel>
+        <text>PSALM CXLI. ...</text>
+      </navLabel>
+      <content src="content/content-0055.xml" />
+    </navPoint>
+    <navPoint id="content-0057" playOrder="34">
+      <navLabel>
+        <text>him as he pleased. &quot;Their judges have been dismissed ...</text>
+      </navLabel>
+      <content src="content/content-0057.xml" />
+    </navPoint>
+    <navPoint id="content-0058" playOrder="35">
+      <navLabel>
+        <text>PSALM CXLII. ...</text>
+      </navLabel>
+      <content src="content/content-0058.xml" />
+    </navPoint>
+    <navPoint id="content-0060" playOrder="36">
+      <navLabel>
+        <text>In Chandler&apos;s &quot; Life of David,&quot; vol. i. pp. 157—160, ...</text>
+      </navLabel>
+      <content src="content/content-0060.xml" />
+    </navPoint>
+    <navPoint id="content-0061" playOrder="37">
+      <navLabel>
+        <text>PSALM CXLIII. ...</text>
+      </navLabel>
+      <content src="content/content-0061.xml" />
+    </navPoint>
+    <navPoint id="content-0062" playOrder="38">
+      <navLabel>
+        <text>The smiles of his face, the sweetness of his voice, ...</text>
+      </navLabel>
+      <content src="content/content-0062.xml" />
+    </navPoint>
+    <navPoint id="content-0063" playOrder="39">
+      <navLabel>
+        <text>PSALM CXL1V. ...</text>
+      </navLabel>
+      <content src="content/content-0063.xml" />
+    </navPoint>
+    <navPoint id="content-0065" playOrder="40">
+      <navLabel>
+        <text>Verse 1.—&quot;To war, . . . to fight.&quot; I ...</text>
+      </navLabel>
+      <content src="content/content-0065.xml" />
+    </navPoint>
+    <navPoint id="content-0066" playOrder="41">
+      <navLabel>
+        <text>PSALM CXLV. ...</text>
+      </navLabel>
+      <content src="content/content-0066.xml" />
+    </navPoint>
+    <navPoint id="content-0067" playOrder="42">
+      <navLabel>
+        <text>than he now beholds or enjoys. The third difference is ...</text>
+      </navLabel>
+      <content src="content/content-0067.xml" />
+    </navPoint>
+    <navPoint id="content-0068" playOrder="43">
+      <navLabel>
+        <text>PSALM CXLVI. ...</text>
+      </navLabel>
+      <content src="content/content-0068.xml" />
+    </navPoint>
+    <navPoint id="content-0070" playOrder="44">
+      <navLabel>
+        <text>&apos;life, honor, or fortune,&quot; yet with singular baseness and ...</text>
+      </navLabel>
+      <content src="content/content-0070.xml" />
+    </navPoint>
+    <navPoint id="content-0071" playOrder="45">
+      <navLabel>
+        <text>PSALM CXLVII. ...</text>
+      </navLabel>
+      <content src="content/content-0071.xml" />
+    </navPoint>
+    <navPoint id="content-0073" playOrder="46">
+      <navLabel>
+        <text>!&apos; ...</text>
+      </navLabel>
+      <content src="content/content-0073.xml" />
+    </navPoint>
+    <navPoint id="content-0074" playOrder="47">
+      <navLabel>
+        <text>distance or time. The Lord can deliver his people right ...</text>
+      </navLabel>
+      <content src="content/content-0074.xml" />
+    </navPoint>
+    <navPoint id="content-0076" playOrder="48">
+      <navLabel>
+        <text>more of the nature, formation, and purpose of the snow ...</text>
+      </navLabel>
+      <content src="content/content-0076.xml" />
+    </navPoint>
+    <navPoint id="content-0077" playOrder="49">
+      <navLabel>
+        <text>PSALM CXLVIII. ...</text>
+      </navLabel>
+      <content src="content/content-0077.xml" />
+    </navPoint>
+    <navPoint id="content-0079" playOrder="50">
+      <navLabel>
+        <text>Were you not frequently praising God when you were children ...</text>
+      </navLabel>
+      <content src="content/content-0079.xml" />
+    </navPoint>
+    <navPoint id="content-0081" playOrder="51">
+      <navLabel>
+        <text>PSALM CXLIX. ...</text>
+      </navLabel>
+      <content src="content/content-0081.xml" />
+    </navPoint>
+    <navPoint id="content-0082" playOrder="52">
+      <navLabel>
+        <text>PSALM CL. ...</text>
+      </navLabel>
+      <content src="content/content-0082.xml" />
+    </navPoint>
+    <navPoint id="content-0084" playOrder="53">
+      <navLabel>
+        <text>HALLELUJAH! ...</text>
+      </navLabel>
+      <content src="content/content-0084.xml" />
+    </navPoint>
+    <navPoint id="content-0088" playOrder="54">
+      <navLabel>
+        <text>INDEX. ...</text>
+      </navLabel>
+      <content src="content/content-0088.xml" />
+    </navPoint>
+    <navPoint id="content-0089" playOrder="55">
+      <navLabel>
+        <text>About this Book - From Google</text>
+      </navLabel>
+      <content src="content/content-0089.xml" />
+    </navPoint>
+  </navMap>
+</ncx>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<package xmlns="http://www.idpf.org/2007/opf" version="2.0" unique-identifier="GoogleId">
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
+    <dc:title>The Treasury of David</dc:title>
+    <dc:creator opf:role="aut">Charles Haddon Spurgeon</dc:creator>
+    <dc:publisher>I.K. Funk &amp; Company</dc:publisher>
+    <dc:identifier id="GoogleId">JeFJAAAAMAAJ</dc:identifier>
+    <dc:language>en</dc:language>
+    <meta name="FIRST_CONTENT_CHAPTER_START" content="content-0011" />
+  </metadata>
+  <manifest>
+    <item id="_toc_ncx_" href="_toc_ncx_.ncx" media-type="application/x-dtbncx+xml" />
+    <item id="content-0001" href="data/content-0001.png" media-type="image/png" />
+    <item id="content-0002" href="data/content-0002.png" media-type="image/png" />
+    <item id="content-0003" href="data/content-0003.png" media-type="image/png" />
+    <item id="content-0004" href="data/content-0004.png" media-type="image/png" />
+    <item id="content-0005" href="data/content-0005.png" media-type="image/png" />
+    <item id="content-0006" href="data/content-0006.png" media-type="image/png" />
+    <item id="content-0007" href="data/content-0007.png" media-type="image/png" />
+    <item id="content-0008" href="data/content-0008.png" media-type="image/png" />
+    <item id="content-0009" href="content/content-0009.xml" media-type="application/xhtml+xml" />
+    <item id="content-0010" href="data/content-0010.png" media-type="image/png" />
+    <item id="content-0011" href="content/content-0011.xml" media-type="application/xhtml+xml" />
+    <item id="content-0012" href="data/content-0012.png" media-type="image/png" />
+    <item id="content-0013" href="content/content-0013.xml" media-type="application/xhtml+xml" />
+    <item id="content-0014" href="content/content-0014.xml" media-type="application/xhtml+xml" />
+    <item id="content-0015" href="data/content-0015.png" media-type="image/png" />
+    <item id="content-0016" href="content/content-0016.xml" media-type="application/xhtml+xml" />
+    <item id="content-0017" href="data/content-0017.png" media-type="image/png" />
+    <item id="content-0018" href="content/content-0018.xml" media-type="application/xhtml+xml" />
+    <item id="content-0019" href="data/content-0019.png" media-type="image/png" />
+    <item id="content-0020" href="data/content-0020.png" media-type="image/png" />
+    <item id="content-0021" href="data/content-0021.png" media-type="image/png" />
+    <item id="content-0022" href="data/content-0022.png" media-type="image/png" />
+    <item id="content-0023" href="content/content-0023.xml" media-type="application/xhtml+xml" />
+    <item id="content-0024" href="content/content-0024.xml" media-type="application/xhtml+xml" />
+    <item id="content-0025" href="data/content-0025.png" media-type="image/png" />
+    <item id="content-0026" href="data/content-0026.png" media-type="image/png" />
+    <item id="content-0027" href="data/content-0027.png" media-type="image/png" />
+    <item id="content-0028" href="content/content-0028.xml" media-type="application/xhtml+xml" />
+    <item id="content-0029" href="content/content-0029.xml" media-type="application/xhtml+xml" />
+    <item id="content-0030" href="data/content-0030.png" media-type="image/png" />
+    <item id="content-0031" href="data/content-0031.png" media-type="image/png" />
+    <item id="content-0032" href="content/content-0032.xml" media-type="application/xhtml+xml" />
+    <item id="content-0033" href="data/content-0033.png" media-type="image/png" />
+    <item id="content-0034" href="data/content-0034.png" media-type="image/png" />
+    <item id="content-0035" href="content/content-0035.xml" media-type="application/xhtml+xml" />
+    <item id="content-0036" href="content/content-0036.xml" media-type="application/xhtml+xml" />
+    <item id="content-0037" href="content/content-0037.xml" media-type="application/xhtml+xml" />
+    <item id="content-0038" href="data/content-0038.png" media-type="image/png" />
+    <item id="content-0039" href="data/content-0039.png" media-type="image/png" />
+    <item id="content-0040" href="data/content-0040.png" media-type="image/png" />
+    <item id="content-0041" href="data/content-0041.png" media-type="image/png" />
+    <item id="content-0042" href="content/content-0042.xml" media-type="application/xhtml+xml" />
+    <item id="content-0043" href="data/content-0043.png" media-type="image/png" />
+    <item id="content-0044" href="data/content-0044.png" media-type="image/png" />
+    <item id="content-0045" href="content/content-0045.xml" media-type="application/xhtml+xml" />
+    <item id="content-0046" href="data/content-0046.png" media-type="image/png" />
+    <item id="content-0047" href="data/content-0047.png" media-type="image/png" />
+    <item id="content-0048" href="content/content-0048.xml" media-type="application/xhtml+xml" />
+    <item id="content-0049" href="data/content-0049.png" media-type="image/png" />
+    <item id="content-0050" href="data/content-0050.png" media-type="image/png" />
+    <item id="content-0051" href="content/content-0051.xml" media-type="application/xhtml+xml" />
+    <item id="content-0052" href="data/content-0052.png" media-type="image/png" />
+    <item id="content-0053" href="content/content-0053.xml" media-type="application/xhtml+xml" />
+    <item id="content-0054" href="data/content-0054.png" media-type="image/png" />
+    <item id="content-0055" href="content/content-0055.xml" media-type="application/xhtml+xml" />
+    <item id="content-0056" href="data/content-0056.png" media-type="image/png" />
+    <item id="content-0057" href="data/content-0057.png" media-type="image/png" />
+    <item id="content-0058" href="content/content-0058.xml" media-type="application/xhtml+xml" />
+    <item id="content-0059" href="content/content-0059.xml" media-type="application/xhtml+xml" />
+    <item id="content-0060" href="content/content-0060.xml" media-type="application/xhtml+xml" />
+    <item id="content-0061" href="data/content-0061.png" media-type="image/png" />
+    <item id="content-0062" href="content/content-0062.xml" media-type="application/xhtml+xml" />
+    <item id="content-0063" href="content/content-0063.xml" media-type="application/xhtml+xml" />
+    <item id="content-0064" href="data/content-0064.png" media-type="image/png" />
+    <item id="content-0065" href="content/content-0065.xml" media-type="application/xhtml+xml" />
+    <item id="content-0066" href="data/content-0066.png" media-type="image/png" />
+    <item id="content-0067" href="data/content-0067.png" media-type="image/png" />
+    <item id="content-0068" href="content/content-0068.xml" media-type="application/xhtml+xml" />
+    <item id="content-0069" href="data/content-0069.png" media-type="image/png" />
+    <item id="content-0070" href="data/content-0070.jpg" media-type="image/jpeg" />
+    <item id="content-0071" href="content/content-0071.xml" media-type="application/xhtml+xml" />
+    <item id="content-0072" href="content/content-0072.xml" media-type="application/xhtml+xml" />
+    <item id="_page_map_" href="_page_map_.xml" media-type="application/oebps-page-map+xml" />
+  </manifest>
+  <spine toc="_toc_ncx_" page-map="_page_map_">
+    <itemref idref="content-0009" />
+    <itemref idref="content-0011" />
+    <itemref idref="content-0013" />
+    <itemref idref="content-0014" />
+    <itemref idref="content-0016" />
+    <itemref idref="content-0018" />
+    <itemref idref="content-0023" />
+    <itemref idref="content-0024" />
+    <itemref idref="content-0028" />
+    <itemref idref="content-0029" />
+    <itemref idref="content-0032" />
+    <itemref idref="content-0035" />
+    <itemref idref="content-0036" />
+    <itemref idref="content-0037" />
+    <itemref idref="content-0042" />
+    <itemref idref="content-0045" />
+    <itemref idref="content-0048" />
+    <itemref idref="content-0051" />
+    <itemref idref="content-0053" />
+    <itemref idref="content-0055" />
+    <itemref idref="content-0058" />
+    <itemref idref="content-0059" />
+    <itemref idref="content-0060" />
+    <itemref idref="content-0062" />
+    <itemref idref="content-0063" />
+    <itemref idref="content-0065" />
+    <itemref idref="content-0068" />
+    <itemref idref="content-0071" />
+    <itemref idref="content-0072" />
+  </spine>
+  <guide>
+    <reference type="cover" title="Cover Page" href="content/content-0009.xml" />
+  </guide>
+</package>

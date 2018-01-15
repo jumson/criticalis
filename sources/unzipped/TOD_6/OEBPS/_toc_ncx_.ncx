@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE ncx PUBLIC "-//NISO//DTD ncx 2005-1//EN" "http://www.daisy.org/z3986/2005/ncx-2005-1.dtd"><ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1" xml:lang="en">
+  <head>
+    <meta name="dtb:uid" content="GoogleId" />
+    <meta name="dtb:depth" content="1" />
+    <meta name="dtb:totalPageCount" content="0" />
+    <meta name="dtb:maxPageNumber" content="0" />
+  </head>
+  <docTitle>
+    <text>The Treasury of David</text>
+  </docTitle>
+  <docAuthor>
+    <text>Charles Haddon Spurgeon</text>
+  </docAuthor>
+  <navMap>
+    <navPoint id="content-0010" playOrder="1">
+      <navLabel>
+        <text>Front Cover</text>
+      </navLabel>
+      <content src="content/content-0010.xml" />
+    </navPoint>
+    <navPoint id="content-0013" playOrder="2">
+      <navLabel>
+        <text>PSALM ...</text>
+      </navLabel>
+      <content src="content/content-0013.xml" />
+    </navPoint>
+    <navPoint id="content-0016" playOrder="3">
+      <navLabel>
+        <text>PSALM LXXX. ...</text>
+      </navLabel>
+      <content src="content/content-0016.xml" />
+    </navPoint>
+    <navPoint id="content-0017" playOrder="4">
+      <navLabel>
+        <text>14. &quot;Return, we beseech thee, 0 God of hosts.&quot; Turn ...</text>
+      </navLabel>
+      <content src="content/content-0017.xml" />
+    </navPoint>
+    <navPoint id="content-0019" playOrder="5">
+      <navLabel>
+        <text>PSALM LXXXI. ...</text>
+      </navLabel>
+      <content src="content/content-0019.xml" />
+    </navPoint>
+    <navPoint id="content-0022" playOrder="6">
+      <navLabel>
+        <text>PSALM LXXXII. ...</text>
+      </navLabel>
+      <content src="content/content-0022.xml" />
+    </navPoint>
+    <navPoint id="content-0024" playOrder="7">
+      <navLabel>
+        <text>PSALM LXXXIII. ...</text>
+      </navLabel>
+      <content src="content/content-0024.xml" />
+    </navPoint>
+    <navPoint id="content-0025" playOrder="8">
+      <navLabel>
+        <text>PSALM LXXXIV. ...</text>
+      </navLabel>
+      <content src="content/content-0025.xml" />
+    </navPoint>
+    <navPoint id="content-0026" playOrder="9">
+      <navLabel>
+        <text>the choicest heritage a son of man can possess. &quot;They ...</text>
+      </navLabel>
+      <content src="content/content-0026.xml" />
+    </navPoint>
+    <navPoint id="content-0027" playOrder="10">
+      <navLabel>
+        <text>him. &quot;In whose heart,&quot; etc. When the doctrines, precepts, ...</text>
+      </navLabel>
+      <content src="content/content-0027.xml" />
+    </navPoint>
+    <navPoint id="content-0030" playOrder="11">
+      <navLabel>
+        <text>PSALM LXXXV. ...</text>
+      </navLabel>
+      <content src="content/content-0030.xml" />
+    </navPoint>
+    <navPoint id="content-0031" playOrder="12">
+      <navLabel>
+        <text>piety, nnd endeavoured to imitate his affections, began to faint ...</text>
+      </navLabel>
+      <content src="content/content-0031.xml" />
+    </navPoint>
+    <navPoint id="content-0034" playOrder="13">
+      <navLabel>
+        <text>PSALM LXXXVI. ...</text>
+      </navLabel>
+      <content src="content/content-0034.xml" />
+    </navPoint>
+    <navPoint id="content-0035" playOrder="14">
+      <navLabel>
+        <text>from him plenteously. 4. His very discrimination is gracious—&quot; all ...</text>
+      </navLabel>
+      <content src="content/content-0035.xml" />
+    </navPoint>
+    <navPoint id="content-0036" playOrder="15">
+      <navLabel>
+        <text>PSALM LXXXVII. ...</text>
+      </navLabel>
+      <content src="content/content-0036.xml" />
+    </navPoint>
+    <navPoint id="content-0039" playOrder="16">
+      <navLabel>
+        <text>PSALM LXXXVIII. ...</text>
+      </navLabel>
+      <content src="content/content-0039.xml" />
+    </navPoint>
+    <navPoint id="content-0042" playOrder="17">
+      <navLabel>
+        <text>Verse 0.—The first clause seems literally to mean ...</text>
+      </navLabel>
+      <content src="content/content-0042.xml" />
+    </navPoint>
+    <navPoint id="content-0043" playOrder="18">
+      <navLabel>
+        <text>PSALM LXXXIX. ...</text>
+      </navLabel>
+      <content src="content/content-0043.xml" />
+    </navPoint>
+    <navPoint id="content-0048" playOrder="19">
+      <navLabel>
+        <text>his oath and covenant. Moreover, he is the Holy One ...</text>
+      </navLabel>
+      <content src="content/content-0048.xml" />
+    </navPoint>
+    <navPoint id="content-0050" playOrder="20">
+      <navLabel>
+        <text>Verse 7.—&apos;&apos;God is greatly to be feared.&quot; The ...</text>
+      </navLabel>
+      <content src="content/content-0050.xml" />
+    </navPoint>
+    <navPoint id="content-0051" playOrder="21">
+      <navLabel>
+        <text>Verse 51 (second clause). —The Chaldee has: &quot;They have scoffed ...</text>
+      </navLabel>
+      <content src="content/content-0051.xml" />
+    </navPoint>
+    <navPoint id="content-0055" playOrder="22">
+      <navLabel>
+        <text>PSALM X C. ...</text>
+      </navLabel>
+      <content src="content/content-0055.xml" />
+    </navPoint>
+    <navPoint id="content-0057" playOrder="23">
+      <navLabel>
+        <text>inhabit, the sea for fishes, the air for fowls, and ...</text>
+      </navLabel>
+      <content src="content/content-0057.xml" />
+    </navPoint>
+    <navPoint id="content-0058" playOrder="24">
+      <navLabel>
+        <text>hypostatic wisdom described by Solomon, Prov. vii. 15 -31. and ...</text>
+      </navLabel>
+      <content src="content/content-0058.xml" />
+    </navPoint>
+    <navPoint id="content-0061" playOrder="25">
+      <navLabel>
+        <text>PSALM XCT. ...</text>
+      </navLabel>
+      <content src="content/content-0061.xml" />
+    </navPoint>
+    <navPoint id="content-0063" playOrder="26">
+      <navLabel>
+        <text>and recalling his blessed experiences of sweet communion with God...</text>
+      </navLabel>
+      <content src="content/content-0063.xml" />
+    </navPoint>
+    <navPoint id="content-0065" playOrder="27">
+      <navLabel>
+        <text>and I will be their God.&quot;—Jeremiah Dyke, in ...</text>
+      </navLabel>
+      <content src="content/content-0065.xml" />
+    </navPoint>
+    <navPoint id="content-0066" playOrder="28">
+      <navLabel>
+        <text>PSALM XCII. ...</text>
+      </navLabel>
+      <content src="content/content-0066.xml" />
+    </navPoint>
+    <navPoint id="content-0069" playOrder="29">
+      <navLabel>
+        <text>God&apos;s hnnds. IIow majestically Milton sang when he said of ...</text>
+      </navLabel>
+      <content src="content/content-0069.xml" />
+    </navPoint>
+    <navPoint id="content-0070" playOrder="30">
+      <navLabel>
+        <text>PSALM XCIII. ...</text>
+      </navLabel>
+      <content src="content/content-0070.xml" />
+    </navPoint>
+    <navPoint id="content-0071" playOrder="31">
+      <navLabel>
+        <text>taken for the habitable globe, and metonymically for the inhabitants ...</text>
+      </navLabel>
+      <content src="content/content-0071.xml" />
+    </navPoint>
+    <navPoint id="content-0074" playOrder="32">
+      <navLabel>
+        <text>PSALM XCIV. ...</text>
+      </navLabel>
+      <content src="content/content-0074.xml" />
+    </navPoint>
+    <navPoint id="content-0075" playOrder="33">
+      <navLabel>
+        <text>Verm 9, 10.—It was no limited power that ...</text>
+      </navLabel>
+      <content src="content/content-0075.xml" />
+    </navPoint>
+    <navPoint id="content-0077" playOrder="34">
+      <navLabel>
+        <text>PSALM XCV. ...</text>
+      </navLabel>
+      <content src="content/content-0077.xml" />
+    </navPoint>
+    <navPoint id="content-0080" playOrder="35">
+      <navLabel>
+        <text>though he cannot be tempted of evil, and will never ...</text>
+      </navLabel>
+      <content src="content/content-0080.xml" />
+    </navPoint>
+    <navPoint id="content-0081" playOrder="36">
+      <navLabel>
+        <text>PSALM XCVI. ...</text>
+      </navLabel>
+      <content src="content/content-0081.xml" />
+    </navPoint>
+    <navPoint id="content-0082" playOrder="37">
+      <navLabel>
+        <text>11 Let the heavens rejoice, and let the earth ...</text>
+      </navLabel>
+      <content src="content/content-0082.xml" />
+    </navPoint>
+    <navPoint id="content-0083" playOrder="38">
+      <navLabel>
+        <text>PSALM XCVII. ...</text>
+      </navLabel>
+      <content src="content/content-0083.xml" />
+    </navPoint>
+    <navPoint id="content-0086" playOrder="39">
+      <navLabel>
+        <text>Islands, and true Formosas. Many a land owes its peace ...</text>
+      </navLabel>
+      <content src="content/content-0086.xml" />
+    </navPoint>
+    <navPoint id="content-0089" playOrder="40">
+      <navLabel>
+        <text>man. 2. His inability to keep the law. 3. To ...</text>
+      </navLabel>
+      <content src="content/content-0089.xml" />
+    </navPoint>
+    <navPoint id="content-0093" playOrder="41">
+      <navLabel>
+        <text>PSALM ...</text>
+      </navLabel>
+      <content src="content/content-0093.xml" />
+    </navPoint>
+    <navPoint id="content-0097" playOrder="42">
+      <navLabel>
+        <text>PSALM XCIX. ...</text>
+      </navLabel>
+      <content src="content/content-0097.xml" />
+    </navPoint>
+    <navPoint id="content-0100" playOrder="43">
+      <navLabel>
+        <text>PSALM C. ...</text>
+      </navLabel>
+      <content src="content/content-0100.xml" />
+    </navPoint>
+    <navPoint id="content-0101" playOrder="44">
+      <navLabel>
+        <text>a moment, if he did not every moment bear them ...</text>
+      </navLabel>
+      <content src="content/content-0101.xml" />
+    </navPoint>
+    <navPoint id="content-0102" playOrder="45">
+      <navLabel>
+        <text>PSALM CI. ...</text>
+      </navLabel>
+      <content src="content/content-0102.xml" />
+    </navPoint>
+    <navPoint id="content-0103" playOrder="46">
+      <navLabel>
+        <text>PSALM CII. ...</text>
+      </navLabel>
+      <content src="content/content-0103.xml" />
+    </navPoint>
+    <navPoint id="content-0105" playOrder="47">
+      <navLabel>
+        <text>Verie 8.—&quot;Mine enemies reproach etc. If I be ...</text>
+      </navLabel>
+      <content src="content/content-0105.xml" />
+    </navPoint>
+    <navPoint id="content-0109" playOrder="48">
+      <navLabel>
+        <text>PSALM CIII. ...</text>
+      </navLabel>
+      <content src="content/content-0109.xml" />
+    </navPoint>
+    <navPoint id="content-0111" playOrder="49">
+      <navLabel>
+        <text>faith and hope are not strangers to us, whence is ...</text>
+      </navLabel>
+      <content src="content/content-0111.xml" />
+    </navPoint>
+    <navPoint id="content-0112" playOrder="50">
+      <navLabel>
+        <text>About this Book - From Google</text>
+      </navLabel>
+      <content src="content/content-0112.xml" />
+    </navPoint>
+  </navMap>
+</ncx>
