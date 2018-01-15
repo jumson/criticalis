@@ -43,8 +43,8 @@ This project will need to be a synthesis of an ePub reader and a git client. I'l
 
 Potential sources of implementations: 
 - ePub reading
-    - simple ePub streamer #[npm install epub](https://www.npmjs.com/package/epub) and the #[github page](https://github.com/julien-c/epub)
-    - ePub to JSON, and some HTML generation - could be useful #[npm install epub-parser](https://www.npmjs.com/package/epub-parser) and #[the github](https://github.com/Vaporbook/epub-parser)
+    - simple ePub streamer !#[npm install epub](https://www.npmjs.com/package/epub) and the !#[github page](https://github.com/julien-c/epub)
+    - ePub to JSON, and some HTML generation - could be useful [npm install epub-parser](https://www.npmjs.com/package/epub-parser) and [the github](https://github.com/Vaporbook/epub-parser)
     - ePub from HTML #[npm install epub-gen](https://www.npmjs.com/package/epub-gen) and #[the github](https://github.com/cyrilis/epub-gen)
     - A streaming EPUB3 writer #[npm install streampub](https://www.npmjs.com/package/streampub) and #[the github](https://github.com/iarna/streampub)
     - The Readium projects look pretty good for rendering ePub3 content  #[the main site](http://readium.github.io/readium-project/) and the #[readium-shared-js](https://github.com/readium/readium-shared-js)
