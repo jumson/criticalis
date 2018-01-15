@@ -30,11 +30,11 @@ The ePubs will need to be decompressed and possibly formatted in such a way as t
 
 As an example for what we are working with, Psalm 1 begins on **page 20** of the file **The_Treasury_of_David-I.pdf**: and looks like this:
 
-<img src="images/example1.PNG?raw=true" width="300" alt="example-pdf-1"/>
+<img src="images/example1.PNG?raw=true" width="600" alt="example-pdf-1"/>
 
 The ePub version (**The_Treasury_of_David-I.epub**) is rendered like so: 
 
-<img src="images/example2.PNG?raw=true" width="300" alt="example-ePub-1"/>
+<img src="images/example2.PNG?raw=true" width="600" alt="example-ePub-1"/>
 
 And, inside the ePub, the xml file (**content-0012.xml**) shows this starting on line **1078**:
 
