@@ -1,6 +1,8 @@
 # criticalis
 The purpose of this project is to create a platform to enable everyone to contribute to the improvement of popular works in the public domain. 
 
+This project will use a favorite text of mine as the initial "subject." "The Treasury of David" is an original exposition and commentary on the book of Psalms by C. H. Spurgeon, composed in seven volumes, published in the late 19th century.
+
 ## Kinds of Improvements
 ### Corrections
 Specifically, the correcting of older works where a computer generated version (using Optical Character Recognition) may have made mistakes due to peculiarities in language and printing styles.
@@ -35,7 +37,6 @@ The format will be html, and contained in epub format. More on this as I explore
     It needs to support, at a minimum, highlighting, and hyperlinks for referencing footnotes and whatnot.
 
 ## The way ahead
-This project will use a favorite text of mine as the initial "subject." "The Treasury of David" is an original exposition and commentary on the book of Psalms by C. H. Spurgeon, composed in seven volumes, published in the late 19th century.
 
 ### Digestion / Implementation Notes / Examples (this is a living document)
 The ePubs will need to be decompressed and possibly formatted in such a way as to ensure workable 'chunks' can be selected and changed, as in Git. I'll likely attempt to find an ePub reader already implemented, open source, and modify it to allow for good referencing of chunks.
