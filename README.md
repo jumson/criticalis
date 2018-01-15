@@ -39,7 +39,7 @@ The ePub version (**The_Treasury_of_David-I.epub**) is rendered like so:
 And, inside the ePub, the xml file (**content-0012.xml**) shows this starting on line **1078**:
 
 
-```
+```xml
     <div class='flow' style=''>
       <a class='page' id='GBS.PA1'></a>
       <div id='block.18.1.0.box.179.412.1310.1953.q.60' class='gtxt_body'>
