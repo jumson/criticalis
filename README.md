@@ -43,13 +43,23 @@ This project will need to be a synthesis of an ePub reader and a git client. I'l
 
 Potential sources of implementations: 
 - ePub reading
-    - simple ePub streamer !#[npm install epub](https://www.npmjs.com/package/epub) and the !#[github page](https://github.com/julien-c/epub)
+    - simple ePub streamer [npm install epub](https://www.npmjs.com/package/epub) and the [github page](https://github.com/julien-c/epub)
     - ePub to JSON, and some HTML generation - could be useful [npm install epub-parser](https://www.npmjs.com/package/epub-parser) and [the github](https://github.com/Vaporbook/epub-parser)
-    - ePub from HTML #[npm install epub-gen](https://www.npmjs.com/package/epub-gen) and #[the github](https://github.com/cyrilis/epub-gen)
-    - A streaming EPUB3 writer #[npm install streampub](https://www.npmjs.com/package/streampub) and #[the github](https://github.com/iarna/streampub)
-    - The Readium projects look pretty good for rendering ePub3 content  #[the main site](http://readium.github.io/readium-project/) and the #[readium-shared-js](https://github.com/readium/readium-shared-js)
-    - This may be a more simple integration #[Future Press](http://futurepress.org/) and #[the github](https://github.com/futurepress/epub.js)
+    - ePub from HTML [npm install epub-gen](https://www.npmjs.com/package/epub-gen) and [the github](https://github.com/cyrilis/epub-gen)
+    - A streaming EPUB3 writer [npm install streampub](https://www.npmjs.com/package/streampub) and [the github](https://github.com/iarna/streampub)
+    - The Readium projects look pretty good for rendering ePub3 content  [the main site](http://readium.github.io/readium-project/) and the [readium-shared-js](https://github.com/readium/readium-shared-js)
+    - This may be a more simple integration [Future Press](http://futurepress.org/) and [the github](https://github.com/futurepress/epub.js)
         - it looks quite promising :"*Similar to a plugins, Epub.js implements events that can be "hooked" into. Thus you can interact with and manipulate the contents of the book.*"
+    - Hypothesis looks promising as well - it can run on top of HTML for annotations [The website](https://web.hypothes.is/) and [the github](https://github.com/hypothesis/)
+        - this is likely more than I need -- the user can highlight a word and suggest the corrected word. If that data gets back to the server, the server can make the edit in the xml. 
+        - Additionally, the user can highlight a phrase and comment with a a syntax that allows the server to parse it as a suggested footnote, rather than a correction.
+            - perhaps something like: "note: this phrase is referring to the king of england at that time - Henry the VIII"
+
+- Version controlling
+    - NodeGit seems legit [main website](http://www.nodegit.org/) and [the github](https://github.com/nodegit/nodegit)
+    - this seems simple [npm install simple-git](https://github.com/steveukx/git-js)
+    - another library for Git using node-js [npm install git](https://www.npmjs.com/package/git) and [the github](https://github.com/christkv/node-git)
+    - this appears to be a complete library for all of the GITHUB API! [GitHub REST API client (docs) for Node.js](https://octokit.github.io/node-github/) and [the github](https://github.com/octokit/node-github) and [some more API specific stuff](https://developer.github.com/v3/)
 
 As an example for what we are working with, the two graphics at the top of the page show Psalm 1, rendered in PDF and ePub. Below, is what it looks like inside the xml file (**content-0012.xml**) shows starting on line **1078** and skips a little to show how a paragraph ends and starts again:
 
