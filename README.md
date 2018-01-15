@@ -33,7 +33,7 @@ Other contributers should be able to see the recommendation and either approve o
 
 The curator of the work will be the one who decides if the corrective will make the cut, and the 'community improved' version will be the result.
 
-The format will be html, and contained in epub format. More on this as I explore the capabilities and requirements.
+The format will be the epub format. More on this will be forthcoming as I explore the capabilities and requirements.
     It needs to support, at a minimum, highlighting, and hyperlinks for referencing footnotes and whatnot.
 
 ## The way ahead
@@ -87,6 +87,10 @@ As an example for what we are working with, the two graphics at the top of the p
 and it goes on like that. This excerpt shows how the first two paragraphs were assembled and the kind of thing we are dealing with.
 
 The ideal situation would allow for a tap or a click on a word, and the selection of a phrase if wanted, and that being able to be modified and pushed back into the xml to simple change spelling.wording/punctuation -- or to add footnotes/references (which may require something more).
+
+Each change submitted by the user would end up, in the backgound, being transmitted as commits and pull requests and/or issues.
+
+There will need to be two branches -- one where the changes are viewable by all, and another where the accepted changes are integrated as a 'final' product.
 
 A separate project would be perhaps some kind of machine learning method to take all these corrections and come up with a better OCR algorithm.
 
