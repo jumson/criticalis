@@ -1,5 +1,6 @@
 # criticalis
 The purpose of this project is to create a platform to enable everyone to contribute to the improvement of popular works in the public domain. 
+The outcome being high quality, annotated works that are accessible to successive generations. 
 
 This project will use a favorite text of mine as the initial "subject." "The Treasury of David" is an original exposition and commentary on the book of Psalms by C. H. Spurgeon, composed in seven volumes, published in the late 19th century.
 
