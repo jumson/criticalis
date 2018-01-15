@@ -14,9 +14,13 @@ For example, here is Psalm 1, first as originally printed in PDF, and then as an
 <img src="images/example2-h.PNG?raw=true" width="600" alt="example-epub-2"/>
 
 ### Explanations
-Many aging works contain phrases, spellings, and references that today are at best, meaningless, and at worst, confusing. The community would be helped to see a simple footnote explaining these things or providing references for further study.
+Many aging works contain phrases, spellings, obscure words and references that a modern reader may find confusing. The community would be helped to see a simple footnote explaining these things or providing references for further study.
 
-(eventually show an example of this kind of improvement)
+For example, the word **controverted** as seen below was about 10 times more popular in 1880 as it is today, and still, is not very common.
+
+<img src="images/example3.PNG?raw=true" width="600" alt="example-3"/>
+
+<iframe name="ngram_chart" src="https://books.google.com/ngrams/interactive_chart?content=controverted&case_insensitive=on&year_start=1800&year_end=2018&corpus=15&smoothing=7&share=&direct_url=t4%3B%2Ccontroverted%3B%2Cc0%3B%2Cs0%3B%3Bcontroverted%3B%2Cc0%3B%3BControverted%3B%2Cc0" width=900 height=500 marginwidth=0 marginheight=0 hspace=0 vspace=0 frameborder=0 scrolling=no></iframe>
 
 ## How it works
 The basic idea is nothing less than a very simplified interface for version control, like GitHub, but focused on texts. It needs to be simplified for the kinds of people that are best suited to making these corrections or comments. From the merely interested to world renown experts, rarely would they also be familiar with all the ins and outs of setting up 'git' on their system, cloning, branching, submitting pull requests, etc. This should all be as seamless as a social media platform where users can comment and press an up or down arrow to show approval (or disapproval).
