@@ -49,7 +49,7 @@ Potential sources of implementations:
     - A streaming EPUB3 writer #[npm install streampub](https://www.npmjs.com/package/streampub) and #[the github](https://github.com/iarna/streampub)
     - The Readium projects look pretty good for rendering ePub3 content  #[the main site](http://readium.github.io/readium-project/) and the #[readium-shared-js](https://github.com/readium/readium-shared-js)
     - This may be a more simple integration #[Future Press](http://futurepress.org/) and #[the github](https://github.com/futurepress/epub.js)
-        - it looks quite promising > Similar to a plugins, Epub.js implements events that can be "hooked" into. Thus you can interact with and manipulate the contents of the book.
+        - it looks quite promising :"*Similar to a plugins, Epub.js implements events that can be "hooked" into. Thus you can interact with and manipulate the contents of the book.*"
 
 As an example for what we are working with, the two graphics at the top of the page show Psalm 1, rendered in PDF and ePub. Below, is what it looks like inside the xml file (**content-0012.xml**) shows starting on line **1078** and skips a little to show how a paragraph ends and starts again:
 
