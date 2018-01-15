@@ -5,7 +5,7 @@ This project will use a favorite text of mine as the initial "subject." "The Tre
 
 ## Kinds of Improvements
 ### Corrections
-Specifically, the correcting of older works where a computer generated version (using Optical Character Recognition) may have made mistakes due to peculiarities in language and printing styles.
+Specifically, the correcting of older works where a computer generated version (using Optical Character Recognition) may have made mistakes due to peculiarities in language and printing styles (or insufficient algorithms).
 
 Contributers may reference the original documents, but many of these errors are self evident.
 
@@ -91,7 +91,7 @@ The ideal situation would allow for a tap or a click on a word, and the selectio
 A separate project would be perhaps some kind of machine learning method to take all these corrections and come up with a better OCR algorithm.
 
 
-## Public References (If I have obtained a downloaded copy, as available, they will be #[found here]() in this repository as well)
+## Public References (downloaded copies are linked below and #[found here](sources/))
 - The main source I retrieved the books from
     - #[Volume 1](https://books.google.com/books?id=XRZVAAAAYAAJ)
     - #[Volume 2](https://books.google.com/books?id=JeFJAAAAMAAJ)
