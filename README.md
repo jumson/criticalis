@@ -39,7 +39,7 @@ The format will be the epub format. More on this will be forthcoming as I explor
 ## The way ahead
 
 ### Digestion / Implementation Notes / Examples (this is a living document)
-The ePubs will need to be decompressed and possibly formatted in such a way as to ensure workable 'chunks' can be selected and changed, as in Git. I'll likely attempt to find an ePub reader already implemented, open source, and modify it to allow for good referencing of chunks.
+This project will need to be a synthesis of an ePub reader and a git client. I'll likely attempt to find an open source ePub reader and a git client already implemented in NodeJS, and modify them to allow for good referencing of chunks.
 
 As an example for what we are working with, the two graphics at the top of the page show Psalm 1, rendered in PDF and ePub. Below, is what it looks like inside the xml file (**content-0012.xml**) shows starting on line **1078** and skips a little to show how a paragraph ends and starts again:
 
@@ -88,7 +88,7 @@ and it goes on like that. This excerpt shows how the first two paragraphs were a
 
 The ideal situation would allow for a tap or a click on a word, and the selection of a phrase if wanted, and that being able to be modified and pushed back into the xml to simple change spelling.wording/punctuation -- or to add footnotes/references (which may require something more).
 
-Each change submitted by the user would end up, in the backgound, being transmitted as commits and pull requests and/or issues.
+Each change submitted by the user would end up, in the background, being transmitted as commits and pull requests and/or issues. Ideally, only the .xml file is compressed and pushed, not the entire ePub. This will make things faster and preserve bandwidth.
 
 There will need to be two branches -- one where the changes are viewable by all, and another where the accepted changes are integrated as a 'final' product.
 
