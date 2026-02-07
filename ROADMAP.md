@@ -18,6 +18,7 @@ This document serves as both a **technical roadmap** and a **decision log**. It 
 - [Phase 3 — Community Layer](#phase-3--community-layer)
 - [Phase 4 — Curation & Publishing](#phase-4--curation--publishing)
 - [Phase 5 — Scale & Polish](#phase-5--scale--polish)
+- [Phase 6 — Multi-Corpus & TEI Support](#phase-6--multi-corpus--tei-support)
 - [Future Horizons](#future-horizons)
 - [Technology Reference](#technology-reference)
 
@@ -92,6 +93,7 @@ All three services (OpenResty, SvelteKit, PostgreSQL) run as Docker containers o
 | **Database** | [PostgreSQL](https://www.postgresql.org/) | PostgreSQL License | Full-text search, JSONB, audit capabilities |
 | **ORM** | [Drizzle ORM](https://orm.drizzle.team/) | Apache 2.0 | Type-safe, SQL-like, lightweight |
 | **Auth** | [Better Auth](https://www.better-auth.com/) | MIT | OSS, framework-agnostic, successor to Auth.js |
+| **Text Encoding** | [TEI P5 XML](https://tei-c.org/guidelines/p5/) | Open | Standard for digital humanities texts; Phase 6 for EEBO/ECCO/TCP corpus |
 | **Notifications** | [Novu](https://github.com/novuhq/novu) | MIT (core) | In-app + email, workflow engine |
 | **Real-time** | Server-Sent Events (native) | — | Built into SvelteKit, no extra dependency |
 | **Reverse Proxy** | [OpenResty](https://openresty.org/) | BSD | nginx + Lua, rate limiting, security headers |
@@ -369,6 +371,134 @@ A production-grade platform capable of hosting multiple public domain texts with
 
 ---
 
+## Phase 6 — Multi-Corpus & TEI Support
+
+**Goal:** Extend the platform beyond ePub/OCR texts to support the vast public domain corpus of early printed books transcribed by the Text Creation Partnership (TCP), encoded in TEI P5 XML.
+
+### Background
+
+The **Text Creation Partnership** has produced over 70,000 accurate full-text transcriptions of early printed books from:
+
+- **EEBO (Early English Books Online)** — books printed in England, Ireland, Scotland, Wales, and British North America between 1473 and 1700
+- **ECCO (Eighteenth Century Collections Online)** — books printed in the UK and Americas between 1701 and 1800
+
+These transcriptions were **double-keyed** (typed twice, compared for accuracy) and encoded in **TEI P5 XML** with structural markup for chapters, poems, lists, tables, marginalia, and more. EEBO-TCP Phase I (25,000+ texts) and Phase II (40,000+ texts) are now **public domain (CC0)**, freely downloadable from the TCP's GitHub repository.
+
+Despite their quality, these transcriptions have known gaps and errors:
+
+- **Non-Latin scripts** left as placeholders (e.g., `〈 in non-Latin alphabet 〉`) — Greek, Hebrew, Syriac, Arabic
+- **Latin phrases** sometimes garbled or truncated
+- **Archaic typography** — long S (ſ), ligatures, abbreviation marks
+- **Structural gaps** — complex tables, verse layouts, and marginalia may be incompletely tagged
+
+Criticalis can serve as the platform where scholars, students, and enthusiasts collaboratively fill these gaps by comparing the TEI transcriptions against the original page scans.
+
+### Tasks
+
+- [ ] **6.1** — Side-by-side scan viewer:
+  - Display the scanned page image (PDF page, JPEG, or TIFF) alongside the electronic text
+  - Synchronized scrolling/navigation — selecting a passage in the text highlights the approximate region in the scan, and vice versa
+  - Zoom and pan controls for the scan image
+  - **Scan sources** (three tiers):
+    - **Platform-provided**: scans sourced from Internet Archive, ProQuest (EEBO/ECCO), or other archives — publicly visible to all users
+    - **User-uploaded**: users upload their own scans (PDF, images) to work with a text — **private by default**, visible only to the uploader
+    - **Shared**: user-uploaded scans can be explicitly shared with specific individuals (by invitation) but remain non-public unless the uploader opts to release them
+  - Support for PDF (rendered page-by-page), IIIF image API (used by many digital libraries), and static image files
+  - **Privacy rationale**: some users may have institutional access to scans (e.g., via ProQuest) that cannot be redistributed. They should still be able to use those scans for correction work on the platform without exposing the images to the public. Corrections to the *text* (which is CC0) remain public; the *scan images* used to make those corrections may be private.
+
+- [ ] **6.2** — TEI P5 XML ingestion and rendering:
+  - Parse TEI P5 XML into a readable view, respecting structural markup (divisions, paragraphs, verse, tables, marginalia, front/back matter)
+  - Render TEI elements with appropriate styling (e.g., `<hi rend="italic">` → italic, `<foreign>` → language-tagged, `<gap>` → visible placeholder indicating a gap needing correction)
+  - **Immutable original**: the ingested P5 XML is stored as-is, byte-for-byte. Corrections are stored as a separate annotation layer in the database, keyed to positions in the original XML (e.g., XPath + character offset). The rendered view overlays approved corrections onto the original text (toggle to show original vs. corrected).
+  - Handle TEI-specific constructs: `<choice>` (original/regularized spellings), `<abbr>`/`<expan>`, `<sic>`/`<corr>`, `<add>`/`<del>`
+
+- [ ] **6.3** — Special character input (three-layer system):
+  - **Layer 1 — Character Quick-Access Bar**: toggleable toolbar with common special characters (`ſ þ ð ƿ Þ Ð æ œ ā ē ī ō ū` etc.). Click to insert at cursor. Custom component, no dependencies.
+  - **Layer 2 — Searchable Character Picker**: expandable panel with fuzzy text search against Unicode names and custom aliases (e.g., type "long s" → `ſ`), categorized browsing (Archaic English, Latin Diacriticals, Greek, Hebrew, Combining Marks), and a recently-used section (persisted in localStorage). Curated dataset of ~200-300 characters relevant to early printed books.
+  - **Layer 3 — KeymanWeb (SIL International)**: on-demand loading for full script input sessions. Use `sil_greek_polytonic` for polytonic Greek (handles breathing marks, accents, iota subscript, all dead-key sequences) and `sil_hebrew` for Hebrew with nikkud. MIT licensed, CDN-distributed, renders on-screen keyboard automatically on touch devices.
+  - All character input normalized to NFC (`String.prototype.normalize('NFC')`) before storage
+  - Web fonts: Gentium Plus / Noto Serif for Greek, Ezra SIL / Noto Serif Hebrew for Hebrew
+  - Copy-paste from external sources also normalized to NFC on input
+
+- [ ] **6.4** — AI-assisted correction (BYOK — Bring Your Own Key):
+  - **Region-select OCR**: user draws a box around difficult text in the page scan (foreign script, damaged/faded, archaic font) and sends that region for AI interpretation
+  - **Page-by-page batch mode**: process an entire page's transcription against the scan, with the AI identifying discrepancies and suggesting corrections
+  - Result is always presented as a *suggestion* for human review — never auto-applied
+  - Confidence scoring — flag low-confidence interpretations for expert review
+  - **BYOK provider system** — users supply their own AI credentials:
+    - Cloud APIs: OpenAI, Anthropic (Claude), Google (Gemini) — user enters their API key in account settings
+    - Local/self-hosted: Ollama endpoint URL, or any OpenAI-compatible API endpoint (LM Studio, vLLM, etc.)
+    - Platform may also offer a shared/subsidized tier for light usage (with rate limits)
+  - **Usage tracking and cost controls**:
+    - Token counting per request (input/output tokens displayed before confirming)
+    - Per-user usage dashboard: total tokens consumed, estimated cost, history
+    - Configurable limits: per-request token cap, daily/monthly budget ceiling, auto-pause when limit reached
+    - Cost estimation before sending a request ("This will use ~2,000 tokens, est. $0.006")
+  - **Client-side OCR option**: Tesseract.js (WASM, runs entirely in the browser) as a free, no-API-key-needed baseline for printed text — lower accuracy than cloud models but zero cost and no data leaving the user's machine
+
+- [ ] **6.5** — Export pipelines:
+  - **P5-to-P5 export** (primary for TEI sources): produce a corrected TEI P5 XML file that weaves approved corrections into the original using TEI editorial markup (`<choice><sic>…</sic><corr>…</corr></choice>`, `<note>`, `<foreign>`, etc.). Add a `<revisionDesc>` crediting the platform and contributors. The result is a valid, enriched TEI P5 document consumable by any TEI-aware tool.
+  - **TEI-to-ePub export**: convert corrected TEI P5 XML into well-formed ePub 3 for reading and distribution. Preserve structural hierarchy (TEI divisions → ePub chapters). Render footnotes, marginalia, and annotations as ePub footnotes. Include a colophon crediting contributors. Generate table of contents from TEI structure.
+  - **TEI-to-HTML export** (optional): web-readable HTML for texts without requiring an ePub reader
+  - All exports include provenance: what was original, what was corrected, and by whom
+
+- [ ] **6.6** — Corpus management:
+  - Admin interface for adding new texts (upload TEI XML + associated page scans)
+  - Metadata import from TEI headers (`<teiHeader>`) — author, title, date, printer, subject
+  - Per-text correction statistics and progress tracking (e.g., "342 of 1,200 gaps filled")
+  - Batch import support for adding multiple texts from the TCP corpus
+
+### Decision Points
+
+> **Scan alignment strategy**: How to link page scans to TEI text positions? — DECIDED
+>
+> Use the `<pb>` elements already present in TCP texts as the alignment backbone. Three scan source tiers:
+> 1. **Platform-provided scans**: sourced from Internet Archive, ProQuest, or other archives — publicly visible
+> 2. **User-uploaded scans**: private by default (the user may have institutional access to scans they cannot redistribute). Users can still make corrections against private scans — the corrections to the CC0 text are public, the scan images are not.
+> 3. **Shared scans**: user-uploaded scans explicitly shared with specific individuals by invitation
+>
+> Support IIIF for hotlinking to library-hosted images (Internet Archive, Bodleian, Folger, HathiTrust) where available. Fall back to self-hosted or user-uploaded scans for texts without free IIIF sources. AI-assisted alignment (OCR + fuzzy match) is a stretch goal.
+
+> **TEI editing granularity**: Should contributors edit raw TEI XML, or a WYSIWYG view? — DECIDED
+>
+> **The original P5 XML is treated as immutable.** Contributors never edit the XML directly — not via WYSIWYG, not via source view. Instead, corrections are stored as a separate annotation layer (in the database) that references positions in the original XML. This ensures:
+>
+> - The original TCP transcription is never disturbed — its structure, formatting, encoding, and whitespace are preserved byte-for-byte
+> - Corrections can be reviewed, approved, rejected, or reverted without touching the source file
+> - Multiple independent corrections to overlapping text regions can coexist as separate proposals
+>
+> **P5 export with correction annotations**: For texts originally in TEI P5 format, the platform produces a *corrected P5 export* that weaves approved corrections into the original XML using TEI's own editorial markup:
+> - `<choice><sic>originall</sic><corr resp="#criticalis">original</corr></choice>` for text corrections
+> - `<note type="footnote" resp="#criticalis">...</note>` for added footnotes/explanations
+> - `<foreign xml:lang="grc">λόγος</foreign>` replacing `<gap reason="foreign"/>` for filled non-Latin gaps
+> - A `<revisionDesc>` entry in the `<teiHeader>` crediting the platform and listing contributors
+>
+> This means the export is a valid, enriched TEI P5 document that any TEI-aware tool can consume, with full provenance of what was original and what was corrected.
+>
+> The contributor UI is the same guided form as Phase 2: select text, provide the corrected version, pick a language if needed. The platform handles all XML generation behind the scenes.
+>
+> A full WYSIWYG TEI editor is a valuable tool but a separate project — out of scope for Criticalis.
+
+> **Virtual keyboard vs. input method**: Build a custom keyboard panel, or integrate an existing library? — DECIDED
+>
+> Three-layer architecture:
+> 1. **Character Quick-Access Bar**: a thin, toggleable toolbar with the most common special characters (`ſ þ ð ƿ æ ā ē` etc.) — click to insert at cursor. Covers the 80% case for most users. Custom component, no dependencies.
+> 2. **Searchable Character Picker**: expandable panel with text search (fuzzy match against Unicode names and custom aliases), categorized browsing, and a recently-used section. Custom component with a curated dataset of ~200-300 relevant characters.
+> 3. **KeymanWeb (SIL International)** for full script input: load on-demand when a user activates Greek or Hebrew input mode. Use the battle-tested `sil_greek_polytonic` keyboard for polytonic Greek and `sil_hebrew` for Hebrew with nikkud. MIT licensed, maintained by SIL's professional team, handles all dead-key sequences and diacritical ordering correctly.
+>
+> Additionally, **Tesseract.js** (WASM, browser-side) provides a no-API-key OCR baseline for region-crop character recognition.
+>
+> Key technical requirements:
+> - Always normalize to NFC (`String.prototype.normalize('NFC')`) for storage
+> - Use proper web fonts: Gentium Plus or Noto Serif for Greek, Ezra SIL or Noto Serif Hebrew for Hebrew
+> - Load KeymanWeb on-demand only — do not bundle for all users
+
+### Deliverable
+
+A platform capable of hosting and improving TEI-encoded early printed books at scale, with side-by-side scan comparison, special character input, AI-assisted gap filling, and ePub export. The 70,000+ public domain TCP texts become candidates for community-driven improvement.
+
+---
+
 ## Future Horizons
 
 These are ideas that are worth recording but should not influence architectural decisions today:
@@ -443,6 +573,28 @@ Detailed notes on each recommended technology, for quick reference during implem
 - **What**: Open-source notification infrastructure.
 - **Why**: In-app inbox, email, push notifications. Workflow engine for event-driven notifications.
 - **When**: Evaluate during Phase 3. A simpler custom notification table + [Resend](https://resend.com/) for email may be sufficient at smaller scale.
+
+### TEI P5 XML (Phase 6)
+- **Spec**: https://tei-c.org/guidelines/p5/
+- **What**: The Text Encoding Initiative Guidelines (P5) — the standard for representing texts in digital form, widely used in digital humanities.
+- **Why**: The TCP corpus (EEBO, ECCO) is encoded in TEI P5 XML. Supporting TEI means Criticalis can work with 70,000+ public domain texts.
+- **Key elements**: `<teiHeader>` (metadata), `<body>` (text content), `<div>` (sections), `<pb>` (page breaks, linkable to scans), `<gap>` (lacunae), `<foreign>` (non-English text), `<choice>`/`<sic>`/`<corr>` (editorial corrections).
+- **Parsing**: Standard XML parsers work. Consider [saxes](https://github.com/lddubeau/saxes) for streaming or the browser's native DOMParser for client-side rendering.
+
+### EEBO-TCP & ECCO-TCP (Phase 6)
+- **EEBO-TCP**: https://textcreationpartnership.org/tcp-texts/eebo-tcp-early-english-books-online/
+- **ECCO-TCP**: https://textcreationpartnership.org/tcp-texts/ecco-tcp-eighteenth-century-collections-online/
+- **What**: Over 70,000 manually keyed transcriptions of early printed books (1473–1800), encoded in TEI P5 XML.
+- **Production method**: Double-keying (typed twice, compared) for near-perfect accuracy of English text. Structural markup added by editors.
+- **Known gaps**: Non-Latin scripts (Greek, Hebrew) often left as `〈 in non-Latin alphabet 〉` placeholders. Complex layouts (tables, marginalia) may be incomplete.
+- **License**: CC0 (public domain). Freely downloadable from TCP GitHub and archival storage.
+- **Status**: Not yet integrated. Example files to be provided for evaluation.
+
+### IIIF (Phase 6, if needed)
+- **Spec**: https://iiif.io/
+- **What**: International Image Interoperability Framework — a standard API for serving and annotating high-resolution images from digital libraries.
+- **Why**: Many libraries (Bodleian, Folger, HathiTrust) serve their page scans via IIIF. Integrating IIIF would allow Criticalis to display page scans directly from library servers without hosting the images locally.
+- **When**: Evaluate during Phase 6 scan viewer implementation. Start with local PDF/image files, add IIIF as a second source.
 
 ---
 
