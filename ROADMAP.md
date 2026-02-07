@@ -115,7 +115,7 @@ If at any point the project needs true distributed/offline editing (Phase 5+), C
 
 **Goal:** Prove the core rendering and text-selection loop works before committing to a stack.
 
-**Status: Complete** — all core rendering proven, foliate-js selected.
+**Status: Complete** (Feb 7, 2026) — all core rendering proven, foliate-js selected.
 
 ### Tasks
 
@@ -146,7 +146,7 @@ If at any point the project needs true distributed/offline editing (Phase 5+), C
 
 **Goal:** A deployed web app where anyone can read *The Treasury of David* in their browser.
 
-**Status: Complete** — reader is functional with all features, Docker deployment ready.
+**Status: Complete** (Feb 7, 2026) — reader is functional with all features, Docker deployment ready.
 
 ### Tasks
 
@@ -179,6 +179,29 @@ If at any point the project needs true distributed/offline editing (Phase 5+), C
 ### Deliverable
 
 ~~A publicly accessible web reader for all 7 volumes. No accounts, no corrections — just reading.~~ Done. Deploy with `docker compose up -d`.
+
+### Validation (Feb 7, 2026, 7:07 AM EST)
+
+Production build (`npm run build`) and server (`node build`) tested against all routes:
+
+| Test | Result |
+|------|--------|
+| All 7 volume pages (`/read/vol-1` … `/read/vol-7`) | 200 OK |
+| All 7 ePub API endpoints (`/api/epub/vol-1` … `/api/epub/vol-7`) | 200 OK, `application/epub+zip`, ~1.4 MB |
+| Landing page `/` | 200 OK, 7 volume covers rendered |
+| About page `/about` | 200 OK |
+| Invalid volume `/read/vol-99` | 404 |
+| Invalid API `/api/epub/vol-99` | 404 |
+| Unknown route `/nonexistent` | 404 |
+| SEO: 1 `<meta name="description">` per page | Pass (duplicate from `app.html` fixed) |
+| SEO: JSON-LD on `/` and `/read/*` | Pass (`CollectionPage`, `Book`) |
+| SEO: Open Graph + Twitter Card tags | Pass |
+| CSP header present | Pass |
+| ePub caching (`max-age=86400`) | Pass |
+| Viewport meta for responsive | Pass |
+| Bookmark button in reader toolbar | Pass |
+
+Not yet tested (requires Docker daemon or browser): Docker Compose stack, OpenResty proxy, foliate-js client-side rendering, localStorage bookmarking.
 
 ---
 
