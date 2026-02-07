@@ -23,7 +23,7 @@ Criticalis aims to support this broader corpus by providing:
 2. **TEI XML editing** — corrections applied back to the TEI P5 XML source, preserving structural markup
 3. **Special character input** — virtual keyboards or AI-assisted recognition for Greek, Hebrew, the long S (ſ), and other characters that contributors may not have on their keyboards
 4. **Format pipeline** — corrected TEI XML exported as ePub for easy reading and distribution
-5. **AI-assisted gap filling** — the ability to select a scan region and have an AI model attempt to interpret and render the correct characters (especially for non-Latin scripts), subject to human review
+5. **AI-assisted gap filling (BYOK)** — users bring their own API keys (OpenAI, Anthropic, Google) or point to a local model (Ollama, LM Studio) to interpret difficult scan regions, with token tracking, cost estimates, and budget controls — all suggestions subject to human review. A free client-side OCR option (Tesseract.js) is also available as a baseline
 
 The core workflow remains the same: contributors compare the source scan with the electronic text, submit corrections, the community reviews them, and the curator approves changes that improve the text.
 

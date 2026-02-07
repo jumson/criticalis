@@ -417,12 +417,21 @@ Criticalis can serve as the platform where scholars, students, and enthusiasts c
   - Recently-used characters panel for quick access
   - Copy-paste from external sources with encoding normalization (NFC)
 
-- [ ] **6.4** — AI-assisted character recognition:
-  - Select a region of the page scan and request AI interpretation
-  - The AI model attempts to read the selected area and produce the correct characters (especially useful for Greek, Hebrew, and damaged/faded text)
-  - Result is presented as a *suggestion* for human review — never auto-applied
-  - Support for multiple AI backends (cloud API or local model)
+- [ ] **6.4** — AI-assisted correction (BYOK — Bring Your Own Key):
+  - **Region-select OCR**: user draws a box around difficult text in the page scan (foreign script, damaged/faded, archaic font) and sends that region for AI interpretation
+  - **Page-by-page batch mode**: process an entire page's transcription against the scan, with the AI identifying discrepancies and suggesting corrections
+  - Result is always presented as a *suggestion* for human review — never auto-applied
   - Confidence scoring — flag low-confidence interpretations for expert review
+  - **BYOK provider system** — users supply their own AI credentials:
+    - Cloud APIs: OpenAI, Anthropic (Claude), Google (Gemini) — user enters their API key in account settings
+    - Local/self-hosted: Ollama endpoint URL, or any OpenAI-compatible API endpoint (LM Studio, vLLM, etc.)
+    - Platform may also offer a shared/subsidized tier for light usage (with rate limits)
+  - **Usage tracking and cost controls**:
+    - Token counting per request (input/output tokens displayed before confirming)
+    - Per-user usage dashboard: total tokens consumed, estimated cost, history
+    - Configurable limits: per-request token cap, daily/monthly budget ceiling, auto-pause when limit reached
+    - Cost estimation before sending a request ("This will use ~2,000 tokens, est. $0.006")
+  - **Client-side OCR option**: Tesseract.js (WASM, runs entirely in the browser) as a free, no-API-key-needed baseline for printed text — lower accuracy than cloud models but zero cost and no data leaving the user's machine
 
 - [ ] **6.5** — TEI-to-ePub export pipeline:
   - Convert corrected TEI P5 XML into well-formed ePub 3 for reading and distribution
