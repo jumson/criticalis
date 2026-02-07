@@ -408,19 +408,17 @@ Criticalis can serve as the platform where scholars, students, and enthusiasts c
 
 - [ ] **6.2** — TEI P5 XML ingestion and rendering:
   - Parse TEI P5 XML into a readable view, respecting structural markup (divisions, paragraphs, verse, tables, marginalia, front/back matter)
-  - Render TEI elements with appropriate styling (e.g., `<hi rend="italic">` → italic, `<foreign>` → language-tagged, `<gap>` → visible placeholder)
-  - Preserve the full TEI structure when corrections are applied — edits modify the XML source, not a flattened representation
+  - Render TEI elements with appropriate styling (e.g., `<hi rend="italic">` → italic, `<foreign>` → language-tagged, `<gap>` → visible placeholder indicating a gap needing correction)
+  - **Immutable original**: the ingested P5 XML is stored as-is, byte-for-byte. Corrections are stored as a separate annotation layer in the database, keyed to positions in the original XML (e.g., XPath + character offset). The rendered view overlays approved corrections onto the original text (toggle to show original vs. corrected).
   - Handle TEI-specific constructs: `<choice>` (original/regularized spellings), `<abbr>`/`<expan>`, `<sic>`/`<corr>`, `<add>`/`<del>`
 
-- [ ] **6.3** — Special character input:
-  - Virtual keyboard panel for frequently needed characters:
-    - **Archaic English**: long S (ſ), common ligatures, thorn (þ), eth (ð), wynn (ƿ)
-    - **Greek**: full polytonic Greek keyboard layout (for biblical/classical quotations)
-    - **Hebrew**: right-to-left input with vowel points (nikkud)
-    - **Latin**: macrons, breves, and other diacritical marks
-  - Character picker / search — type a description (e.g., "long s") and find the Unicode character
-  - Recently-used characters panel for quick access
-  - Copy-paste from external sources with encoding normalization (NFC)
+- [ ] **6.3** — Special character input (three-layer system):
+  - **Layer 1 — Character Quick-Access Bar**: toggleable toolbar with common special characters (`ſ þ ð ƿ Þ Ð æ œ ā ē ī ō ū` etc.). Click to insert at cursor. Custom component, no dependencies.
+  - **Layer 2 — Searchable Character Picker**: expandable panel with fuzzy text search against Unicode names and custom aliases (e.g., type "long s" → `ſ`), categorized browsing (Archaic English, Latin Diacriticals, Greek, Hebrew, Combining Marks), and a recently-used section (persisted in localStorage). Curated dataset of ~200-300 characters relevant to early printed books.
+  - **Layer 3 — KeymanWeb (SIL International)**: on-demand loading for full script input sessions. Use `sil_greek_polytonic` for polytonic Greek (handles breathing marks, accents, iota subscript, all dead-key sequences) and `sil_hebrew` for Hebrew with nikkud. MIT licensed, CDN-distributed, renders on-screen keyboard automatically on touch devices.
+  - All character input normalized to NFC (`String.prototype.normalize('NFC')`) before storage
+  - Web fonts: Gentium Plus / Noto Serif for Greek, Ezra SIL / Noto Serif Hebrew for Hebrew
+  - Copy-paste from external sources also normalized to NFC on input
 
 - [ ] **6.4** — AI-assisted correction (BYOK — Bring Your Own Key):
   - **Region-select OCR**: user draws a box around difficult text in the page scan (foreign script, damaged/faded, archaic font) and sends that region for AI interpretation
@@ -438,13 +436,11 @@ Criticalis can serve as the platform where scholars, students, and enthusiasts c
     - Cost estimation before sending a request ("This will use ~2,000 tokens, est. $0.006")
   - **Client-side OCR option**: Tesseract.js (WASM, runs entirely in the browser) as a free, no-API-key-needed baseline for printed text — lower accuracy than cloud models but zero cost and no data leaving the user's machine
 
-- [ ] **6.5** — TEI-to-ePub export pipeline:
-  - Convert corrected TEI P5 XML into well-formed ePub 3 for reading and distribution
-  - Preserve structural hierarchy (TEI divisions → ePub chapters)
-  - Render footnotes, marginalia, and annotations as ePub footnotes
-  - Include a colophon crediting contributors
-  - Generate table of contents from TEI structure
-  - Optional: TEI-to-HTML export for web reading without ePub
+- [ ] **6.5** — Export pipelines:
+  - **P5-to-P5 export** (primary for TEI sources): produce a corrected TEI P5 XML file that weaves approved corrections into the original using TEI editorial markup (`<choice><sic>…</sic><corr>…</corr></choice>`, `<note>`, `<foreign>`, etc.). Add a `<revisionDesc>` crediting the platform and contributors. The result is a valid, enriched TEI P5 document consumable by any TEI-aware tool.
+  - **TEI-to-ePub export**: convert corrected TEI P5 XML into well-formed ePub 3 for reading and distribution. Preserve structural hierarchy (TEI divisions → ePub chapters). Render footnotes, marginalia, and annotations as ePub footnotes. Include a colophon crediting contributors. Generate table of contents from TEI structure.
+  - **TEI-to-HTML export** (optional): web-readable HTML for texts without requiring an ePub reader
+  - All exports include provenance: what was original, what was corrected, and by whom
 
 - [ ] **6.6** — Corpus management:
   - Admin interface for adding new texts (upload TEI XML + associated page scans)
@@ -463,14 +459,39 @@ Criticalis can serve as the platform where scholars, students, and enthusiasts c
 >
 > Support IIIF for hotlinking to library-hosted images (Internet Archive, Bodleian, Folger, HathiTrust) where available. Fall back to self-hosted or user-uploaded scans for texts without free IIIF sources. AI-assisted alignment (OCR + fuzzy match) is a stretch goal.
 
-> **TEI editing granularity**: Should contributors edit raw TEI XML, or a WYSIWYG view?
-> - Most contributors should see a rich-text view and submit corrections through the same popup workflow as Phase 2
-> - Power users / editors may need a "source view" toggle to edit TEI markup directly (e.g., wrapping a phrase in `<foreign xml:lang="grc">`)
-> - The platform should enforce TEI validity — reject edits that produce malformed XML
+> **TEI editing granularity**: Should contributors edit raw TEI XML, or a WYSIWYG view? — DECIDED
+>
+> **The original P5 XML is treated as immutable.** Contributors never edit the XML directly — not via WYSIWYG, not via source view. Instead, corrections are stored as a separate annotation layer (in the database) that references positions in the original XML. This ensures:
+>
+> - The original TCP transcription is never disturbed — its structure, formatting, encoding, and whitespace are preserved byte-for-byte
+> - Corrections can be reviewed, approved, rejected, or reverted without touching the source file
+> - Multiple independent corrections to overlapping text regions can coexist as separate proposals
+>
+> **P5 export with correction annotations**: For texts originally in TEI P5 format, the platform produces a *corrected P5 export* that weaves approved corrections into the original XML using TEI's own editorial markup:
+> - `<choice><sic>originall</sic><corr resp="#criticalis">original</corr></choice>` for text corrections
+> - `<note type="footnote" resp="#criticalis">...</note>` for added footnotes/explanations
+> - `<foreign xml:lang="grc">λόγος</foreign>` replacing `<gap reason="foreign"/>` for filled non-Latin gaps
+> - A `<revisionDesc>` entry in the `<teiHeader>` crediting the platform and listing contributors
+>
+> This means the export is a valid, enriched TEI P5 document that any TEI-aware tool can consume, with full provenance of what was original and what was corrected.
+>
+> The contributor UI is the same guided form as Phase 2: select text, provide the corrected version, pick a language if needed. The platform handles all XML generation behind the scenes.
+>
+> A full WYSIWYG TEI editor is a valuable tool but a separate project — out of scope for Criticalis.
 
-> **Virtual keyboard vs. input method**: Build a custom keyboard panel, or integrate an existing library?
-> - Evaluate: [online-keyboard](https://github.com/nicklambson/online-keyboard), browser-native `inputMode` hints, or a custom panel
-> - Greek polytonic input is the hardest — consider leveraging existing polytonic Greek keyboard layouts
+> **Virtual keyboard vs. input method**: Build a custom keyboard panel, or integrate an existing library? — DECIDED
+>
+> Three-layer architecture:
+> 1. **Character Quick-Access Bar**: a thin, toggleable toolbar with the most common special characters (`ſ þ ð ƿ æ ā ē` etc.) — click to insert at cursor. Covers the 80% case for most users. Custom component, no dependencies.
+> 2. **Searchable Character Picker**: expandable panel with text search (fuzzy match against Unicode names and custom aliases), categorized browsing, and a recently-used section. Custom component with a curated dataset of ~200-300 relevant characters.
+> 3. **KeymanWeb (SIL International)** for full script input: load on-demand when a user activates Greek or Hebrew input mode. Use the battle-tested `sil_greek_polytonic` keyboard for polytonic Greek and `sil_hebrew` for Hebrew with nikkud. MIT licensed, maintained by SIL's professional team, handles all dead-key sequences and diacritical ordering correctly.
+>
+> Additionally, **Tesseract.js** (WASM, browser-side) provides a no-API-key OCR baseline for region-crop character recognition.
+>
+> Key technical requirements:
+> - Always normalize to NFC (`String.prototype.normalize('NFC')`) for storage
+> - Use proper web fonts: Gentium Plus or Noto Serif for Greek, Ezra SIL or Noto Serif Hebrew for Hebrew
+> - Load KeymanWeb on-demand only — do not bundle for all users
 
 ### Deliverable
 
