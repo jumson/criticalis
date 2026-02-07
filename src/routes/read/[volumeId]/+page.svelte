@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
+	import CorrectionPopup from '$lib/components/CorrectionPopup.svelte';
 	import type { PageData } from './$types';
 
 	let { data }: { data: PageData } = $props();
@@ -14,6 +15,17 @@
 	let view: any = $state(null);
 	let hasBookmark: boolean = $state(false);
 	let lastCfi: string = $state('');
+	let currentSectionIndex: number = $state(0);
+
+	// Correction popup state
+	let correctionSelection: {
+		volumeId: string;
+		sectionIndex?: number;
+		cfi?: string;
+		originalText: string;
+	} | null = $state(null);
+	let showSuccessToast: boolean = $state(false);
+	let correctionCount: number = $state(0);
 
 	const bookmarkKey = `criticalis-bookmark-${data.volume.id}`;
 
@@ -42,8 +54,19 @@
 		hasBookmark = false;
 	}
 
+	async function fetchCorrectionCount() {
+		try {
+			const res = await fetch(`/api/corrections/count?volumeId=${data.volume.id}`);
+			if (res.ok) {
+				const counts = await res.json();
+				correctionCount = counts.total ?? 0;
+			}
+		} catch { /* ignore */ }
+	}
+
 	onMount(async () => {
 		hasBookmark = !!getSavedBookmark();
+		fetchCorrectionCount();
 
 		try {
 			// Dynamic import of foliate-js view module (registers <foliate-view> custom element)
@@ -72,6 +95,9 @@
 				}
 				if (detail.cfi) {
 					lastCfi = detail.cfi;
+				}
+				if (detail.index != null) {
+					currentSectionIndex = detail.index;
 				}
 			});
 
@@ -111,8 +137,23 @@
 	});
 
 	function handleTextSelection(text: string) {
-		// For now, just log it — this is the hook for Phase 2 corrections
-		console.log('Selected text:', text);
+		correctionSelection = {
+			volumeId: data.volume.id,
+			sectionIndex: currentSectionIndex,
+			cfi: lastCfi || undefined,
+			originalText: text
+		};
+	}
+
+	function handleCorrectionClose() {
+		correctionSelection = null;
+	}
+
+	function handleCorrectionSuccess() {
+		correctionSelection = null;
+		showSuccessToast = true;
+		correctionCount++;
+		setTimeout(() => { showSuccessToast = false; }, 3000);
 	}
 
 	function goToTocItem(href: string) {
@@ -131,6 +172,7 @@
 	}
 
 	function handleKeydown(e: KeyboardEvent) {
+		if (correctionSelection) return; // Don't navigate while popup is open
 		if (e.key === 'ArrowLeft') goPrev();
 		else if (e.key === 'ArrowRight') goNext();
 	}
@@ -199,6 +241,15 @@
 					<span class="toolbar-location">{currentLocation}</span>
 				{/if}
 			</div>
+			<a href="/corrections/{data.volume.id}" class="toolbar-btn corrections-btn" title="View corrections for this volume ({correctionCount})">
+				<svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+					<path d="M4 13l3 3 7-7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+					<path d="M14 3l3 3-7 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.4"/>
+				</svg>
+				{#if correctionCount > 0}
+					<span class="corrections-badge">{correctionCount}</span>
+				{/if}
+			</a>
 			<button
 				class="toolbar-btn bookmark-btn"
 				class:active={hasBookmark}
@@ -250,6 +301,19 @@
 		</div>
 	</div>
 </div>
+
+<!-- Correction popup -->
+<CorrectionPopup
+	selection={correctionSelection}
+	user={data.user}
+	onclose={handleCorrectionClose}
+	onsuccess={handleCorrectionSuccess}
+/>
+
+<!-- Success toast -->
+{#if showSuccessToast}
+	<div class="toast">Correction submitted successfully!</div>
+{/if}
 
 <style>
 	.reader-layout {
@@ -370,6 +434,28 @@
 		text-decoration: none;
 	}
 
+	.corrections-btn {
+		position: relative;
+	}
+
+	.corrections-badge {
+		position: absolute;
+		top: -2px;
+		right: -4px;
+		background: var(--color-accent);
+		color: white;
+		font-size: 0.6rem;
+		font-weight: 600;
+		min-width: 15px;
+		height: 15px;
+		border-radius: 99px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 0 3px;
+		line-height: 1;
+	}
+
 	.bookmark-btn.active {
 		color: var(--color-accent);
 	}
@@ -467,6 +553,33 @@
 		color: var(--color-text-faint);
 		min-width: 2.5rem;
 		text-align: right;
+	}
+
+	/* Toast notification */
+	.toast {
+		position: fixed;
+		bottom: 2rem;
+		left: 50%;
+		transform: translateX(-50%);
+		background: var(--color-text);
+		color: var(--color-bg);
+		padding: 0.75rem 1.25rem;
+		border-radius: var(--radius);
+		font-size: 0.85rem;
+		box-shadow: var(--shadow-lg);
+		z-index: 300;
+		animation: toast-in 0.3s ease;
+	}
+
+	@keyframes toast-in {
+		from {
+			opacity: 0;
+			transform: translateX(-50%) translateY(10px);
+		}
+		to {
+			opacity: 1;
+			transform: translateX(-50%) translateY(0);
+		}
 	}
 
 	@media (max-width: 600px) {

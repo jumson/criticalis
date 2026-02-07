@@ -1,7 +1,16 @@
 <script lang="ts">
 	import '../app.css';
+	import { authClient } from '$lib/auth-client';
+	import { goto, invalidateAll } from '$app/navigation';
+	import type { LayoutData } from './$types';
 
-	let { children } = $props();
+	let { data, children }: { data: LayoutData; children: any } = $props();
+
+	async function handleSignOut() {
+		await authClient.signOut();
+		await invalidateAll();
+		goto('/');
+	}
 </script>
 
 <svelte:head>
@@ -16,6 +25,15 @@
 		<nav class="nav">
 			<a href="/">Volumes</a>
 			<a href="/about">About</a>
+			{#if data.user}
+				{#if data.user.role === 'curator' || data.user.role === 'admin'}
+					<a href="/curator">Curator</a>
+				{/if}
+				<span class="nav-user">{data.user.name}</span>
+				<button class="nav-signout" onclick={handleSignOut}>Sign out</button>
+			{:else}
+				<a href="/sign-in">Sign in</a>
+			{/if}
 		</nav>
 	</div>
 </header>
@@ -66,6 +84,7 @@
 
 	.nav {
 		display: flex;
+		align-items: center;
 		gap: 1.5rem;
 	}
 
@@ -78,6 +97,24 @@
 	.nav a:hover {
 		color: var(--color-text);
 		text-decoration: none;
+	}
+
+	.nav-user {
+		font-size: 0.85rem;
+		color: var(--color-text);
+		font-weight: 500;
+	}
+
+	.nav-signout {
+		font-size: 0.85rem;
+		color: var(--color-text-muted);
+		background: none;
+		border: none;
+		padding: 0;
+	}
+
+	.nav-signout:hover {
+		color: var(--color-text);
 	}
 
 	main {
@@ -109,7 +146,9 @@
 			gap: 1rem;
 		}
 
-		.nav a {
+		.nav a,
+		.nav-user,
+		.nav-signout {
 			font-size: 0.85rem;
 		}
 
