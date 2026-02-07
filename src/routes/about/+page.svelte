@@ -1,5 +1,9 @@
 <svelte:head>
 	<title>About - Criticalis</title>
+	<meta name="description" content="Criticalis is an open-source platform for collaboratively improving public domain works through crowdsourced corrections and annotations." />
+	<meta property="og:title" content="About Criticalis" />
+	<meta property="og:description" content="An open platform for crowdsourced correction and annotation of public domain texts." />
+	<meta property="og:type" content="website" />
 </svelte:head>
 
 <div class="container about">
@@ -83,5 +87,24 @@
 
 	.about li {
 		margin: 0.25rem 0;
+	}
+
+	@media (max-width: 600px) {
+		.about {
+			padding-top: 1.5rem;
+		}
+
+		.about h1 {
+			font-size: 1.4rem;
+		}
+
+		.about h2 {
+			font-size: 1.1rem;
+			margin-top: 1.5rem;
+		}
+
+		.about p {
+			font-size: 0.9rem;
+		}
 	}
 </style>

@@ -95,4 +95,34 @@
 		font-size: 0.85rem;
 		color: var(--color-text-faint);
 	}
+
+	@media (max-width: 600px) {
+		.header-inner {
+			height: 48px;
+		}
+
+		.logo-text {
+			font-size: 1.1rem;
+		}
+
+		.nav {
+			gap: 1rem;
+		}
+
+		.nav a {
+			font-size: 0.85rem;
+		}
+
+		main {
+			min-height: calc(100vh - 48px - 72px);
+		}
+
+		.site-footer {
+			padding: 1rem 0;
+		}
+
+		.site-footer p {
+			font-size: 0.8rem;
+		}
+	}
 </style>

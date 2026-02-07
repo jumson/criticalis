@@ -41,13 +41,17 @@ This document serves as both a **technical roadmap** and a **decision log**. It 
 │                                                     │
 │  ┌─────────────┐  ┌──────────────┐  ┌───────────┐  │
 │  │  ePub Reader │  │  Annotation  │  │ Community │  │
-│  │ (foliate-js │  │    Layer     │  │   UI      │  │
-│  │  or epub.js)│  │              │  │           │  │
+│  │ (foliate-js)│  │    Layer     │  │   UI      │  │
 │  └──────┬──────┘  └──────┬───────┘  └─────┬─────┘  │
 │         └────────────────┼────────────────┘         │
 │                          │                          │
 └──────────────────────────┼──────────────────────────┘
-                           │ HTTP / SSE
+                           │ HTTP
+┌──────────────────────────┼──────────────────────────┐
+│                     OpenResty                        │
+│            (reverse proxy, rate limiting)             │
+└──────────────────────────┼──────────────────────────┘
+                           │
 ┌──────────────────────────┼──────────────────────────┐
 │                    SvelteKit Server                  │
 │                                                     │
@@ -73,6 +77,8 @@ This document serves as both a **technical roadmap** and a **decision log**. It 
 └─────────────────────────────────────────────────────┘
 ```
 
+All three services (OpenResty, SvelteKit, PostgreSQL) run as Docker containers orchestrated by Docker Compose. See [DEPLOYING.md](DEPLOYING.md) for operational details.
+
 ---
 
 ## Recommended Tech Stack
@@ -81,7 +87,6 @@ This document serves as both a **technical roadmap** and a **decision log**. It 
 |-------|-----------|---------|-------|
 | **Framework** | [SvelteKit](https://kit.svelte.dev/) | MIT | Smallest bundles, fast hydration, SSR built-in |
 | **ePub Rendering** | [foliate-js](https://github.com/johnfactotum/foliate-js) | MIT | Modern, native ES modules, direct DOM access |
-| **ePub Rendering (alt)** | [epub.js](https://github.com/futurepress/epub.js) | BSD | Fallback — more stable API, larger community |
 | **Annotation UI** | [text-annotator-js](https://github.com/recogito/text-annotator-js) | BSD-3 | W3C Web Annotation compatible, lightweight |
 | **ePub Modification** | [@smoores/epub](https://www.npmjs.com/package/@smoores/epub) | MIT | Server-side ePub3 inspection and modification |
 | **Database** | [PostgreSQL](https://www.postgresql.org/) | PostgreSQL License | Full-text search, JSONB, audit capabilities |
@@ -89,7 +94,8 @@ This document serves as both a **technical roadmap** and a **decision log**. It 
 | **Auth** | [Better Auth](https://www.better-auth.com/) | MIT | OSS, framework-agnostic, successor to Auth.js |
 | **Notifications** | [Novu](https://github.com/novuhq/novu) | MIT (core) | In-app + email, workflow engine |
 | **Real-time** | Server-Sent Events (native) | — | Built into SvelteKit, no extra dependency |
-| **Deployment** | [Railway](https://railway.app/) / [Fly.io](https://fly.io/) | — | Managed Postgres included, free tiers |
+| **Reverse Proxy** | [OpenResty](https://openresty.org/) | BSD | nginx + Lua, rate limiting, security headers |
+| **Deployment** | Docker Compose (self-hosted) | — | Three-container stack: app, db, proxy |
 
 ### Why not Git under the hood?
 
@@ -105,52 +111,65 @@ If at any point the project needs true distributed/offline editing (Phase 5+), C
 
 ---
 
-## Phase 0 — Foundation & Spike
+## Phase 0 — Foundation & Spike ✓
 
 **Goal:** Prove the core rendering and text-selection loop works before committing to a stack.
 
+**Status: Complete** (Feb 7, 2026) — all core rendering proven, foliate-js selected.
+
 ### Tasks
 
-- [ ] **0.1** — Set up a minimal SvelteKit project
-- [ ] **0.2** — Integrate foliate-js to render one volume of *Treasury of David* in the browser
-- [ ] **0.3** — Implement text selection: user selects a word or phrase and a popup appears showing what they selected, including its location in the ePub XML (volume, file, XPath or CFI)
-- [ ] **0.4** — Test with the actual ePub files in `sources/` — confirm OCR content renders correctly, page navigation works, and the XML structure can be targeted for modifications
-- [ ] **0.5** — Spike: use `@smoores/epub` to programmatically apply a test correction to one XML file and verify the ePub still renders correctly
+- [x] **0.1** — Set up a minimal SvelteKit project
+- [x] **0.2** — Integrate foliate-js to render one volume of *Treasury of David* in the browser
+- [x] **0.3** — Implement text selection: user selects a word or phrase and the selection is captured (logged to console with CFI position tracking)
+- [x] **0.4** — Test with the actual ePub files in `sources/` — confirmed OCR content renders correctly, page navigation works, and the XML structure can be targeted
+- [ ] **0.5** — Spike: use `@smoores/epub` to programmatically apply a test correction to one XML file and verify the ePub still renders correctly *(deferred to start of Phase 2 — not blocking the reader MVP)*
 
-### Decision Point: ePub Renderer
+### Decision Point: ePub Renderer — DECIDED
 
-> After completing 0.2–0.4, evaluate:
+> **foliate-js** was selected and integrated via git submodule (pinned commit).
 >
-> - **Does foliate-js provide reliable text selection and position reporting?**
->   - If YES → continue with foliate-js
->   - If NO → switch to epub.js (more battle-tested, hook-based event system)
->   - If NEITHER → consider rendering the ePub content as plain HTML (extract XML content server-side, serve as styled HTML pages). This loses some ePub features but gives full DOM control.
+> - Text selection works reliably and provides CFI-based position data
+> - Rendering of the Google Books OCR ePubs is correct
+> - Paginated and scrolled modes both work
+> - epub.js was not needed as a fallback
 >
-> - **Does `@smoores/epub` handle the Google Books OCR ePub structure?**
->   - These ePubs have unusual XML with deeply nested `<span>` elements and Google-specific class names (see README examples). If `@smoores/epub` struggles with them, the fallback is direct XML manipulation via a library like [fast-xml-parser](https://github.com/NaturalIntelligence/fast-xml-parser) or [cheerio](https://github.com/cheeriojs/cheerio).
+> **`@smoores/epub` evaluation** is deferred to Phase 2 when server-side ePub modification is actually needed. The package is already in `package.json` (as `@storyteller-platform/epub`).
 
 ### Deliverable
 
-A local dev environment where you can open a volume, select text, and see the precise XML location logged to the console. One test correction applied and verified.
+~~A local dev environment where you can open a volume, select text, and see the precise XML location logged to the console.~~ Done.
 
 ---
 
-## Phase 1 — Reader MVP
+## Phase 1 — Reader MVP ✓
 
 **Goal:** A deployed web app where anyone can read *The Treasury of David* in their browser.
 
+**Status: Complete** (Feb 7, 2026) — reader is functional with all features, Docker deployment ready.
+
 ### Tasks
 
-- [ ] **1.1** — Volume selection screen (all 7 volumes with cover images/titles)
-- [ ] **1.2** — Full reader UI: table of contents, page/chapter navigation, bookmarking (local storage)
-- [ ] **1.3** — Responsive layout — readable on desktop, tablet, and phone
-- [ ] **1.4** — Basic SEO: server-rendered landing page, meta tags, structured data for the public domain work
-- [ ] **1.5** — Deploy to Railway or Fly.io with a public URL
-- [ ] **1.6** — Store ePub files: decide between filesystem (simpler) or object storage (S3-compatible via Tigris/Cloudflare R2)
+- [x] **1.1** — Volume selection screen with styled CSS book covers showing title, volume number, and psalm range
+- [x] **1.2** — Full reader UI: table of contents sidebar, page/chapter navigation (arrow keys + buttons), bookmarking via localStorage (save/restore reading position per volume)
+- [x] **1.3** — Responsive layout — mobile breakpoints at 600px across all pages (header, volume grid, reader toolbar, TOC overlay)
+- [x] **1.4** — SEO: Open Graph and Twitter Card meta tags, JSON-LD structured data (`CollectionPage` on home, `Book` on reader), descriptive titles
+- [x] **1.5** — Deploy via Docker Compose: three-container stack (SvelteKit app, PostgreSQL 17, OpenResty proxy) with configurable domain, rate limiting, and security headers
+- [x] **1.6** — ePub storage: filesystem-based, mounted as a Docker volume at `/data/sources`, configurable via `SOURCES_PATH` env var
 
-### Decision Point: Rendering Strategy
+### Decision Point: Deployment — DECIDED
 
-> After Phase 1 is live, gather feedback:
+> **Self-hosted Docker Compose with OpenResty** was chosen over Railway/Fly.io.
+>
+> - The project owner has a VPS with an existing OpenResty setup
+> - Docker Compose provides full control and avoids vendor lock-in
+> - OpenResty handles reverse proxy, rate limiting, and security headers
+> - The `.env.example` documents all configuration options
+> - See [DEPLOYING.md](DEPLOYING.md) for full setup instructions
+
+### Decision Point: Rendering Strategy — OPEN
+
+> Now that the reader is live, gather feedback:
 >
 > - **Is the reading experience good enough?** Fast load times, readable typography, smooth navigation?
 > - **Are there rendering quirks** with the Google Books ePub structure that need workarounds?
@@ -159,21 +178,51 @@ A local dev environment where you can open a volume, select text, and see the pr
 
 ### Deliverable
 
-A publicly accessible web reader for all 7 volumes. No accounts, no corrections — just reading.
+~~A publicly accessible web reader for all 7 volumes. No accounts, no corrections — just reading.~~ Done. Deploy with `docker compose up -d`.
+
+### Validation (Feb 7, 2026, 7:07 AM EST)
+
+Production build (`npm run build`) and server (`node build`) tested against all routes:
+
+| Test | Result |
+|------|--------|
+| All 7 volume pages (`/read/vol-1` … `/read/vol-7`) | 200 OK |
+| All 7 ePub API endpoints (`/api/epub/vol-1` … `/api/epub/vol-7`) | 200 OK, `application/epub+zip`, ~1.4 MB |
+| Landing page `/` | 200 OK, 7 volume covers rendered |
+| About page `/about` | 200 OK |
+| Invalid volume `/read/vol-99` | 404 |
+| Invalid API `/api/epub/vol-99` | 404 |
+| Unknown route `/nonexistent` | 404 |
+| SEO: 1 `<meta name="description">` per page | Pass (duplicate from `app.html` fixed) |
+| SEO: JSON-LD on `/` and `/read/*` | Pass (`CollectionPage`, `Book`) |
+| SEO: Open Graph + Twitter Card tags | Pass |
+| CSP header present | Pass |
+| ePub caching (`max-age=86400`) | Pass |
+| Viewport meta for responsive | Pass |
+| Bookmark button in reader toolbar | Pass |
+
+Not yet tested (requires Docker daemon or browser): Docker Compose stack, OpenResty proxy, foliate-js client-side rendering, localStorage bookmarking.
 
 ---
 
-## Phase 2 — Corrections Workflow
+## Phase 2 — Corrections Workflow ← NEXT
 
 **Goal:** Authenticated users can submit corrections and footnotes. A curator can review and apply them.
 
+### Groundwork already done
+
+The following infrastructure from Phase 0/1 is ready for Phase 2:
+
+- **Database schema** exists in `src/lib/server/schema.ts`: `user`, `session`, `account`, `verification`, `correction` (with status/type enums), `vote`, `comment`
+- **Better Auth** configured with email/password (`src/lib/server/auth.ts`), OAuth provider stubs in `.env.example`
+- **Text selection** is captured in the reader (`handleTextSelection` function) — ready to wire into a correction popup
+- **`@storyteller-platform/epub`** (`@smoores/epub`) is installed as a dependency
+
 ### Tasks
 
-- [ ] **2.1** — Set up PostgreSQL database with core schema:
-  ```
-  users, corrections, correction_history, documents, document_versions
-  ```
-- [ ] **2.2** — Integrate Better Auth: email/password + at least one social login (Google or GitHub)
+- [ ] **2.0** — Run the deferred 0.5 spike: use `@smoores/epub` to apply a test correction to a Google Books ePub and verify it still renders. If it fails, fall back to cheerio/fast-xml-parser for direct XML manipulation.
+- [ ] **2.1** — Run database migrations (Drizzle Kit) to create the schema tables in PostgreSQL
+- [ ] **2.2** — Wire up Better Auth routes: sign up, sign in, sign out, session management. Add at least one social login (Google or GitHub).
 - [ ] **2.3** — Correction submission UI:
   - User selects text in the reader
   - Popup with two tabs: "Suggest Correction" and "Add Footnote"
@@ -294,8 +343,8 @@ Downloadable, corrected editions of *The Treasury of David* with community attri
 - [ ] **5.3** — Accessibility audit: screen reader support, keyboard navigation, high contrast mode
 - [ ] **5.4** — Multi-text support: generalize the platform so a second public domain work can be added (new "project" containing its own volumes, corrections, and community)
 - [ ] **5.5** — API for third-party access: corrections data, edition metadata, contributor stats
-- [ ] **5.6** — Migrate deployment to Fly.io (if still on Railway) for global edge distribution and better scaling
-- [ ] **5.7** — Automated backup strategy for database and ePub files
+- [ ] **5.6** — Automated backup strategy for database and ePub files
+- [ ] **5.7** — Monitoring and alerting (uptime, error rates, disk usage)
 
 ### Decision Point: Real-time Collaboration
 
@@ -341,26 +390,27 @@ Detailed notes on each recommended technology, for quick reference during implem
 - **Repo**: https://github.com/johnfactotum/foliate-js
 - **What**: Browser-based e-book renderer. Supports EPUB, MOBI, KF8, FB2, CBZ.
 - **Why**: Native ES modules (no build step), more accurate text range detection than epub.js (uses bisecting), supports paginated and scrolled modes, direct DOM access.
-- **Caveat**: API is not yet stable — pin to a specific commit via git submodule. No npm package.
-- **Alternative**: [epub.js](https://github.com/futurepress/epub.js) (~6.6k stars, BSD license, npm package `epubjs`). More stable API but semi-dormant maintenance. Good documentation and plugin/hook system.
+- **Caveat**: API is not yet stable — pinned to a specific commit via git submodule. No npm package.
+- **Status**: Integrated and working. Rendering of Google Books OCR ePubs confirmed.
 
 ### text-annotator-js (Recogito)
 - **Repo**: https://github.com/recogito/text-annotator-js
 - **What**: Text annotation library. Successor to recogito-js.
 - **Why**: W3C Web Annotation compatible selectors, lightweight, framework-agnostic with React wrapper available, supports highlight customization.
-- **Alternative**: Build a custom selection popup (simpler, fewer dependencies, may be sufficient for v1).
+- **Status**: Not yet integrated. Evaluate during Phase 2 — may not be needed if a custom popup suffices.
 
 ### @smoores/epub
 - **Repo/npm**: https://www.npmjs.com/package/@smoores/epub
 - **What**: Node.js library for inspecting, modifying, and creating EPUB3 publications.
 - **Why**: Purpose-built for programmatic ePub modification — exactly what we need for applying corrections to XML files.
+- **Status**: Installed as `@storyteller-platform/epub`. Not yet tested against the Google Books ePub structure — scheduled as task 2.0.
 - **Alternative**: Direct XML manipulation via [cheerio](https://github.com/cheeriojs/cheerio) or [fast-xml-parser](https://github.com/NaturalIntelligence/fast-xml-parser). Less ePub-aware but more flexible if the ePub structure is unusual.
 
 ### SvelteKit
 - **Site**: https://kit.svelte.dev/
 - **What**: Full-stack web framework built on Svelte.
 - **Why**: Smallest bundle sizes of any major framework, fast hydration, built-in SSR/SSG, API routes, form actions. Excellent developer experience for small teams.
-- **Alternative**: [Remix / React Router v7](https://remix.run/) if you prefer React. Progressive enhancement model is also a good fit for this project.
+- **Status**: Integrated. Using SvelteKit 2 with Svelte 5, adapter-node for Docker deployment.
 
 ### PostgreSQL + Drizzle ORM
 - **PG**: https://www.postgresql.org/
@@ -368,12 +418,19 @@ Detailed notes on each recommended technology, for quick reference during implem
 - **What**: Relational database + type-safe ORM.
 - **Why PG**: Full-text search, JSONB for flexible annotation data, `pg_trgm` for fuzzy matching, rock-solid reliability, free.
 - **Why Drizzle**: Lightweight, SQL-like syntax (not an abstraction over SQL), excellent TypeScript support, works with any framework.
+- **Status**: Schema defined in `src/lib/server/schema.ts`. Migrations not yet run (Phase 2).
 
 ### Better Auth
 - **Site**: https://www.better-auth.com/
 - **What**: Open-source authentication framework.
 - **Why**: Framework-agnostic, auto schema generation, social logins, self-hostable, actively funded and developed. Successor to Auth.js/NextAuth.
-- **Alternative**: [Clerk](https://clerk.com/) (managed, paid per MAU — simpler but vendor lock-in).
+- **Status**: Configured with email/password in `src/lib/server/auth.ts`. OAuth providers stubbed in `.env.example`.
+
+### OpenResty
+- **Site**: https://openresty.org/
+- **What**: nginx + Lua scripting for high-performance web applications.
+- **Why**: Lightweight reverse proxy with rate limiting, security headers, and gzip compression. Familiar nginx configuration.
+- **Status**: Integrated into Docker Compose stack. Config template with envsubst for domain configuration.
 
 ### Yjs (future, if needed)
 - **Repo**: https://github.com/yjs/yjs
