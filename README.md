@@ -1,8 +1,31 @@
 # criticalis
-The purpose of this project is to create a platform to enable everyone to contribute to the improvement of popular works in the public domain. 
-The outcome being high quality, annotated works that are accessible to successive generations. 
+The purpose of this project is to create a platform to enable everyone to contribute to the improvement of popular works in the public domain.
+The outcome being high quality, annotated works that are accessible to successive generations.
 
 This project will use a favorite text of mine as the initial "subject." "The Treasury of David" is an original exposition and commentary on the book of Psalms by C. H. Spurgeon, composed in seven volumes, published in the late 19th century.
+
+### Broader Vision: Early Printed Books & the TCP Corpus
+
+Beyond Spurgeon, the same correction workflow applies to a vast and largely untapped resource: the **Text Creation Partnership (TCP)** transcriptions of early printed books from the **Early English Books Online (EEBO)** and **Eighteenth Century Collections Online (ECCO)** databases.
+
+The TCP has produced over **70,000 manually keyed, TEI-encoded transcriptions** of books printed between 1473 and 1800. These transcriptions were "double-keyed" (typed twice and compared) for near-perfect accuracy of the English text — but they are not perfect, and they have known gaps:
+
+- **Non-Latin scripts** — Greek, Hebrew, and other scripts were often left as placeholders (e.g., `〈 in non-Latin alphabet 〉`) rather than transcribed
+- **Latin phrases** — sometimes garbled or truncated, especially in theological and scientific works
+- **Archaic characters** — the long S (ſ), ligatures, and other period typography require careful handling
+- **Structural issues** — tables, verse, marginalia, and other complex layouts may be incompletely tagged
+
+The TCP Phase I (25,000+ texts) and Phase II (40,000+ texts) are now in the **public domain (CC0)**, available as TEI P5 XML files for anyone to download and improve.
+
+Criticalis aims to support this broader corpus by providing:
+
+1. **Side-by-side viewing** — the scanned page image (PDF/JPEG) alongside the electronic text, so contributors can compare the transcription against the original printing
+2. **TEI XML editing** — corrections applied back to the TEI P5 XML source, preserving structural markup
+3. **Special character input** — virtual keyboards or AI-assisted recognition for Greek, Hebrew, the long S (ſ), and other characters that contributors may not have on their keyboards
+4. **Format pipeline** — corrected TEI XML exported as ePub for easy reading and distribution
+5. **AI-assisted gap filling** — the ability to select a scan region and have an AI model attempt to interpret and render the correct characters (especially for non-Latin scripts), subject to human review
+
+The core workflow remains the same: contributors compare the source scan with the electronic text, submit corrections, the community reviews them, and the curator approves changes that improve the text.
 
 ## Kinds of Improvements
 ### Corrections
