@@ -94,6 +94,9 @@ All three services (OpenResty, SvelteKit, PostgreSQL) run as Docker containers o
 | **ORM** | [Drizzle ORM](https://orm.drizzle.team/) | Apache 2.0 | Type-safe, SQL-like, lightweight |
 | **Auth** | [Better Auth](https://www.better-auth.com/) | MIT | OSS, framework-agnostic, successor to Auth.js |
 | **Text Encoding** | [TEI P5 XML](https://tei-c.org/guidelines/p5/) | Open | Standard for digital humanities texts; Phase 6 for EEBO/ECCO/TCP corpus |
+| **TEI Rendering** | [CETEIcean](https://github.com/TEIC/CETEIcean) | MIT | Client-side TEI-to-HTML via Custom Elements; no server dependency |
+| **Scan Viewer** | [OpenSeadragon](https://openseadragon.github.io/) | BSD | Deep-zoom image viewer; IIIF-compatible; Phase 6 for side-by-side scans |
+| **Special Characters** | [KeymanWeb](https://keyman.com/developer/keymanweb/) | MIT | On-demand polytonic Greek & Hebrew keyboards (SIL); Phase 6 |
 | **Notifications** | [Novu](https://github.com/novuhq/novu) | MIT (core) | In-app + email, workflow engine |
 | **Real-time** | Server-Sent Events (native) | — | Built into SvelteKit, no extra dependency |
 | **Reverse Proxy** | [OpenResty](https://openresty.org/) | BSD | nginx + Lua, rate limiting, security headers |
@@ -595,6 +598,43 @@ Detailed notes on each recommended technology, for quick reference during implem
 - **What**: International Image Interoperability Framework — a standard API for serving and annotating high-resolution images from digital libraries.
 - **Why**: Many libraries (Bodleian, Folger, HathiTrust) serve their page scans via IIIF. Integrating IIIF would allow Criticalis to display page scans directly from library servers without hosting the images locally.
 - **When**: Evaluate during Phase 6 scan viewer implementation. Start with local PDF/image files, add IIIF as a second source.
+
+### CETEIcean (Phase 6)
+- **Repo**: https://github.com/TEIC/CETEIcean
+- **What**: A JavaScript library that registers TEI XML elements as HTML Custom Elements, rendering TEI directly in the browser with no server-side transformation required.
+- **Why**: Lightweight, client-side-only TEI rendering that works with any backend stack (no eXist-db or XQuery dependency). TEI elements become `<tei-div>`, `<tei-p>`, etc. in the DOM, styleable with CSS. Maintained by the TEI Consortium itself.
+- **How it works**: Load TEI XML → CETEIcean registers each TEI element as a Custom Element → the browser renders them natively → CSS styles the output. Supports `<tei-pb>` page breaks (linkable to scans), `<tei-gap>` placeholders, `<tei-foreign>` language tagging, `<tei-choice>` editorial markup — all the constructs Criticalis needs.
+- **Status**: Planned for Phase 6 TEI rendering (task 6.2). Not yet integrated.
+
+### OpenSeadragon (Phase 6)
+- **Site**: https://openseadragon.github.io/
+- **Repo**: https://github.com/openseadragon/openseadragon
+- **What**: High-performance, JavaScript deep-zoom image viewer for the web. Supports IIIF Image API, DZI, TileSource, and static image formats.
+- **Why**: The standard viewer used by digital libraries worldwide (Bodleian, Folger, Library of Congress, Internet Archive). Provides zoom, pan, full-screen, and multi-image navigation. IIIF-compatible out of the box. BSD licensed — no copyleft concerns.
+- **How it will be used**: Side-by-side with CETEIcean's TEI rendering. Navigate by TEI `<pb>` page breaks to sync the text view with the scan image. Support both IIIF-served images and locally hosted PDF pages / static images.
+- **Status**: Planned for Phase 6 scan viewer (task 6.1). Not yet integrated.
+
+### KeymanWeb (Phase 6)
+- **Site**: https://keyman.com/developer/keymanweb/
+- **Repo**: https://github.com/keymanapp/keyman
+- **What**: Browser-based keyboard engine by SIL International. 1,000+ keyboard layouts for minority, historical, and complex scripts. Renders on-screen keyboards, handles dead-key sequences, runs entirely in JavaScript.
+- **Why**: Battle-tested polytonic Greek (`sil_greek_polytonic`) and Hebrew with nikkud (`sil_hebrew`) keyboards that handle diacritical ordering and Unicode normalization correctly. Building this from scratch would be weeks of work with subtle edge cases.
+- **Integration**: CDN-distributed (not npm). Load on-demand via `<script>` tag when user activates Greek or Hebrew input mode. Auto-attaches to input elements. ~100KB+ with keyboards.
+- **Status**: Planned for Phase 6 special character input (task 6.3, Layer 3). Not yet integrated.
+
+### Tesseract.js (Phase 6)
+- **Repo**: https://github.com/naptha/tesseract.js
+- **npm**: `tesseract.js` (~348K weekly downloads)
+- **What**: Browser-based OCR engine compiled to WASM. Supports 100+ languages including Greek and Hebrew.
+- **Why**: Runs entirely client-side — zero cost, no API key, no data leaving the user's machine. Provides a free baseline OCR option for region-crop character recognition alongside the BYOK cloud AI providers.
+- **Status**: Planned for Phase 6 AI-assisted correction (task 6.4, client-side OCR option). Not yet integrated.
+
+### Jinks / TEI Publisher (design reference only)
+- **Repo**: https://github.com/eeditiones/jinks
+- **What**: App manager for TEI Publisher 10 (e-editiones). Generates TEI publishing applications backed by eXist-db (Java/XQuery).
+- **Why not a dependency**: Requires eXist-db as its runtime (incompatible with SvelteKit/Node.js/PostgreSQL stack). Web components (`pb-components`) cannot render TEI without the eXist-db backend. GPL-3.0 license (strong copyleft).
+- **What IS valuable**: The `annotate` profile implements a standoff annotation model (JSON annotations keyed by element ID + character offset, merged back into inline TEI for export) that closely matches Criticalis's "immutable original + annotation layer" design. The `sic/corr` and `choice` handling in `annotation-config.xqm` and the merge algorithm in `annotations.xql` are excellent design references for reimplementing in TypeScript. The `pb-facsimile` source shows how to sync OpenSeadragon with TEI `<pb>` page breaks.
+- **Status**: Design reference only. Not integrated, not planned as a dependency.
 
 ---
 
