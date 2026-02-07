@@ -399,7 +399,12 @@ Criticalis can serve as the platform where scholars, students, and enthusiasts c
   - Display the scanned page image (PDF page, JPEG, or TIFF) alongside the electronic text
   - Synchronized scrolling/navigation — selecting a passage in the text highlights the approximate region in the scan, and vice versa
   - Zoom and pan controls for the scan image
+  - **Scan sources** (three tiers):
+    - **Platform-provided**: scans sourced from Internet Archive, ProQuest (EEBO/ECCO), or other archives — publicly visible to all users
+    - **User-uploaded**: users upload their own scans (PDF, images) to work with a text — **private by default**, visible only to the uploader
+    - **Shared**: user-uploaded scans can be explicitly shared with specific individuals (by invitation) but remain non-public unless the uploader opts to release them
   - Support for PDF (rendered page-by-page), IIIF image API (used by many digital libraries), and static image files
+  - **Privacy rationale**: some users may have institutional access to scans (e.g., via ProQuest) that cannot be redistributed. They should still be able to use those scans for correction work on the platform without exposing the images to the public. Corrections to the *text* (which is CC0) remain public; the *scan images* used to make those corrections may be private.
 
 - [ ] **6.2** — TEI P5 XML ingestion and rendering:
   - Parse TEI P5 XML into a readable view, respecting structural markup (divisions, paragraphs, verse, tables, marginalia, front/back matter)
@@ -449,11 +454,14 @@ Criticalis can serve as the platform where scholars, students, and enthusiasts c
 
 ### Decision Points
 
-> **Scan alignment strategy**: How to link page scans to TEI text positions?
-> - Option A: Manual page-break alignment — editors mark `<pb>` elements in the TEI that correspond to scan pages
-> - Option B: IIIF manifest integration — many libraries provide structured image manifests that can be linked to TEI page breaks
-> - Option C: AI-assisted alignment — use OCR on the scan and fuzzy-match against the TEI text to auto-link regions
-> - Likely a combination: start with manual `<pb>` alignment (already present in most TCP texts), add IIIF support, explore AI alignment as a stretch goal
+> **Scan alignment strategy**: How to link page scans to TEI text positions? — DECIDED
+>
+> Use the `<pb>` elements already present in TCP texts as the alignment backbone. Three scan source tiers:
+> 1. **Platform-provided scans**: sourced from Internet Archive, ProQuest, or other archives — publicly visible
+> 2. **User-uploaded scans**: private by default (the user may have institutional access to scans they cannot redistribute). Users can still make corrections against private scans — the corrections to the CC0 text are public, the scan images are not.
+> 3. **Shared scans**: user-uploaded scans explicitly shared with specific individuals by invitation
+>
+> Support IIIF for hotlinking to library-hosted images (Internet Archive, Bodleian, Folger, HathiTrust) where available. Fall back to self-hosted or user-uploaded scans for texts without free IIIF sources. AI-assisted alignment (OCR + fuzzy match) is a stretch goal.
 
 > **TEI editing granularity**: Should contributors edit raw TEI XML, or a WYSIWYG view?
 > - Most contributors should see a rich-text view and submit corrections through the same popup workflow as Phase 2
