@@ -1,0 +1,6 @@
+[submodule "/home/user/criticalis/src/lib/foliate-js"]
+	path = /home/user/criticalis/src/lib/foliate-js
+	url = https://github.com/johnfactotum/foliate-js.git
+[submodule "/home/user/criticalis/static/foliate-js"]
+	path = /home/user/criticalis/static/foliate-js
+	url = https://github.com/johnfactotum/foliate-js.git
