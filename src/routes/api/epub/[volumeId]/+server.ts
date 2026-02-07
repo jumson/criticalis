@@ -10,7 +10,8 @@ export const GET: RequestHandler = async ({ params }) => {
 		error(404, 'Volume not found');
 	}
 
-	const epubPath = join(process.cwd(), 'sources', volume.filename);
+	const sourcesDir = process.env.SOURCES_PATH || join(process.cwd(), 'sources');
+	const epubPath = join(sourcesDir, volume.filename);
 
 	try {
 		const fileBuffer = await readFile(epubPath);

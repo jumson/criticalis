@@ -12,8 +12,39 @@
 	let errorMessage: string = $state('');
 	let showToc: boolean = $state(false);
 	let view: any = $state(null);
+	let hasBookmark: boolean = $state(false);
+	let lastCfi: string = $state('');
+
+	const bookmarkKey = `criticalis-bookmark-${data.volume.id}`;
+
+	function saveBookmark() {
+		if (lastCfi) {
+			localStorage.setItem(bookmarkKey, JSON.stringify({
+				cfi: lastCfi,
+				location: currentLocation,
+				progress,
+				savedAt: Date.now()
+			}));
+			hasBookmark = true;
+		}
+	}
+
+	function getSavedBookmark(): { cfi: string; location: string; progress: number } | null {
+		try {
+			const raw = localStorage.getItem(bookmarkKey);
+			if (raw) return JSON.parse(raw);
+		} catch { /* ignore */ }
+		return null;
+	}
+
+	function clearBookmark() {
+		localStorage.removeItem(bookmarkKey);
+		hasBookmark = false;
+	}
 
 	onMount(async () => {
+		hasBookmark = !!getSavedBookmark();
+
 		try {
 			// Dynamic import of foliate-js view module (registers <foliate-view> custom element)
 			// Loaded from static/ so Vite doesn't process it — foliate-js uses native ES modules
@@ -39,6 +70,9 @@
 				if (detail.fraction != null) {
 					progress = Math.round(detail.fraction * 100);
 				}
+				if (detail.cfi) {
+					lastCfi = detail.cfi;
+				}
 			});
 
 			// Listen for section loads to capture text selection
@@ -61,8 +95,13 @@
 				tocItems = el.book.toc;
 			}
 
-			// Start at the beginning
-			await el.init({ showTextStart: true });
+			// Restore saved position or start at the beginning
+			const saved = getSavedBookmark();
+			if (saved?.cfi) {
+				await el.init({ lastLocation: saved.cfi });
+			} else {
+				await el.init({ showTextStart: true });
+			}
 			loading = false;
 		} catch (err) {
 			console.error('Failed to load ePub:', err);
@@ -98,7 +137,21 @@
 </script>
 
 <svelte:head>
-	<title>{data.volume.subtitle} - Criticalis</title>
+	<title>{data.volume.subtitle} — The Treasury of David - Criticalis</title>
+	<meta name="description" content="Read The Treasury of David {data.volume.subtitle} ({data.volume.psalms}) by C. H. Spurgeon. Community-corrected edition." />
+	<meta property="og:title" content="{data.volume.subtitle} — The Treasury of David" />
+	<meta property="og:description" content="Read {data.volume.psalms} from The Treasury of David by C. H. Spurgeon." />
+	<meta property="og:type" content="book" />
+	<meta property="og:site_name" content="Criticalis" />
+	{@html `<script type="application/ld+json">${JSON.stringify({
+		"@context": "https://schema.org",
+		"@type": "Book",
+		"name": `The Treasury of David — ${data.volume.subtitle}`,
+		"author": { "@type": "Person", "name": "Charles Haddon Spurgeon" },
+		"bookFormat": "EBook",
+		"numberOfPages": 0,
+		"description": `${data.volume.psalms} — A commentary on the Book of Psalms`
+	})}</script>`}
 </svelte:head>
 
 <svelte:window onkeydown={handleKeydown} />
@@ -146,6 +199,16 @@
 					<span class="toolbar-location">{currentLocation}</span>
 				{/if}
 			</div>
+			<button
+				class="toolbar-btn bookmark-btn"
+				class:active={hasBookmark}
+				onclick={() => hasBookmark ? clearBookmark() : saveBookmark()}
+				title={hasBookmark ? 'Remove bookmark' : 'Bookmark this page'}
+			>
+				<svg width="20" height="20" viewBox="0 0 20 20" fill={hasBookmark ? 'currentColor' : 'none'}>
+					<path d="M5 3h10v14l-5-3-5 3V3z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+				</svg>
+			</button>
 			<a href="/" class="toolbar-btn" title="Back to volumes">
 				<svg width="20" height="20" viewBox="0 0 20 20" fill="none">
 					<path d="M5 10h10M5 10l4-4M5 10l4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -307,6 +370,10 @@
 		text-decoration: none;
 	}
 
+	.bookmark-btn.active {
+		color: var(--color-accent);
+	}
+
 	.toolbar-title {
 		flex: 1;
 		display: flex;
@@ -400,5 +467,40 @@
 		color: var(--color-text-faint);
 		min-width: 2.5rem;
 		text-align: right;
+	}
+
+	@media (max-width: 600px) {
+		.reader-layout {
+			height: calc(100vh - 48px);
+		}
+
+		.toc-sidebar {
+			width: 100%;
+		}
+
+		.reader-toolbar {
+			padding: 0.4rem 0.5rem;
+			gap: 0.25rem;
+		}
+
+		.toolbar-title {
+			font-size: 0.8rem;
+		}
+
+		.toolbar-volume {
+			max-width: 120px;
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}
+
+		.reader-nav {
+			padding: 0.4rem 0.5rem;
+			gap: 0.5rem;
+		}
+
+		.progress-text {
+			font-size: 0.7rem;
+			min-width: 2rem;
+		}
 	}
 </style>

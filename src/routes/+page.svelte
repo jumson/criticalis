@@ -3,7 +3,28 @@
 </script>
 
 <svelte:head>
-	<title>Criticalis - The Treasury of David</title>
+	<title>Criticalis - The Treasury of David by C. H. Spurgeon</title>
+	<meta name="description" content="Read and help correct The Treasury of David by C. H. Spurgeon — a seven-volume exposition on the Book of Psalms. Community-driven OCR correction and annotation." />
+	<meta property="og:title" content="Criticalis - The Treasury of David" />
+	<meta property="og:description" content="A community effort to correct and annotate this classic seven-volume exposition on the Book of Psalms." />
+	<meta property="og:type" content="website" />
+	<meta property="og:site_name" content="Criticalis" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="Criticalis - The Treasury of David" />
+	<meta name="twitter:description" content="Community-driven correction and annotation of The Treasury of David by C. H. Spurgeon." />
+	{@html `<script type="application/ld+json">${JSON.stringify({
+		"@context": "https://schema.org",
+		"@type": "CollectionPage",
+		"name": "The Treasury of David",
+		"author": { "@type": "Person", "name": "Charles Haddon Spurgeon" },
+		"description": "A seven-volume exposition and commentary on the Book of Psalms",
+		"numberOfItems": 7,
+		"isPartOf": {
+			"@type": "WebSite",
+			"name": "Criticalis",
+			"description": "Collaborative correction and annotation of public domain works"
+		}
+	})}</script>`}
 </svelte:head>
 
 <div class="container hero">
@@ -21,15 +42,18 @@
 	<div class="volumes-grid">
 		{#each volumes as volume}
 			<a href="/read/{volume.id}" class="volume-card">
-				<div class="volume-number">{volume.roman}</div>
+				<div class="volume-cover">
+					<div class="cover-spine"></div>
+					<div class="cover-front">
+						<span class="cover-ornament">&#x2766;</span>
+						<span class="cover-title">Treasury<br/>of David</span>
+						<span class="cover-roman">{volume.roman}</span>
+						<span class="cover-author">Spurgeon</span>
+					</div>
+				</div>
 				<div class="volume-info">
 					<h3>{volume.subtitle}</h3>
 					<p class="volume-psalms">{volume.psalms}</p>
-				</div>
-				<div class="volume-arrow">
-					<svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-						<path d="M7 4l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-					</svg>
 				</div>
 			</a>
 		{/each}
@@ -66,64 +90,150 @@
 
 	.section-title {
 		font-size: 1.2rem;
-		margin-bottom: 1rem;
+		margin-bottom: 1.25rem;
 		padding-bottom: 0.5rem;
 		border-bottom: 1px solid var(--color-border-light);
 	}
 
 	.volumes-grid {
-		display: flex;
-		flex-direction: column;
-		gap: 0.5rem;
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+		gap: 1.25rem;
 		padding-bottom: 3rem;
 	}
 
 	.volume-card {
 		display: flex;
+		flex-direction: column;
 		align-items: center;
-		gap: 1rem;
-		padding: 1rem 1.25rem;
+		gap: 0.75rem;
+		padding: 1rem;
 		background: var(--color-bg-elevated);
 		border: 1px solid var(--color-border-light);
 		border-radius: var(--radius-lg);
 		text-decoration: none;
 		color: inherit;
-		transition: border-color 0.15s, box-shadow 0.15s;
+		transition: border-color 0.15s, box-shadow 0.15s, transform 0.15s;
 	}
 
 	.volume-card:hover {
 		border-color: var(--color-border);
-		box-shadow: var(--shadow-sm);
+		box-shadow: var(--shadow-md);
 		text-decoration: none;
 		color: inherit;
+		transform: translateY(-2px);
 	}
 
-	.volume-number {
+	.volume-cover {
+		width: 100px;
+		height: 140px;
+		display: flex;
+		border-radius: 2px 4px 4px 2px;
+		box-shadow: var(--shadow-sm), 2px 2px 6px rgba(0, 0, 0, 0.12);
+		overflow: hidden;
+		flex-shrink: 0;
+	}
+
+	.cover-spine {
+		width: 8px;
+		background: #5c4229;
+		flex-shrink: 0;
+	}
+
+	.cover-front {
+		flex: 1;
+		background: linear-gradient(135deg, #7c5e3c 0%, #5c4229 100%);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 0.25rem;
+		padding: 0.5rem;
+		color: #f0e8dc;
+		border-left: 1px solid rgba(255, 255, 255, 0.1);
+	}
+
+	.cover-ornament {
+		font-size: 1rem;
+		opacity: 0.6;
+		line-height: 1;
+	}
+
+	.cover-title {
+		font-family: var(--font-serif);
+		font-size: 0.65rem;
+		text-align: center;
+		line-height: 1.3;
+		letter-spacing: 0.02em;
+	}
+
+	.cover-roman {
 		font-family: var(--font-serif);
 		font-size: 1.4rem;
 		font-weight: 700;
-		color: var(--color-accent);
-		min-width: 2.5rem;
-		text-align: center;
+		line-height: 1;
+	}
+
+	.cover-author {
+		font-size: 0.55rem;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		opacity: 0.7;
 	}
 
 	.volume-info {
-		flex: 1;
+		text-align: center;
 	}
 
 	.volume-info h3 {
-		font-size: 1rem;
+		font-size: 0.95rem;
 		font-family: var(--font-sans);
 		font-weight: 600;
 	}
 
 	.volume-psalms {
 		margin: 0.15rem 0 0;
-		font-size: 0.85rem;
+		font-size: 0.8rem;
 		color: var(--color-text-muted);
 	}
 
-	.volume-arrow {
-		color: var(--color-text-faint);
+	@media (max-width: 600px) {
+		.hero {
+			padding: 2rem 1rem 1.5rem;
+		}
+
+		.hero h1 {
+			font-size: 1.6rem;
+		}
+
+		.subtitle {
+			font-size: 1rem;
+		}
+
+		.description {
+			font-size: 0.9rem;
+		}
+
+		.volumes-grid {
+			grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+			gap: 1rem;
+		}
+
+		.volume-card {
+			padding: 0.75rem;
+		}
+
+		.volume-cover {
+			width: 88px;
+			height: 124px;
+		}
+
+		.volume-info h3 {
+			font-size: 0.85rem;
+		}
+
+		.volume-psalms {
+			font-size: 0.75rem;
+		}
 	}
 </style>
