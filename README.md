@@ -1,8 +1,38 @@
-# criticalis
-The purpose of this project is to create a platform to enable everyone to contribute to the improvement of popular works in the public domain.
-The outcome being high quality, annotated works that are accessible to successive generations.
+# Criticalis
 
-This project will use a favorite text of mine as the initial "subject." "The Treasury of David" is an original exposition and commentary on the book of Psalms by C. H. Spurgeon, composed in seven volumes, published in the late 19th century.
+A collaborative platform for crowdsourcing corrections and annotations to public domain works. The goal: high quality, annotated texts accessible to successive generations.
+
+The initial subject is **The Treasury of David** — C. H. Spurgeon's seven-volume commentary on the Psalms, published in the late 19th century. The OCR-digitized ePub editions contain numerous errors that the community can identify and fix.
+
+## Current Status
+
+| Phase | Status | Description |
+|-------|--------|-------------|
+| 0-1 | Complete | Reader MVP — ePub viewer, volumes listing, bookmarks, Docker deployment |
+| 2 | Complete | Corrections workflow — authentication, correction/footnote submission, curator dashboard |
+| 3 | Next | Community layer — voting, comments, user profiles, notifications |
+| 4+ | Planned | Multi-corpus support, TEI XML editing, AI-assisted corrections |
+
+## Technology Stack
+
+- **Frontend**: SvelteKit 2, Svelte 5, Vite 7
+- **ePub Rendering**: foliate-js (custom element, loaded from static)
+- **Backend**: Node.js 22, SvelteKit adapter-node
+- **Database**: PostgreSQL 17, Drizzle ORM
+- **Authentication**: Better Auth (email/password)
+- **Deployment**: Docker Compose (App + PostgreSQL + OpenResty proxy)
+
+## Features
+
+- **ePub Reader** — read all 7 volumes with table of contents, bookmarking, and progress tracking
+- **Text Selection Corrections** — select text in the reader to propose corrections or add footnotes
+- **Correction List** — browse all corrections for each volume, filtered by status
+- **Curator Dashboard** — role-restricted review queue with side-by-side comparison, approve/reject/request changes
+- **User Roles** — contributor (default), curator, admin
+
+---
+
+## Vision
 
 ### Broader Vision: Early Printed Books & the TCP Corpus
 
@@ -49,44 +79,24 @@ For example, the word **controverted** as seen below was about 10 times more pop
 <img src="images/example3-g.PNG?raw=true" width="600" alt="example-3-graph"/>
 
 ## How it works
-The basic idea is nothing less than a very simplified interface for version control, like GitHub, but focused on texts. It needs to be simplified for the kinds of people that are best suited to making these corrections or comments. From the merely interested to world renown experts, rarely would they also be familiar with all the ins and outs of setting up 'git' on their system, cloning, branching, submitting pull requests, etc. This should all be as seamless as a social media platform where users can comment and press an up or down arrow to show approval (or disapproval).
 
-The current concept is to provide the public domain version of the text to the reader, in a format which they may also use as a regular etext reading platform. The reader can then easily reference a particular location or set of words, and offer the corrective, along with explanatory notes. 
+1. **Read** — Users browse volumes and read the ePub text in an in-browser reader powered by foliate-js
+2. **Select & Correct** — Selecting text opens a popup where users can suggest a correction (fix OCR errors) or add a footnote (explain archaic language, add context)
+3. **Review** — Corrections are stored in the database with status tracking. Other contributors can browse all corrections for a volume
+4. **Curate** — Users with the curator role review submissions in a dedicated dashboard, with side-by-side original vs. proposed text, and can approve, reject, or request changes
+5. **Community** *(coming in Phase 3)* — Voting, comments, and user profiles will allow the community to surface the best corrections and self-govern
 
-Other contributers should be able to see the recommendation and either approve or disapprove, and interact with the one submitting the change. In this way the community can self-govern after a fashion.
+The platform is designed to be as accessible as a social media app — no git knowledge required. Sign up, read, select text, submit. The curator workflow ensures quality control.
 
-The curator of the work will be the one who decides if the corrective will make the cut, and the 'community improved' version will be the result.
+## Implementation Notes
 
-The format will be the epub format. More on this will be forthcoming as I explore the capabilities and requirements.
-    It needs to support, at a minimum, highlighting, and hyperlinks for referencing footnotes and whatnot.
+### Technology choices made
 
-## The way ahead
+- **ePub rendering**: [foliate-js](https://github.com/johnfactotum/foliate-js) — a lightweight custom element that renders ePubs in a shadow DOM. Chosen over epub.js and Readium for its simplicity and native ES module architecture
+- **Corrections storage**: Database (PostgreSQL + Drizzle ORM) rather than git branches — more granular, supports voting/status workflows, simpler for non-technical users
+- **Location tracking**: EPUB CFI (Canonical Fragment Identifier) + section index for anchoring corrections to specific text locations
 
-### Digestion / Implementation Notes / Examples (this is a living document)
-This project will need to be a synthesis of an ePub reader and a git client. I'll likely attempt to find an open source ePub reader and a git client already implemented in NodeJS, and modify them to allow for good referencing of chunks.
-
-#### Potential sources of implementations: 
-- **ePub reading**
-    - simple ePub streamer [npm install epub](https://www.npmjs.com/package/epub) and the [github page](https://github.com/julien-c/epub)
-    - ePub to JSON, and some HTML generation - could be useful [npm install epub-parser](https://www.npmjs.com/package/epub-parser) and [the github](https://github.com/Vaporbook/epub-parser)
-    - ePub from HTML [npm install epub-gen](https://www.npmjs.com/package/epub-gen) and [the github](https://github.com/cyrilis/epub-gen)
-    - A streaming EPUB3 writer [npm install streampub](https://www.npmjs.com/package/streampub) and [the github](https://github.com/iarna/streampub)
-    - The Readium projects look pretty good for rendering ePub3 content  [the main site](http://readium.github.io/readium-project/) and the [readium-shared-js](https://github.com/readium/readium-shared-js)
-    - This may be a more simple integration [Future Press](http://futurepress.org/) and [the github](https://github.com/futurepress/epub.js)
-        - it looks quite promising :"*Similar to a plugins, Epub.js implements events that can be "hooked" into. Thus you can interact with and manipulate the contents of the book.*"
-    - Hypothesis looks promising as well - it can run on top of HTML for annotations [The website](https://web.hypothes.is/) and [the github](https://github.com/hypothesis/)
-        - this is likely more than I need -- the user can highlight a word and suggest the corrected word. If that data gets back to the server, the server can make the edit in the xml. 
-        - Additionally, the user can highlight a phrase and comment with a a syntax that allows the server to parse it as a suggested footnote, rather than a correction.
-            - perhaps something like: "note: this phrase is referring to the king of england at that time - Henry the VIII"
-
-- **Version controlling**
-    - NodeGit seems legit [main website](http://www.nodegit.org/) and [the github](https://github.com/nodegit/nodegit)
-    - this seems simple [npm install simple-git](https://github.com/steveukx/git-js)
-    - another library for Git using node-js [npm install git](https://www.npmjs.com/package/git) and [the github](https://github.com/christkv/node-git)
-    - this appears to be a complete library for all of the GITHUB API! [GitHub REST API client (docs) for Node.js](https://octokit.github.io/node-github/) and [the github](https://github.com/octokit/node-github) and [some more API specific stuff](https://developer.github.com/v3/)
-
-
-#### The insides of the ePub
+### The insides of the ePub
 As an example for what we are working with, the two graphics at the top of the page show Psalm 1, rendered in PDF and ePub. Below, is what it looks like inside the xml file (**content-0012.xml**) shows starting on line **1078** and skips a little to show how a paragraph ends and starts again:
 
 ```xml
@@ -132,13 +142,7 @@ As an example for what we are working with, the two graphics at the top of the p
 
 and it goes on like that. This excerpt shows how the first two paragraphs were assembled and the kind of thing we are dealing with.
 
-The ideal situation would allow for a tap or a click on a word, and the selection of a phrase if wanted, and that being able to be modified and pushed back into the xml to simple change spelling.wording/punctuation -- or to add footnotes/references (which may require something more).
-
-Each change submitted by the user would end up, in the background, being transmitted as commits and pull requests and/or issues. Ideally, only the .xml file is compressed and pushed, not the entire ePub. This will make things faster and preserve bandwidth.
-
-There will need to be two branches -- one where the changes are viewable by all, and another where the accepted changes are integrated as a 'final' product.
-
-A separate project would be perhaps some kind of machine learning method to take all these corrections and come up with a better OCR algorithm.
+In the current implementation, users select text in the foliate-js reader and submit corrections through a popup UI. Corrections are stored in the database with the selected text, proposed replacement, and EPUB location metadata (CFI + section index). Curators review and approve corrections through a dedicated dashboard. Future work will apply approved corrections back to the ePub XML to produce corrected editions.
 
 
 

@@ -6,8 +6,22 @@ import {
 	boolean,
 	serial,
 	varchar,
-	pgEnum
+	pgEnum,
+	uniqueIndex
 } from 'drizzle-orm/pg-core';
+
+// --- Enums ---
+
+export const userRoleEnum = pgEnum('user_role', ['contributor', 'curator', 'admin']);
+
+export const correctionStatusEnum = pgEnum('correction_status', [
+	'pending',
+	'under_review',
+	'approved',
+	'rejected'
+]);
+
+export const correctionTypeEnum = pgEnum('correction_type', ['fix', 'footnote']);
 
 // --- Auth tables (managed by Better Auth, defined here for Drizzle awareness) ---
 
@@ -17,6 +31,7 @@ export const user = pgTable('user', {
 	email: text('email').notNull().unique(),
 	emailVerified: boolean('email_verified').notNull().default(false),
 	image: text('image'),
+	role: userRoleEnum('role').notNull().default('contributor'),
 	createdAt: timestamp('created_at').notNull().defaultNow(),
 	updatedAt: timestamp('updated_at').notNull().defaultNow()
 });
@@ -29,7 +44,9 @@ export const session = pgTable('session', {
 	userAgent: text('user_agent'),
 	userId: text('user_id')
 		.notNull()
-		.references(() => user.id, { onDelete: 'cascade' })
+		.references(() => user.id, { onDelete: 'cascade' }),
+	createdAt: timestamp('created_at').notNull().defaultNow(),
+	updatedAt: timestamp('updated_at').notNull().defaultNow()
 });
 
 export const account = pgTable('account', {
@@ -61,15 +78,6 @@ export const verification = pgTable('verification', {
 
 // --- Application tables ---
 
-export const correctionStatusEnum = pgEnum('correction_status', [
-	'pending',
-	'under_review',
-	'approved',
-	'rejected'
-]);
-
-export const correctionTypeEnum = pgEnum('correction_type', ['fix', 'footnote']);
-
 export const correction = pgTable('correction', {
 	id: serial('id').primaryKey(),
 	volumeId: varchar('volume_id', { length: 16 }).notNull(),
@@ -99,7 +107,9 @@ export const vote = pgTable('vote', {
 		.references(() => user.id, { onDelete: 'cascade' }),
 	value: integer('value').notNull(), // +1 or -1
 	createdAt: timestamp('created_at').notNull().defaultNow()
-});
+}, (table) => [
+	uniqueIndex('vote_user_correction_idx').on(table.userId, table.correctionId)
+]);
 
 export const comment = pgTable('comment', {
 	id: serial('id').primaryKey(),

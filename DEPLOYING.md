@@ -30,10 +30,13 @@ cp .env.example .env
 # 4. Start the stack
 docker compose up -d
 
-# 5. Seed the ePub source files into the Docker volume
+# 5. Run database migrations
+docker compose exec app npx drizzle-kit migrate
+
+# 6. Seed the ePub source files into the Docker volume
 ./scripts/seed-sources.sh
 
-# 6. Verify it's running
+# 7. Verify it's running
 curl http://localhost
 ```
 
@@ -183,11 +186,26 @@ BETTER_AUTH_SECRET=dev-secret-not-for-production
 BETTER_AUTH_URL=http://localhost:5173
 EOF
 
+# Run database migrations
+npm run db:migrate
+
 # Start the dev server
 npm run dev
 ```
 
 The dev server runs at `http://localhost:5173`. ePub files are served from the local `sources/` directory.
+
+### Available npm scripts
+
+| Script | Description |
+|--------|-------------|
+| `npm run dev` | Start development server |
+| `npm run build` | Build for production |
+| `npm run preview` | Preview production build locally |
+| `npm run check` | TypeScript and Svelte type checking |
+| `npm run db:generate` | Generate new Drizzle migration SQL from schema changes |
+| `npm run db:migrate` | Apply pending migrations to the database |
+| `npm run db:push` | Push schema directly to database (development only) |
 
 ---
 
@@ -215,10 +233,23 @@ docker compose down && docker compose up -d
 docker compose build app && docker compose up -d app
 ```
 
+### Run database migrations
+
+```bash
+docker compose exec app npx drizzle-kit migrate
+```
+
 ### Database access
 
 ```bash
 docker compose exec db psql -U criticalis
+```
+
+### Promote a user to curator
+
+```bash
+docker compose exec db psql -U criticalis -c \
+  "UPDATE \"user\" SET role = 'curator' WHERE email = 'user@example.com';"
 ```
 
 ### Backup the database
@@ -242,23 +273,45 @@ criticalis/
 ├── src/
 │   ├── routes/
 │   │   ├── +page.svelte              # Landing page (volume grid)
-│   │   ├── +layout.svelte            # Global layout (header, footer)
+│   │   ├── +layout.svelte            # Global layout (header, footer, auth nav)
+│   │   ├── +layout.server.ts         # Layout server load (passes auth state)
 │   │   ├── about/+page.svelte        # About page
+│   │   ├── sign-in/+page.svelte      # Sign-in page
+│   │   ├── sign-up/+page.svelte      # Sign-up page
 │   │   ├── read/[volumeId]/          # Reader UI
-│   │   │   ├── +page.svelte          # ePub reader with foliate-js
-│   │   │   └── +page.ts              # Volume data loader
-│   │   └── api/epub/[volumeId]/      # ePub file serving endpoint
-│   │       └── +server.ts
+│   │   │   ├── +page.svelte          # ePub reader with foliate-js + correction popup
+│   │   │   ├── +page.ts              # Volume data loader
+│   │   │   └── +page.server.ts       # Auth data for reader
+│   │   ├── corrections/[volumeId]/   # Correction list per volume
+│   │   │   ├── +page.svelte          # Filterable corrections list
+│   │   │   └── +page.server.ts       # Corrections data loader
+│   │   ├── curator/                   # Curator dashboard (role-restricted)
+│   │   │   ├── +page.svelte          # Review queue with side-by-side view
+│   │   │   └── +page.server.ts       # Dashboard data loader
+│   │   └── api/
+│   │       ├── auth/[...all]/+server.ts          # Better Auth handler
+│   │       ├── epub/[volumeId]/+server.ts        # ePub file serving
+│   │       └── corrections/
+│   │           ├── +server.ts                    # GET/POST corrections
+│   │           ├── count/+server.ts              # Correction count per volume
+│   │           └── [id]/review/+server.ts        # Curator review actions
 │   ├── lib/
 │   │   ├── server/
 │   │   │   ├── schema.ts             # Drizzle ORM database schema
 │   │   │   ├── db.ts                 # PostgreSQL connection
 │   │   │   └── auth.ts               # Better Auth configuration
-│   │   └── data/
-│   │       └── volumes.ts            # Volume metadata (titles, psalm ranges)
-│   ├── hooks.server.ts               # CSP headers for ePub rendering
+│   │   ├── components/
+│   │   │   └── CorrectionPopup.svelte # Text selection correction/footnote popup
+│   │   ├── data/
+│   │   │   └── volumes.ts            # Volume metadata (titles, psalm ranges)
+│   │   └── auth-client.ts            # Better Auth client for Svelte
+│   ├── hooks.server.ts               # Session resolution + CSP headers
+│   ├── app.d.ts                      # TypeScript types (App.Locals)
 │   ├── app.css                       # Global styles
 │   └── app.html                      # HTML shell
+├── drizzle/                           # Database migration files
+│   ├── 0000_hard_lucky_pierre.sql    # Initial schema migration
+│   └── meta/                         # Migration metadata
 ├── sources/                           # ePub + PDF source files (7 volumes each)
 ├── static/
 │   └── foliate-js/                   # ePub renderer (git submodule)
